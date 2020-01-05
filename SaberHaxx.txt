@@ -1,0 +1,195 @@
+--Please dont remake or skid em kthx luv u
+--- Anti Lag 
+local plr = game:GetService("Players").LocalPlayer
+local screengui = plr.PlayerGui.Gui
+screengui.NumberAnimationStorage.Visible = false
+
+--variable
+local newvar = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Spero [SM HAXX]";
+Text = "Made by Athoi 21";
+Icon = "rbxassetid://3837426995";
+Duration = 23;
+})
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local FirstFrame = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local _1 = Instance.new("TextButton")
+local _2 = Instance.new("TextButton")
+local _3 = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local _5 = Instance.new("TextButton")
+local Fuck = Instance.new("TextLabel")
+local fuck2 = Instance.new("TextLabel")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FirstFrame.Name = "FirstFrame"
+FirstFrame.Parent = ScreenGui
+FirstFrame.Active = true
+FirstFrame.Draggable = true
+FirstFrame.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+FirstFrame.BorderSizePixel = 0
+FirstFrame.Position = UDim2.new(0.408180684, 0, 0.394622326, 0)
+FirstFrame.Size = UDim2.new(0, 189, 0, 28)
+FirstFrame.Font = Enum.Font.SourceSans
+FirstFrame.Text = "SARBER SIMULATOR V0"
+FirstFrame.TextColor3 = Color3.new(1, 1, 1)
+FirstFrame.TextSize = 20
+
+Frame.Parent = FirstFrame
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BackgroundTransparency = 0.5
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-6.81397796e-05, 0, 0.991697013, 0)
+Frame.Size = UDim2.new(0, 189, 0, 104)
+
+_1.Name = "1"
+_1.Parent = Frame
+_1.BackgroundColor3 = Color3.new(1, 1, 1)
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0, 0, 0.0736196339, 0)
+_1.Size = UDim2.new(0, 189, 0, 26)
+_1.Font = Enum.Font.Cartoon
+_1.Text = "Auto Strength"
+_1.TextColor3 = Color3.new(0, 0, 0)
+_1.TextSize = 21
+_1.MouseButton1Down:connect(function()
+	while wait() do
+local tbl_main = 
+{
+}
+game:GetService("ReplicatedStorage").Events.Clicked:FireServer(unpack(tbl_main))
+end
+end)
+
+
+_2.Name = "2"
+_2.Parent = Frame
+_2.BackgroundColor3 = Color3.new(1, 1, 1)
+_2.BorderSizePixel = 0
+_2.Position = UDim2.new(0, 0, 0.276073635, 0)
+_2.Size = UDim2.new(0, 189, 0, 26)
+_2.Font = Enum.Font.Cartoon
+_2.Text = "Auto Sell"
+_2.TextColor3 = Color3.new(0, 0, 0)
+_2.TextSize = 21
+_2.MouseButton1Down:connect(function()
+  while wait() do
+wait(1)
+ hum.CFrame = CFrame.new(-68.9284821, 83.4382248, -125.067215) 
+ wait(3)
+  hum.CFrame = CFrame.new(-36,3,46) 
+  end
+end)
+
+
+_3.Name = "3"
+_3.Parent = Frame
+_3.BackgroundColor3 = Color3.new(1, 1, 1)
+_3.BorderSizePixel = 0
+_3.Position = UDim2.new(0, 0, 0.478527606, 0)
+_3.Size = UDim2.new(0, 189, 0, 26)
+_3.Font = Enum.Font.Cartoon
+_3.Text = "Auto Coin collect"
+_3.TextColor3 = Color3.new(0, 0, 0)
+_3.TextSize = 21
+_3.MouseButton1Down:connect(function()
+while wait(2) do
+local plr = game.Players.LocalPlayer
+for i,v in pairs(game.Workspace.CoinsHolder:GetChildren()) do
+if v and plr.Character:FindFirstChild("HumanoidRootPart") and v:IsA("MeshPart") then 
+wait(1)
+plr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,1,0)
+end
+end
+end
+end)
+
+
+
+UIListLayout.Parent = Frame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+_5.Name = "5"
+_5.Parent = Frame
+_5.BackgroundColor3 = Color3.new(1, 1, 1)
+_5.BorderSizePixel = 0
+_5.Position = UDim2.new({0.385, 0},{0.111, 0})
+_5.Size = UDim2.new(0, 189, 0, 26)
+_5.Font = Enum.Font.Cartoon
+_5.Text = "Close Gui"
+_5.TextColor3 = Color3.new(0, 0, 0)
+_5.TextSize = 21
+_5.MouseButton1Down:connect(function()
+	FirstFrame.Visible = false
+	Fuck.Visible = false
+	fuck2.Visible = false
+end)
+
+
+Fuck.Name = "Fuck"
+Fuck.Parent = ScreenGui
+Fuck.BackgroundColor3 = Color3.new(1, 1, 1)
+Fuck.BackgroundTransparency = 1
+Fuck.BorderSizePixel = 0
+Fuck.Position = UDim2.new(0.385, 0,0.068, 0)
+Fuck.Size = UDim2.new(0, 350, 0, 36)
+Fuck.Font = Enum.Font.SciFi
+Fuck.Text = "??Saber Simulator Haxx?? "
+Fuck.TextColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Fuck.TextScaled = true
+Fuck.TextSize = 14
+Fuck.TextWrapped = true
+
+fuck2.Name = "fuck2"
+fuck2.Parent = ScreenGui
+fuck2.BackgroundColor3 = Color3.new(1, 1, 1)
+fuck2.BackgroundTransparency = 1
+fuck2.BorderSizePixel = 0
+fuck2.Position = UDim2.new(0.385, 0,0.111, 0)
+fuck2.Size = UDim2.new(0, 341, 0, 33)
+fuck2.Font = Enum.Font.SciFi
+fuck2.Text = "Made by Athoi 21"
+fuck2.TextColor3 = Color3.new(0, 0, 0)
+fuck2.TextSize = 25
+-- Scripts:
+function SCRIPT_XNND88_FAKESCRIPT() -- Fuck.Script 
+	local script = Instance.new('Script')
+	script.Parent = Fuck
+	repeat  
+	  for hue = 0, 1, .01 do
+	       script.Parent.TextColor3= Color3.fromHSV(hue, 1, 1)
+	        wait()
+	    end
+	    for hue = 1, 0 -.01 do
+	       script.Parent.TextColor3= Color3.fromHSV(hue, 1, 1)
+	        wait()
+	    end
+	until nil
+
+end
+coroutine.resume(coroutine.create(SCRIPT_XNND88_FAKESCRIPT))
+function SCRIPT_OXUC71_FAKESCRIPT() -- fuck2.Script 
+	local script = Instance.new('Script')
+	script.Parent = fuck2
+	repeat  
+	  for hue = 0, 1, .01 do
+	       script.Parent.TextColor3= Color3.fromHSV(hue, 1, 1)
+	        wait()
+	    end
+	    for hue = 1, 0 -.01 do
+	       script.Parent.TextColor3= Color3.fromHSV(hue, 1, 1)
+	        wait()
+	    end
+	until nil
+
+end
+coroutine.resume(coroutine.create(SCRIPT_OXUC71_FAKESCRIPT))
