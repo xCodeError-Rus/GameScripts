@@ -1,0 +1,2032 @@
+local pitchup              = false
+local pitchdown            = false
+local pitchfakelag         = false
+local jitter               = false
+local sideways             = false
+local yawfakelag           = false
+local backward             = false
+local antiaim              = false
+local aasettings           = false
+local alsetting            = false
+local aimlock              = false
+local thirdperson          = false
+local fovchanger           = false
+local opened                = false
+local hidekey              = Enum.KeyCode.Insert
+local Chillware            = Instance.new("ScreenGui")
+local ChillwareMain        = Instance.new("Frame")
+local ChillwareDrag        = Instance.new("TextLabel")
+local TabSelector          = Instance.new("Frame")
+local LegitTabButton       = Instance.new("TextButton")
+local RageTabButton        = Instance.new("TextButton")
+local VisualsTabButton     = Instance.new("TextButton")
+local SkinChangerTabButton = Instance.new("TextButton")
+local MiscTabButton        = Instance.new("TextButton")
+local RageTab              = Instance.new("Frame")
+local AntiAimSettings      = Instance.new("TextButton")
+local AntiAimSettingsForm  = Instance.new("Frame")
+local Spacer               = Instance.new("Frame")
+local UpCheckBox           = Instance.new("TextButton")
+local UpLabel              = Instance.new("TextLabel")
+local PitchLabel           = Instance.new("TextLabel")
+local DownCheckBox         = Instance.new("TextButton")
+local DownLabel            = Instance.new("TextLabel")
+local FakeLagPitchCheckBox = Instance.new("TextButton")
+local FakeLagPitchLabel    = Instance.new("TextLabel")
+local YawLabel             = Instance.new("TextLabel")
+local JitterCheckBox       = Instance.new("TextButton")
+local JitterLabel          = Instance.new("TextLabel")
+local SidewaysLabel        = Instance.new("TextLabel")
+local SidewaysCheckBox     = Instance.new("TextButton")
+local FakeLagYawCheckBox   = Instance.new("TextButton")
+local FakeLagYawLabel      = Instance.new("TextLabel")
+local BackwardCheckBox     = Instance.new("TextButton")
+local BackwardLabel        = Instance.new("TextLabel")
+local AntiAimCheckBox      = Instance.new("TextButton")
+local AntiAimLabel         = Instance.new("TextLabel")
+local LegitTab             = Instance.new("Frame")
+local AimLockSettingsForm  = Instance.new("Frame")
+local AimLockHeadCheckBox  = Instance.new("TextButton")
+local AimLockTorsoCheckBox = Instance.new("TextButton")
+local HeadLabel            = Instance.new("TextLabel")
+local TorsoLabel           = Instance.new("TextLabel")
+local AimLockSettings      = Instance.new("TextButton")
+local AimLockCheckBox      = Instance.new("TextButton")
+local AimLockLabel         = Instance.new("TextLabel")
+local VisualsTab           = Instance.new("Frame")
+local ESPLabel             = Instance.new("TextLabel")
+local ESPCheckBox          = Instance.new("TextButton")
+local ChamsLabel           = Instance.new("TextLabel")
+local ChamsCheckBox        = Instance.new("TextButton")
+local ThirdPersonLabel     = Instance.new("TextLabel")
+local ThirdPersonCheckBox  = Instance.new("TextButton")
+local FOVChangerLabel      = Instance.new("TextLabel")
+local FOVChangerCheckBox   = Instance.new("TextButton")
+local FOVChangerSettings   = Instance.new("TextButton")
+local FOVValue             = Instance.new("TextBox")
+local SkinChangerTab       = Instance.new("Frame")
+local SkinChangerLabel     = Instance.new("TextLabel")
+local MiscTab              = Instance.new("Frame")
+local RespawnButton        = Instance.new("TextButton")
+local JoinCTButton         = Instance.new("TextButton")
+local JoinTButton          = Instance.new("TextButton")
+
+Chillware.Name = "Chillware"
+Chillware.Parent = game.CoreGui
+Chillware.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ChillwareMain.Name = "ChillwareMain"
+ChillwareMain.Parent = Chillware
+ChillwareMain.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+ChillwareMain.BorderSizePixel = 0
+ChillwareMain.Position = UDim2.new(0.131675869, 0, 0.118095234, 0)
+ChillwareMain.Size = UDim2.new(0, 800, 0, 400)
+ChillwareMain.Active = true
+ChillwareMain.Draggable = true
+ChillwareMain.Visible = false
+
+ChillwareDrag.Name = "ChillwareDrag"
+ChillwareDrag.Parent = ChillwareMain
+ChillwareDrag.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+ChillwareDrag.BorderSizePixel = 0
+ChillwareDrag.Size = UDim2.new(0, 800, 0, 25)
+ChillwareDrag.Font = Enum.Font.Gotham
+ChillwareDrag.Text = "Chillware (BETA v0.0.5)"
+ChillwareDrag.TextColor3 = Color3.new(1, 1, 1)
+ChillwareDrag.TextSize = 20
+
+TabSelector.Name = "TabSelector"
+TabSelector.Parent = ChillwareMain
+TabSelector.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+TabSelector.BorderSizePixel = 0
+TabSelector.Position = UDim2.new(0, 0, 0.0625, 0)
+TabSelector.Size = UDim2.new(0, 800, 0, 40)
+
+LegitTabButton.Name = "LegitTabButton"
+LegitTabButton.Parent = TabSelector
+LegitTabButton.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+LegitTabButton.BorderSizePixel = 0
+LegitTabButton.Size = UDim2.new(0, 160, 0, 40)
+LegitTabButton.Font = Enum.Font.Gotham
+LegitTabButton.Text = "Legit"
+LegitTabButton.TextColor3 = Color3.new(1, 1, 1)
+LegitTabButton.TextSize = 25
+LegitTabButton.TextWrapped = true
+LegitTabButton.MouseButton1Down:connect(function()
+    LegitTab.Visible = true
+    RageTab.Visible = false
+    VisualsTab.Visible = false
+    SkinChangerTab.Visible = false
+    MiscTab.Visible = false
+end)
+
+RageTabButton.Name = "RageTabButton"
+RageTabButton.Parent = TabSelector
+RageTabButton.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+RageTabButton.BorderSizePixel = 0
+RageTabButton.Position = UDim2.new(0.200000003, 0, 0, 0)
+RageTabButton.Size = UDim2.new(0, 160, 0, 40)
+RageTabButton.Font = Enum.Font.Gotham
+RageTabButton.Text = "Rage"
+RageTabButton.TextColor3 = Color3.new(1, 1, 1)
+RageTabButton.TextSize = 25
+RageTabButton.TextWrapped = true
+RageTabButton.MouseButton1Down:connect(function()
+    LegitTab.Visible = false
+    RageTab.Visible = true
+    VisualsTab.Visible = false
+    SkinChangerTab.Visible = false
+    MiscTab.Visible = false
+end)
+
+VisualsTabButton.Name = "VisualsTabButton"
+VisualsTabButton.Parent = TabSelector
+VisualsTabButton.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+VisualsTabButton.BorderSizePixel = 0
+VisualsTabButton.Position = UDim2.new(0.400000006, 0, 0, 0)
+VisualsTabButton.Size = UDim2.new(0, 160, 0, 40)
+VisualsTabButton.Font = Enum.Font.Gotham
+VisualsTabButton.Text = "Visuals"
+VisualsTabButton.TextColor3 = Color3.new(1, 1, 1)
+VisualsTabButton.TextSize = 25
+VisualsTabButton.TextWrapped = true
+VisualsTabButton.MouseButton1Down:connect(function()
+    LegitTab.Visible = false
+    RageTab.Visible = false
+    VisualsTab.Visible = true
+    SkinChangerTab.Visible = false
+    MiscTab.Visible = false
+end)
+
+SkinChangerTabButton.Name = "SkinChangerTabButton"
+SkinChangerTabButton.Parent = TabSelector
+SkinChangerTabButton.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+SkinChangerTabButton.BorderSizePixel = 0
+SkinChangerTabButton.Position = UDim2.new(0.800000012, 0, 0, 0)
+SkinChangerTabButton.Size = UDim2.new(0, 160, 0, 40)
+SkinChangerTabButton.Font = Enum.Font.Gotham
+SkinChangerTabButton.Text = "SkinChanger"
+SkinChangerTabButton.TextColor3 = Color3.new(1, 1, 1)
+SkinChangerTabButton.TextSize = 25
+SkinChangerTabButton.TextWrapped = true
+SkinChangerTabButton.MouseButton1Down:connect(function()
+    LegitTab.Visible = false
+    RageTab.Visible = false
+    VisualsTab.Visible = false
+    SkinChangerTab.Visible = true
+    MiscTab.Visible = false
+end)
+
+MiscTabButton.Name = "MiscTabButton"
+MiscTabButton.Parent = TabSelector
+MiscTabButton.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+MiscTabButton.BorderSizePixel = 0
+MiscTabButton.Position = UDim2.new(0.600000024, 0, 0, 0)
+MiscTabButton.Size = UDim2.new(0, 160, 0, 40)
+MiscTabButton.Font = Enum.Font.Gotham
+MiscTabButton.Text = "Misc"
+MiscTabButton.TextColor3 = Color3.new(1, 1, 1)
+MiscTabButton.TextSize = 25
+MiscTabButton.TextWrapped = true
+MiscTabButton.MouseButton1Down:connect(function()
+    LegitTab.Visible = false
+    RageTab.Visible = false
+    VisualsTab.Visible = false
+    SkinChangerTab.Visible = false
+    MiscTab.Visible = true
+end)
+
+RageTab.Name = "RageTab"
+RageTab.Parent = ChillwareMain
+RageTab.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+RageTab.BorderColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+RageTab.BorderSizePixel = 5
+RageTab.Position = UDim2.new(0.0434999838, 0, 0.224999994, 0)
+RageTab.Size = UDim2.new(0, 730, 0, 280)
+RageTab.Visible = false
+
+AntiAimSettings.Name = "AntiAimSettings"
+AntiAimSettings.Parent = RageTab
+AntiAimSettings.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AntiAimSettings.BorderSizePixel = 0
+AntiAimSettings.Position = UDim2.new(0.223219171, 0, 0.0314285718, 0)
+AntiAimSettings.Size = UDim2.new(0, 30, 0, 30)
+AntiAimSettings.Visible = false
+AntiAimSettings.Font = Enum.Font.Gotham
+AntiAimSettings.Text = ">"
+AntiAimSettings.TextColor3 = Color3.new(1, 1, 1)
+AntiAimSettings.TextSize = 14
+AntiAimSettings.MouseButton1Down:connect(function()
+    if not aasettings
+    then
+        aasettings = true
+    AntiAimSettings.Text = ("<")
+    AntiAimSettingsForm.Visible = true
+    else
+        aasettings = false
+        AntiAimSettings.Text = (">")
+        AntiAimSettingsForm.Visible = false
+        end
+end)
+
+AntiAimSettingsForm.Name = "AntiAimSettingsForm"
+AntiAimSettingsForm.Parent = RageTab
+AntiAimSettingsForm.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AntiAimSettingsForm.Position = UDim2.new(0.284931511, 0, 0.032142859, 0)
+AntiAimSettingsForm.Size = UDim2.new(0, 292, 0, 262)
+AntiAimSettingsForm.Visible = false
+AntiAimSettingsForm.Style = Enum.FrameStyle.RobloxRound
+
+Spacer.Name = "Spacer"
+Spacer.Parent = AntiAimSettingsForm
+Spacer.BackgroundColor3 = Color3.new(1, 1, 1)
+Spacer.Position = UDim2.new(0.497971982, 0, -0.0234719198, 0)
+Spacer.Size = UDim2.new(0, 1, 0, 260)
+
+UpCheckBox.Name = "UpCheckBox"
+UpCheckBox.Parent = AntiAimSettingsForm
+UpCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+UpCheckBox.Position = UDim2.new(-0.000753426924, 0, 0.0922519118, 0)
+UpCheckBox.Size = UDim2.new(0, 30, 0, 30)
+UpCheckBox.Style = Enum.ButtonStyle.RobloxButton
+UpCheckBox.Font = Enum.Font.Gotham
+UpCheckBox.Text = ""
+UpCheckBox.TextColor3 = Color3.new(1, 1, 1)
+UpCheckBox.TextSize = 14
+UpCheckBox.MouseButton1Down:connect(function()
+if not pitchup
+then
+ pitchup = true
+UpCheckBox.Text = ("?")
+repeat if pitchup then
+    wait()
+    game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("1")
+    end
+until pitchup == false
+else
+     pitchup = false
+    UpCheckBox.Text = ("")
+end
+end)
+
+UpLabel.Name = "UpLabel"
+UpLabel.Parent = AntiAimSettingsForm
+UpLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+UpLabel.BorderSizePixel = 0
+UpLabel.Position = UDim2.new(0.13930051, 0, 0.0861789733, 0)
+UpLabel.Size = UDim2.new(0, 90, 0, 30)
+UpLabel.Font = Enum.Font.Gotham
+UpLabel.Text = "Up"
+UpLabel.TextColor3 = Color3.new(1, 1, 1)
+UpLabel.TextSize = 14
+UpLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+PitchLabel.Name = "PitchLabel"
+PitchLabel.Parent = AntiAimSettingsForm
+PitchLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+PitchLabel.BorderSizePixel = 0
+PitchLabel.Position = UDim2.new(0.0280000009, 0, -0.0289999992, 0)
+PitchLabel.Size = UDim2.new(0, 105, 0, 30)
+PitchLabel.Font = Enum.Font.Gotham
+PitchLabel.Text = "Pitch"
+PitchLabel.TextColor3 = Color3.new(1, 1, 1)
+PitchLabel.TextSize = 14
+
+DownCheckBox.Name = "DownCheckBox"
+DownCheckBox.Parent = AntiAimSettingsForm
+DownCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+DownCheckBox.Position = UDim2.new(-0.000753426924, 0, 0.241106868, 0)
+DownCheckBox.Size = UDim2.new(0, 30, 0, 30)
+DownCheckBox.Style = Enum.ButtonStyle.RobloxButton
+DownCheckBox.Font = Enum.Font.Gotham
+DownCheckBox.Text = ""
+DownCheckBox.TextColor3 = Color3.new(1, 1, 1)
+DownCheckBox.TextSize = 14
+DownCheckBox.MouseButton1Down:connect(function()
+if not pitchdown
+then
+ pitchdown = true
+DownCheckBox.Text = ("?")
+repeat if pitchdown then
+    wait()
+    game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("-1")
+    end
+until pitchdown == false
+else
+     pitchdown = false
+    DownCheckBox.Text = ("")
+end
+end)
+
+DownLabel.Name = "DownLabel"
+DownLabel.Parent = AntiAimSettingsForm
+DownLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+DownLabel.BorderSizePixel = 0
+DownLabel.Position = UDim2.new(0.13930051, 0, 0.235033929, 0)
+DownLabel.Size = UDim2.new(0, 90, 0, 30)
+DownLabel.Font = Enum.Font.Gotham
+DownLabel.Text = "Down"
+DownLabel.TextColor3 = Color3.new(1, 1, 1)
+DownLabel.TextSize = 14
+DownLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+FakeLagPitchCheckBox.Name = "FakeLagPitchCheckBox"
+FakeLagPitchCheckBox.Parent = AntiAimSettingsForm
+FakeLagPitchCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+FakeLagPitchCheckBox.Position = UDim2.new(-0.000753426924, 0, 0.397595406, 0)
+FakeLagPitchCheckBox.Size = UDim2.new(0, 30, 0, 30)
+FakeLagPitchCheckBox.Style = Enum.ButtonStyle.RobloxButton
+FakeLagPitchCheckBox.Font = Enum.Font.Gotham
+FakeLagPitchCheckBox.Text = ""
+FakeLagPitchCheckBox.TextColor3 = Color3.new(1, 1, 1)
+FakeLagPitchCheckBox.TextSize = 14
+FakeLagPitchCheckBox.MouseButton1Down:connect(function()
+if not pitchfakelag
+then
+ pitchfakelag = true
+FakeLagPitchCheckBox.Text = ("?")
+repeat if pitchfakelag then
+    wait()
+    game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("1")
+    wait()
+    game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("-1")
+    end
+until pitchfakelag == false
+else
+     pitchfakelag = false
+    FakeLagPitchCheckBox.Text = ("")
+end
+end)
+
+FakeLagPitchLabel.Name = "FakeLagPitchLabel"
+FakeLagPitchLabel.Parent = AntiAimSettingsForm
+FakeLagPitchLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+FakeLagPitchLabel.BorderSizePixel = 0
+FakeLagPitchLabel.Position = UDim2.new(0.13930051, 0, 0.391522467, 0)
+FakeLagPitchLabel.Size = UDim2.new(0, 90, 0, 30)
+FakeLagPitchLabel.Font = Enum.Font.Gotham
+FakeLagPitchLabel.Text = "Fake Lag"
+FakeLagPitchLabel.TextColor3 = Color3.new(1, 1, 1)
+FakeLagPitchLabel.TextSize = 14
+FakeLagPitchLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+YawLabel.Name = "YawLabel"
+YawLabel.Parent = AntiAimSettingsForm
+YawLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+YawLabel.BorderSizePixel = 0
+YawLabel.Position = UDim2.new(0.558821917, 0, -0.0251832046, 0)
+YawLabel.Size = UDim2.new(0, 105, 0, 30)
+YawLabel.Font = Enum.Font.Gotham
+YawLabel.Text = "Yaw"
+YawLabel.TextColor3 = Color3.new(1, 1, 1)
+YawLabel.TextSize = 14
+
+JitterCheckBox.Name = "JitterCheckBox"
+JitterCheckBox.Parent = AntiAimSettingsForm
+JitterCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+JitterCheckBox.Position = UDim2.new(0.530068517, 0, 0.0960687026, 0)
+JitterCheckBox.Size = UDim2.new(0, 30, 0, 30)
+JitterCheckBox.Style = Enum.ButtonStyle.RobloxButton
+JitterCheckBox.Font = Enum.Font.Gotham
+JitterCheckBox.Text = ""
+JitterCheckBox.TextColor3 = Color3.new(1, 1, 1)
+JitterCheckBox.TextSize = 14
+JitterCheckBox.MouseButton1Down:connect(function()
+    if not jitter
+    then
+     jitter = true
+    JitterCheckBox.Text = ("?")
+    repeat if jitter then
+        --jitter
+wait(0.1)
+AnimationId      = "754658275"
+local Anim       = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k          = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(2.5)
+end
+     
+    until jitter == false
+    else
+         jitter = false
+        JitterCheckBox.Text = ("")
+    end
+end)
+
+JitterLabel.Name = "JitterLabel"
+JitterLabel.Parent = AntiAimSettingsForm
+JitterLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+JitterLabel.BorderSizePixel = 0
+JitterLabel.Position = UDim2.new(0.670122445, 0, 0.0899957642, 0)
+JitterLabel.Size = UDim2.new(0, 90, 0, 30)
+JitterLabel.Font = Enum.Font.Gotham
+JitterLabel.Text = "Jitter"
+JitterLabel.TextColor3 = Color3.new(1, 1, 1)
+JitterLabel.TextSize = 14
+JitterLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+SidewaysLabel.Name = "SidewaysLabel"
+SidewaysLabel.Parent = AntiAimSettingsForm
+SidewaysLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+SidewaysLabel.BorderSizePixel = 0
+SidewaysLabel.Position = UDim2.new(0.670122445, 0, 0.238850728, 0)
+SidewaysLabel.Size = UDim2.new(0, 90, 0, 30)
+SidewaysLabel.Font = Enum.Font.Gotham
+SidewaysLabel.Text = "Sideways"
+SidewaysLabel.TextColor3 = Color3.new(1, 1, 1)
+SidewaysLabel.TextSize = 14
+SidewaysLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+SidewaysCheckBox.Name = "SidewaysCheckBox"
+SidewaysCheckBox.Parent = AntiAimSettingsForm
+SidewaysCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+SidewaysCheckBox.Position = UDim2.new(0.530068517, 0, 0.244923666, 0)
+SidewaysCheckBox.Size = UDim2.new(0, 30, 0, 30)
+SidewaysCheckBox.Style = Enum.ButtonStyle.RobloxButton
+SidewaysCheckBox.Font = Enum.Font.Gotham
+SidewaysCheckBox.Text = ""
+SidewaysCheckBox.TextColor3 = Color3.new(1, 1, 1)
+SidewaysCheckBox.TextSize = 14
+SidewaysCheckBox.MouseButton1Down:connect(function()
+    if not sideways
+    then
+     sideways = true
+    SidewaysCheckBox.Text = ("?")
+    repeat if sideways then
+--sideways
+wait(0.01)
+AnimationId      = "754658275"
+local Anim       = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k          = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1.5)
+end
+     
+    until sideways == false
+    else
+         sideways = false
+        SidewaysCheckBox.Text = ("")
+    end
+end)
+
+FakeLagYawCheckBox.Name = "FakeLagYawCheckBox"
+FakeLagYawCheckBox.Parent = AntiAimSettingsForm
+FakeLagYawCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+FakeLagYawCheckBox.Position = UDim2.new(0.530068517, 0, 0.401412189, 0)
+FakeLagYawCheckBox.Size = UDim2.new(0, 30, 0, 30)
+FakeLagYawCheckBox.Style = Enum.ButtonStyle.RobloxButton
+FakeLagYawCheckBox.Font = Enum.Font.Gotham
+FakeLagYawCheckBox.Text = ""
+FakeLagYawCheckBox.TextColor3 = Color3.new(1, 1, 1)
+FakeLagYawCheckBox.TextSize = 14
+FakeLagYawCheckBox.MouseButton1Down:connect(function()
+    if not yawfakelag
+    then
+     yawfakelag = true
+    FakeLagYawCheckBox.Text = ("?")
+    repeat if yawfakelag then
+--fakelag
+wait(0.01)
+AnimationId      = "754658275"
+local Anim       = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k          = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(8)
+end
+     
+    until yawfakelag == false
+    else
+         yawfakelag = false
+        FakeLagYawCheckBox.Text = ("")
+    end
+end)
+
+FakeLagYawLabel.Name = "FakeLagYawLabel"
+FakeLagYawLabel.Parent = AntiAimSettingsForm
+FakeLagYawLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+FakeLagYawLabel.BorderSizePixel = 0
+FakeLagYawLabel.Position = UDim2.new(0.670122445, 0, 0.395339251, 0)
+FakeLagYawLabel.Size = UDim2.new(0, 90, 0, 30)
+FakeLagYawLabel.Font = Enum.Font.Gotham
+FakeLagYawLabel.Text = "Fake Lag"
+FakeLagYawLabel.TextColor3 = Color3.new(1, 1, 1)
+FakeLagYawLabel.TextSize = 14
+FakeLagYawLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+BackwardCheckBox.Name = "BackwardCheckBox"
+BackwardCheckBox.Parent = AntiAimSettingsForm
+BackwardCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+BackwardCheckBox.Position = UDim2.new(0.530068517, 0, 0.546450377, 0)
+BackwardCheckBox.Size = UDim2.new(0, 30, 0, 30)
+BackwardCheckBox.Style = Enum.ButtonStyle.RobloxButton
+BackwardCheckBox.Font = Enum.Font.Gotham
+BackwardCheckBox.Text = ""
+BackwardCheckBox.TextColor3 = Color3.new(1, 1, 1)
+BackwardCheckBox.TextSize = 14
+BackwardCheckBox.MouseButton1Down:connect(function()
+    if not backward then
+    backward = true
+    BackwardCheckBox.Text = ("?")
+    repeat if backward then
+wait(0.001)
+AnimationId      = "754658275"
+local Anim       = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k          = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3.2)
+end until backward == false
+    else
+        backward = false
+        BackwardCheckBox.Text = ("")
+    end
+end)
+
+BackwardLabel.Name = "BackwardLabel"
+BackwardLabel.Parent = AntiAimSettingsForm
+BackwardLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+BackwardLabel.BorderSizePixel = 0
+BackwardLabel.Position = UDim2.new(0.670122445, 0, 0.540377438, 0)
+BackwardLabel.Size = UDim2.new(0, 90, 0, 30)
+BackwardLabel.Font = Enum.Font.Gotham
+BackwardLabel.Text = "Backward"
+BackwardLabel.TextColor3 = Color3.new(1, 1, 1)
+BackwardLabel.TextSize = 14
+BackwardLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiAimCheckBox.Name = "AntiAimCheckBox"
+AntiAimCheckBox.Parent = RageTab
+AntiAimCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AntiAimCheckBox.Position = UDim2.new(0.0149999997, 0, 0.0350000001, 0)
+AntiAimCheckBox.Size = UDim2.new(0, 30, 0, 30)
+AntiAimCheckBox.Style = Enum.ButtonStyle.RobloxButton
+AntiAimCheckBox.Font = Enum.Font.Gotham
+AntiAimCheckBox.Text = ""
+AntiAimCheckBox.TextColor3 = Color3.new(1, 1, 1)
+AntiAimCheckBox.TextSize = 14
+AntiAimCheckBox.MouseButton1Down:connect(function()
+    if not antiaim
+    then
+        antiaim = true
+        AntiAimCheckBox.Text = ("?")
+    AntiAimSettings.Visible = true
+    else
+        AntiAimSettings.Visible = false
+        antiaim = false
+        AntiAimCheckBox.Text = ("")
+        backward = false
+        jitter = false
+        yawfakelag = false
+        pitchdown = false
+        pitchup = false
+        pitchfakelag = false
+        sideways = false
+        end
+end)
+
+AntiAimLabel.Name = "AntiAimLabel"
+AntiAimLabel.Parent = RageTab
+AntiAimLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AntiAimLabel.BorderSizePixel = 0
+AntiAimLabel.Position = UDim2.new(0.0698630139, 0, 0.032142859, 0)
+AntiAimLabel.Size = UDim2.new(0, 112, 0, 30)
+AntiAimLabel.Font = Enum.Font.Gotham
+AntiAimLabel.Text = "Toggle AntiAim"
+AntiAimLabel.TextColor3 = Color3.new(1, 1, 1)
+AntiAimLabel.TextSize = 14
+AntiAimLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+LegitTab.Name = "LegitTab"
+LegitTab.Parent = ChillwareMain
+LegitTab.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+LegitTab.BorderColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+LegitTab.BorderSizePixel = 5
+LegitTab.Position = UDim2.new(0.0434999838, 0, 0.224999994, 0)
+LegitTab.Size = UDim2.new(0, 730, 0, 280)
+LegitTab.Visible = false
+
+AimLockSettingsForm.Name = "AimLockSettingsForm"
+AimLockSettingsForm.Parent = LegitTab
+AimLockSettingsForm.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AimLockSettingsForm.Position = UDim2.new(0.284931511, 0, 0.032142859, 0)
+AimLockSettingsForm.Size = UDim2.new(0, 161, 0, 62)
+AimLockSettingsForm.Visible = false
+AimLockSettingsForm.Style = Enum.FrameStyle.RobloxRound
+
+AimLockHeadCheckBox.Name = "AimLockHeadCheckBox"
+AimLockHeadCheckBox.Parent = AimLockSettingsForm
+AimLockHeadCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AimLockHeadCheckBox.Position = UDim2.new(-0.0562839247, 0, -0.17237325, 0)
+AimLockHeadCheckBox.Size = UDim2.new(0, 30, 0, 30)
+AimLockHeadCheckBox.Style = Enum.ButtonStyle.RobloxButton
+AimLockHeadCheckBox.Font = Enum.Font.Gotham
+AimLockHeadCheckBox.Text = ""
+AimLockHeadCheckBox.TextColor3 = Color3.new(1, 1, 1)
+AimLockHeadCheckBox.TextSize = 14
+AimLockHeadCheckBox.MouseButton1Down:connect(function()
+    PLAYER  = game.Players.LocalPlayer
+MOUSE   = PLAYER:GetMouse()
+CC      = game.Workspace.CurrentCamera
+
+_G.AIM_AT = 'Head'
+_G.BIND   = 101 -- E
+
+function GetNearestPlayerToMouse()
+    local PLAYERS      = {}
+    local PLAYER_HOLD  = {}
+    local DISTANCES    = {}
+    for i, v in pairs(game.Players:GetPlayers()) do
+        if v ~= PLAYER then
+            table.insert(PLAYERS, v)
+        end
+    end
+    for i, v in pairs(PLAYERS) do
+            if v and (v.Character) ~= nil and v.Team ~= PLAYER.Team then
+                local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+                if AIM ~= nil then
+                    local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+                    local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+                    local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+                    local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+                    PLAYER_HOLD[v.Name .. i]       = {}
+                    PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+                    PLAYER_HOLD[v.Name .. i].plr   = v
+                    PLAYER_HOLD[v.Name .. i].diff  = DIFF
+                    table.insert(DISTANCES, DIFF)
+                end
+            end
+        end
+    
+    if unpack(DISTANCES) == nil then
+        return false
+    end
+    
+    local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+    if L_DISTANCE > 20 then
+        return false
+    end
+    
+    for i, v in pairs(PLAYER_HOLD) do
+        if v.diff == L_DISTANCE then
+            return v.plr
+        end
+    end
+    return false
+end
+
+MOUSE.KeyDown:connect(function(KEY)
+    KEY = KEY:lower():byte()
+    if KEY == _G.BIND then
+        ENABLED = true
+    end
+end)
+
+MOUSE.KeyUp:connect(function(KEY)
+    KEY = KEY:lower():byte()
+    if KEY == _G.BIND then
+        ENABLED = false
+    end
+end)
+
+game:GetService('RunService').RenderStepped:connect(function()
+    if ENABLED then
+        local TARGET = GetNearestPlayerToMouse()
+        if (TARGET ~= false) then
+            local AIM = TARGET.Character:FindFirstChild(_G.AIM_AT)
+            if AIM then
+                CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
+            end
+        end
+    end
+end)
+
+print("[Chillware]: AimLock Active")
+AimLockTorsoCheckBox.Visible = false
+AimLockHeadCheckBox.Text = ("?")
+end)
+
+AimLockTorsoCheckBox.Name = "AimLockTorsoCheckBox"
+AimLockTorsoCheckBox.Parent = AimLockSettingsForm
+AimLockTorsoCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AimLockTorsoCheckBox.Position = UDim2.new(-0.0562839247, 0, 0.49478218, 0)
+AimLockTorsoCheckBox.Size = UDim2.new(0, 30, 0, 30)
+AimLockTorsoCheckBox.Style = Enum.ButtonStyle.RobloxButton
+AimLockTorsoCheckBox.Font = Enum.Font.Gotham
+AimLockTorsoCheckBox.Text = ""
+AimLockTorsoCheckBox.TextColor3 = Color3.new(1, 1, 1)
+AimLockTorsoCheckBox.TextSize = 14
+AimLockTorsoCheckBox.MouseButton1Down:connect(function()
+PLAYER  = game.Players.LocalPlayer
+MOUSE   = PLAYER:GetMouse()
+CC      = game.Workspace.CurrentCamera
+
+_G.AIM_AT = 'UpperTorso'
+_G.BIND   = 101 -- E
+
+function GetNearestPlayerToMouse()
+    local PLAYERS      = {}
+    local PLAYER_HOLD  = {}
+    local DISTANCES    = {}
+    for i, v in pairs(game.Players:GetPlayers()) do
+        if v ~= PLAYER then
+            table.insert(PLAYERS, v)
+        end
+    end
+    for i, v in pairs(PLAYERS) do
+            if v and (v.Character) ~= nil and v.Team ~= PLAYER.Team then
+                local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+                if AIM ~= nil then
+                    local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+                    local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+                    local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+                    local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+                    PLAYER_HOLD[v.Name .. i]       = {}
+                    PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+                    PLAYER_HOLD[v.Name .. i].plr   = v
+                    PLAYER_HOLD[v.Name .. i].diff  = DIFF
+                    table.insert(DISTANCES, DIFF)
+                end
+            end
+        end
+    
+    if unpack(DISTANCES) == nil then
+        return false
+    end
+    
+    local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+    if L_DISTANCE > 20 then
+        return false
+    end
+    
+    for i, v in pairs(PLAYER_HOLD) do
+        if v.diff == L_DISTANCE then
+            return v.plr
+        end
+    end
+    return false
+end
+
+MOUSE.KeyDown:connect(function(KEY)
+    KEY = KEY:lower():byte()
+    if KEY == _G.BIND then
+        ENABLED = true
+    end
+end)
+
+MOUSE.KeyUp:connect(function(KEY)
+    KEY = KEY:lower():byte()
+    if KEY == _G.BIND then
+        ENABLED = false
+    end
+end)
+
+game:GetService('RunService').RenderStepped:connect(function()
+    if ENABLED then
+        local TARGET = GetNearestPlayerToMouse()
+        if (TARGET ~= false) then
+            local AIM = TARGET.Character:FindFirstChild(_G.AIM_AT)
+            if AIM then
+                CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
+            end
+        end
+    end
+end)
+
+print("[Chillware]: AimLock Active")
+AimLockHeadCheckBox.Visible = false
+AimLockTorsoCheckBox.Text = ("?")
+end)
+
+HeadLabel.Name = "HeadLabel"
+HeadLabel.Parent = AimLockSettingsForm
+HeadLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+HeadLabel.BorderSizePixel = 0
+HeadLabel.Position = UDim2.new(0.209785432, 0, -0.123123899, 0)
+HeadLabel.Size = UDim2.new(0, 106, 0, 27)
+HeadLabel.Font = Enum.Font.Gotham
+HeadLabel.Text = "Head"
+HeadLabel.TextColor3 = Color3.new(1, 1, 1)
+HeadLabel.TextSize = 14
+HeadLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TorsoLabel.Name = "TorsoLabel"
+TorsoLabel.Parent = AimLockSettingsForm
+TorsoLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TorsoLabel.BorderSizePixel = 0
+TorsoLabel.Position = UDim2.new(0.209785432, 0, 0.55429548, 0)
+TorsoLabel.Size = UDim2.new(0, 106, 0, 27)
+TorsoLabel.Font = Enum.Font.Gotham
+TorsoLabel.Text = "Torso"
+TorsoLabel.TextColor3 = Color3.new(1, 1, 1)
+TorsoLabel.TextSize = 14
+TorsoLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+AimLockSettings.Name = "AimLockSettings"
+AimLockSettings.Parent = LegitTab
+AimLockSettings.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AimLockSettings.BorderSizePixel = 0
+AimLockSettings.Position = UDim2.new(0.232808217, 0, 0.0350000001, 0)
+AimLockSettings.Size = UDim2.new(0, 30, 0, 30)
+AimLockSettings.Visible = false
+AimLockSettings.Font = Enum.Font.Gotham
+AimLockSettings.Text = ">"
+AimLockSettings.TextColor3 = Color3.new(1, 1, 1)
+AimLockSettings.TextSize = 14
+AimLockSettings.MouseButton1Down:connect(function()
+    if not aasettings
+    then
+        aasettings = true
+        AimLockSettingsForm.Visible = true
+        AimLockSettings.Text = ("<")
+    else
+    if aasettings then
+        aasettings = false
+        AimLockSettingsForm.Visible = false
+        AimLockSettings.Text = (">")
+        end
+end
+end)
+
+AimLockCheckBox.Name = "AimLockCheckBox"
+AimLockCheckBox.Parent = LegitTab
+AimLockCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+AimLockCheckBox.Position = UDim2.new(0.0149999997, 0, 0.0350000001, 0)
+AimLockCheckBox.Size = UDim2.new(0, 30, 0, 30)
+AimLockCheckBox.Style = Enum.ButtonStyle.RobloxButton
+AimLockCheckBox.Font = Enum.Font.Gotham
+AimLockCheckBox.Text = ""
+AimLockCheckBox.TextColor3 = Color3.new(1, 1, 1)
+AimLockCheckBox.TextSize = 14
+AimLockCheckBox.MouseButton1Down:connect(function()
+    if not aimlock
+    then
+        aimlock = true
+    AimLockSettings.Visible = true
+    AimLockCheckBox.Text = ("?")
+    else
+        AimLockCheckBox.Text = ("")
+        aimlock = false
+        AimLockSettings.Visible = false
+        end
+end)
+
+AimLockLabel.Name = "AimLockLabel"
+AimLockLabel.Parent = LegitTab
+AimLockLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AimLockLabel.BorderSizePixel = 0
+AimLockLabel.Position = UDim2.new(0.0698630139, 0, 0.032142859, 0)
+AimLockLabel.Size = UDim2.new(0, 112, 0, 30)
+AimLockLabel.Font = Enum.Font.Gotham
+AimLockLabel.Text = "Toggle AimLock"
+AimLockLabel.TextColor3 = Color3.new(1, 1, 1)
+AimLockLabel.TextSize = 14
+AimLockLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = ChillwareMain
+VisualsTab.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+VisualsTab.BorderColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+VisualsTab.BorderSizePixel = 5
+VisualsTab.Position = UDim2.new(0.0434999838, 0, 0.224999994, 0)
+VisualsTab.Size = UDim2.new(0, 730, 0, 280)
+VisualsTab.Visible = false
+
+ESPLabel.Name = "ESPLabel"
+ESPLabel.Parent = VisualsTab
+ESPLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ESPLabel.BorderSizePixel = 0
+ESPLabel.Position = UDim2.new(0.0698630139, 0, 0.032142859, 0)
+ESPLabel.Size = UDim2.new(0, 112, 0, 30)
+ESPLabel.Font = Enum.Font.Gotham
+ESPLabel.Text = "Toggle ESP"
+ESPLabel.TextColor3 = Color3.new(1, 1, 1)
+ESPLabel.TextSize = 14
+ESPLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ESPCheckBox.Name = "ESPCheckBox"
+ESPCheckBox.Parent = VisualsTab
+ESPCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+ESPCheckBox.Position = UDim2.new(0.0149999997, 0, 0.0350000001, 0)
+ESPCheckBox.Size = UDim2.new(0, 30, 0, 30)
+ESPCheckBox.Style = Enum.ButtonStyle.RobloxButton
+ESPCheckBox.Font = Enum.Font.Gotham
+ESPCheckBox.Text = ""
+ESPCheckBox.TextColor3 = Color3.new(1, 1, 1)
+ESPCheckBox.TextSize = 14
+ESPCheckBox.MouseButton1Down:connect(function()
+    ESPCheckBox.Text = ("?")
+    PLR = game.Players.LocalPlayer
+MOUSE  = PLR:GetMouse()
+
+function CREATE(BASE, TEAM)
+    local ESP_MAIN                   = Instance.new('BillboardGui', PLR.PlayerGui)
+    local ESP_DOT                    = Instance.new('Frame', ESP_MAIN)
+    local ESP_NAME                   = Instance.new('TextLabel', ESP_MAIN)
+    
+    ESP_MAIN.Name                    = 'ESP'
+    ESP_MAIN.Adornee                 = BASE
+    ESP_MAIN.AlwaysOnTop             = true
+    ESP_MAIN.ExtentsOffset           = Vector3.new(0, 1, 0)
+    ESP_MAIN.Size                    = UDim2.new(0, 5, 0, 5)
+    
+    ESP_DOT.Name                     = 'DOT'
+    ESP_DOT.BackgroundColor          = BrickColor.new('Bright yellow')
+    ESP_DOT.BackgroundTransparency   = 0.3
+    ESP_DOT.BorderSizePixel          = 0
+    ESP_DOT.Position                 = UDim2.new(-0.5, 0, -0.5, 0)
+    ESP_DOT.Size                     = UDim2.new(2, 0, 2, 0)
+    ESP_DOT.Visible                  = true
+    ESP_DOT.ZIndex                   = 10
+    
+    ESP_NAME.Name                    = 'NAME'
+    ESP_NAME.BackgroundColor3        = Color3.new(255, 255, 255)
+    ESP_NAME.BackgroundTransparency  = 1
+    ESP_NAME.BorderSizePixel         = 0
+    ESP_NAME.Position                = UDim2.new(0, 0, 0, -40)
+    ESP_NAME.Size                    = UDim2.new(1, 0, 10, 0)
+    ESP_NAME.Visible                 = true
+    ESP_NAME.ZIndex                  = 10
+    ESP_NAME.Font                    = 'SciFi'
+    ESP_NAME.FontSize                = 'Size14'
+    ESP_NAME.Text                    = BASE.Parent.Name:upper()
+    ESP_NAME.TextColor               = BrickColor.new('Really red')
+end
+
+function CLEAR()
+    for _,v in pairs(PLR.PlayerGui:children()) do
+        if v.Name == 'ESP' and v:IsA('BillboardGui') then
+            v:Destroy()
+        end
+    end
+end
+
+function FIND()
+    CLEAR()
+    spawn(function()
+        while wait(0.01) do
+                CLEAR()
+                for i,v in pairs(game.Players:GetChildren()) do
+                    if v.Character and v.Character:FindFirstChild('Head') then
+                            if v.Team == PLR.Team then
+                                   else
+                                if v.Character:FindFirstChild('Head') then
+                                CREATE(v.Character.Head, true)
+                            end
+                        end
+                    end
+                end
+            end        
+        wait(1)
+    end)
+end
+
+FIND()
+print('[Chillware]: ESP Enabled.')
+end)
+
+ChamsLabel.Name = "ChamsLabel"
+ChamsLabel.Parent = VisualsTab
+ChamsLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ChamsLabel.BorderSizePixel = 0
+ChamsLabel.Position = UDim2.new(0.0698630139, 0, 0.167857155, 0)
+ChamsLabel.Size = UDim2.new(0, 112, 0, 30)
+ChamsLabel.Font = Enum.Font.Gotham
+ChamsLabel.Text = "Toggle Chams"
+ChamsLabel.TextColor3 = Color3.new(1, 1, 1)
+ChamsLabel.TextSize = 14
+ChamsLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ChamsCheckBox.Name = "ChamsCheckBox"
+ChamsCheckBox.Parent = VisualsTab
+ChamsCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+ChamsCheckBox.Position = UDim2.new(0.0149999997, 0, 0.170714289, 0)
+ChamsCheckBox.Size = UDim2.new(0, 30, 0, 30)
+ChamsCheckBox.Style = Enum.ButtonStyle.RobloxButton
+ChamsCheckBox.Font = Enum.Font.Gotham
+ChamsCheckBox.Text = ""
+ChamsCheckBox.TextColor3 = Color3.new(1, 1, 1)
+ChamsCheckBox.TextSize = 14
+ChamsCheckBox.MouseButton1Down:connect(function()
+    ChamsCheckBox.Text = ("?")
+    pcall(function()
+local espcolor                  = Color3.fromRGB(255, 0, 0)
+local wallhack_esp_transparency = .4
+local gui_hide_button           = {Enum.KeyCode.LeftControl, ""}
+local plrs                      = game:GetService("Players")
+local lplr                      = game:GetService("Players").LocalPlayer
+local TeamBased                 = true ; local teambasedswitch = ""
+local presskeytoaim             = true; local aimkey = ""
+aimbothider                     = false; aimbothiderspeed = 1
+local Aim_Assist                = false ; Aim_Assist_Key = {Enum.KeyCode.LeftControl, ""}
+local espupdatetime             = 5; autoesp = true; local charmsesp = true
+local movementcounting          = true
+
+
+
+
+local mouselock = false
+local canaimat = true
+local lockaim = true; local lockangle = 5
+local ver = "0.2.7"
+local cam = game.Workspace.CurrentCamera
+local BetterDeathCount = true
+local ballisticsboost = 0
+
+local mouse = lplr:GetMouse()
+local switch = false
+local key = "k"
+local aimatpart = nil
+local lightesp = false
+
+local abs = math.abs
+
+local Gui = Instance.new("ScreenGui")
+local Move = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local EspStatus = Instance.new("TextLabel")
+local st1 = Instance.new("TextLabel")
+local st1_2 = Instance.new("TextLabel")
+local st1_3 = Instance.new("TextBox")
+local Name = Instance.new("TextLabel")
+--Properties:
+
+Gui.Parent = plrs.LocalPlayer:WaitForChild("PlayerGui")
+
+
+local aimbotstatus = {"qc", "qr", "qe", "qd", "qi", "qt", "qs", "dd", "sp", "ql", "qa", "qd", "qs"}
+local gotstring = 0
+local function getrandomstring()
+    gotstring = gotstring+666
+    local str = ""
+    local randomstring = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+         "?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?","?", "`", "$", 
+        "0","1","2","3","4","5","6","7","8","9", }
+    local counting123 = 0
+    for i, v in ipairs(randomstring) do
+        counting123 = i
+    end
+    do
+        math.randomseed(tick()+gotstring)
+        for i = 3, math.random(1,100) do
+                math.randomseed(i+tick()+gotstring)
+                
+                local oneortwo = math.random(1,2)
+                if oneortwo == 2 then
+                    math.randomseed(i+tick()+gotstring)
+                    str = str..""..randomstring[math.random(1, counting123)]
+                else
+                    math.randomseed(i+tick()+gotstring)
+                    str = str..""..string.upper(randomstring[math.random(1, counting123)])
+                end
+            
+        end
+    end
+    return str
+end
+local mousedown = false
+local isonmovething = false
+local mouseoffset = Vector2.new()
+local mousedown = false
+local bspeed = 3584
+local aimbotoffset = {dd = ":", sp = " ", qa = "a", qb = "b",qc = "c", qd = "d", qe = "e", qf = "f", qg = "g" , qh = "h" , qi = "i", qj = "j", qk = "k", ql = "l", qm = "m", qn = "n", qo = "o", qp = "p", qq = "q", qr = "r", qs = "s", qt = "t", qu = "u", qv = "w", qx = "x", qy = "y", qz = "z"}
+
+
+
+Gui.Name = getrandomstring()
+
+Move.Name                   = getrandomstring()
+Move.Draggable              = true
+Move.Parent                 = Gui
+Move.BackgroundColor3       = Color3.new(0.0431373, 1, 0.0745098)
+Move.BackgroundTransparency = 0.40000000596046
+Move.BorderSizePixel        = 0
+Move.Position               = UDim2.new(0.5, 0,0.018, 0)
+Move.Size                   = UDim2.new(0, 0, 0, 0)
+
+Move.MouseEnter:Connect(function()
+    
+    isonmovething = true
+    
+end)
+Move.MouseLeave:Connect(function()
+    
+    isonmovething = mousedown and true or false
+end)
+mouse.Button1Down:connect(function()
+    mousedown = true
+    mouseoffset = Move.AbsolutePosition - Vector2.new(mouse.X, mouse.Y)
+end)
+mouse.Button1Up:connect(function()
+    mousedown = false
+end)
+
+mouse.Move:Connect(function()
+    if isonmovething == true and mousedown then
+        Move.Position = UDim2.new(0, mouseoffset.X + mouse.X, 0, mouseoffset.Y + mouse.Y)
+    end
+end)
+local function uc (st)
+    local ast = ""
+    for i, v in ipairs(st) do
+        local let = aimbotoffset[v]
+        ast = ast..let
+    end
+    return ast
+end
+
+Main.Name                   = getrandomstring()
+Main.Parent                 = Move
+Main.BackgroundColor3       = Color3.new(0.176471, 0.176471, 0.176471)
+Main.BackgroundTransparency = 0.69999998807907
+Main.Position               = UDim2.new(0, 0, 0.995670795, 0)
+Main.Size                   = UDim2.new(0, 0, 0, 0)
+
+st1.Name = getrandomstring()
+st1.Parent = Main
+st1.BackgroundColor3 = Color3.new(1, 1, 1)
+st1.BackgroundTransparency = 1
+st1.Position = UDim2.new(0, 0, 0, 0)
+st1.Size = UDim2.new(1, 0, 0.161862016, 0)
+st1.Font = Enum.Font.ArialBold
+st1.Text = uc(aimbotstatus)
+st1.TextColor3 = Color3.new(0.0431373, 1, 0.0745098)
+st1.TextScaled = true
+st1.TextSize = 14
+st1.TextWrapped = true
+
+st1_2.Name = getrandomstring()
+st1_2.Parent = Main
+st1_2.BackgroundColor3 = Color3.new(1, 1, 1)
+st1_2.BackgroundTransparency = 1
+st1_2.Position = UDim2.new(0, 0, 0.375590861, 0)
+st1_2.Size = UDim2.new(0.999999881, 0, 0.161862016, 0)
+st1_2.Font = Enum.Font.ArialBold
+st1_2.TextXAlignment = Enum.TextXAlignment.Left
+st1_2.Text = "Current ballistics: 0"
+st1_2.TextColor3 = Color3.new(0.0431373, 1, 0.0745098)
+st1_2.TextScaled = true
+st1_2.TextSize = 14
+st1_2.TextWrapped = true
+
+local aimbothiderbox = Instance.new("TextBox")
+aimbothiderbox.Name = getrandomstring()
+aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." off"
+aimbothiderbox.Size = UDim2.new(1, 0,0.162, 0)
+aimbothiderbox.TextScaled = true
+aimbothiderbox.TextColor3 =Color3.fromRGB(255, 0, 0)
+aimbothiderbox.Position = UDim2.new(0, 0,0.853, 0)
+aimbothiderbox.BackgroundTransparency = 1
+aimbothiderbox.Parent = Main
+
+st1_3.Name = getrandomstring()
+st1_3.Parent = Main
+st1_3.BackgroundColor3 = Color3.new(1, 1, 1)
+st1_3.BackgroundTransparency = 1
+st1_3.Position = UDim2.new(0, 0, 0.18558608, 0)
+st1_3.Size = UDim2.new(0.999999881, 0, 0.161862016, 0)
+st1_3.Font = Enum.Font.ArialBold
+st1_3.Text = "Bullet speed = 3584"
+st1_3.TextColor3 = Color3.new(0.0431373, 1, 0.0745098)
+st1_3.TextScaled = true
+st1_3.TextSize = 14
+st1_3.TextWrapped = true
+local teambasedstatus = st1_3:Clone()
+teambasedstatus.Parent = Main
+teambasedstatus.TextScaled = true
+teambasedstatus.Position = UDim2.new(0, 0,.7, 0)
+teambasedstatus.Size = UDim2.new(1, 0,.1, 0)
+teambasedstatus.Name = getrandomstring()
+teambasedstatus.Text = "Team Based: "..tostring(TeamBased)
+local espstatustext = teambasedstatus:Clone()
+espstatustext.Name = getrandomstring()
+espstatustext.Position = UDim2.new(0, 0,0.58, 0)
+espstatustext.Text = "Esp loop :"..tostring(autoesp)
+espstatustext.Parent = Main
+local hide = Instance.new("TextButton")
+hide.Text = "_"
+hide.BackgroundTransparency = 1
+hide.TextScaled = true
+hide.TextWrapped = true
+hide.Size = UDim2.new(0.1, 0,1, 0)
+hide.Position = UDim2.new(0.9, 0,-0.15, 0)
+hide.Name = getrandomstring()
+hide.Parent = Move
+Name.Name = getrandomstring()
+Name.Parent = Move
+Name.BackgroundColor3 = Color3.new(1, 1, 1)
+Name.BackgroundTransparency = 1
+Name.Size = UDim2.new(0.838, 0, 1, 0)
+Name.Font = Enum.Font.Arial
+Name.Text = "FPS MultiHack v"..ver
+Name.TextColor3 = Color3.new(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14
+Name.TextWrapped = true
+Name.TextXAlignment = Enum.TextXAlignment.Left
+local scr = Instance.new("ScrollingFrame")
+scr.Size = Main.Size
+scr.Position = Main.Position
+scr.ScrollBarThickness = 0
+scr.BackgroundTransparency = 1
+scr.Name = getrandomstring()
+Main.Size = UDim2.new(1, 0, 1, 0)
+Main.Position = UDim2.new(0,0,0,0)
+Main.Parent = scr
+scr.Parent = Move
+startpos = Main.Position
+Move.Active = true
+
+-- Scripts:
+hided = false
+hide.MouseButton1Click:Connect(function()
+    if hided == false then
+        hided = true
+        Main:TweenPosition(UDim2.new(0, 0, -1.5, 0))
+    else
+        hided = false
+        Main:TweenPosition(startpos)
+    end
+end)
+
+
+aimbothiderbox.FocusLost:Connect(function()
+    local numb = tonumber(aimbothiderbox.Text)
+    if aimbothider == true then
+        aimbothiderbox.TextColor3 =Color3.fromRGB(11, 255, 19)
+    else
+        aimbothiderbox.TextColor3 =Color3.fromRGB(255, 0, 0)
+    end
+    if numb ~= nil then
+        aimbothiderspeed = numb
+        if aimbothider == true then
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." on"
+        else
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." off"
+        end
+    else
+        if aimbothider == true then
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." on"
+        else
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." off"
+        end
+    end
+end)
+
+
+local plrsforaim = {}
+
+
+Move.Draggable = true
+Gui.ResetOnSpawn = false
+--Gui.Name = "Chat"
+Gui.DisplayOrder = 999
+pcall(function()
+if not game:GetService("CoreGui") then
+    Gui.Parent = plrs.LocalPlayer.PlayerGui
+else
+    Gui.Parent = game:GetService("CoreGui")
+end
+end)
+local espheadthing
+do
+local BillboardGui = Instance.new("BillboardGui")
+local PName = Instance.new("TextLabel")
+local Pdist = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+--Properties:
+--BillboardGui.Parent = game.Workspace.Part
+BillboardGui.ZIndexBehavior  = Enum.ZIndexBehavior.Sibling
+BillboardGui.AlwaysOnTop     = true
+BillboardGui.LightInfluence  = 0
+BillboardGui.Size            = UDim2.new(0, 0, 0, 0)
+BillboardGui.Name            = "headoverthing"
+PName.Name                   = "PName"
+PName.Parent                 = BillboardGui
+PName.BackgroundColor3       = espcolor
+PName.BackgroundTransparency = 0.55000001192093
+PName.BorderSizePixel        = 0
+PName.Size                   = UDim2.new(0, 100, 0, 23)
+PName.Font                   = Enum.Font.SourceSans
+PName.Text                   = "urmom"
+PName.TextColor3             = Color3.new(0, 0, 0)
+PName.TextScaled             = true
+PName.TextSize               = 14
+PName.TextWrapped            = true
+st1.Text                     = uc(aimbotstatus)
+Pdist.Name                   = "Pdist"
+Pdist.Parent                 = BillboardGui
+Pdist.AnchorPoint            = Vector2.new(0.5, 0)
+Pdist.BackgroundColor3       = espcolor
+Pdist.BackgroundTransparency = 0.55000001192093
+Pdist.BorderSizePixel        = 0
+Pdist.Position               = UDim2.new(0.5, 0, 0.5, 0)
+Pdist.Size                   = UDim2.new(0, 70, 0, 23)
+Pdist.Font                   = Enum.Font.SourceSans
+Pdist.Text                   = "666"
+Pdist.TextColor3             = Color3.new(0, 0, 0)
+Pdist.TextScaled             = true
+Pdist.TextSize               = 14
+Pdist.TextWrapped            = true
+
+ImageLabel.Parent = BillboardGui
+ImageLabel.BackgroundColor3 = Color3.new(0.298039, 1, 0)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = espcolor
+ImageLabel.Position = UDim2.new(1, -15, 0.5, 0)
+ImageLabel.Rotation = 180
+ImageLabel.Size = UDim2.new(0, 15, 0, 23)
+ImageLabel.Image = "rbxassetid://2832171824"
+ImageLabel.ImageColor3 = espcolor
+ImageLabel.ImageTransparency = 0.55000001192093
+
+ImageLabel_2.Parent = BillboardGui
+ImageLabel_2.BackgroundColor3 = espcolor
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.BorderColor3 = Color3.new(0.298039, 1, 0)
+ImageLabel_2.Position = UDim2.new(0, 0, 0.5, 0)
+ImageLabel_2.Rotation = 180
+ImageLabel_2.Size = UDim2.new(0, 15, 0, 23)
+ImageLabel_2.Image = "rbxassetid://2832177613"
+ImageLabel_2.ImageColor3 = espcolor
+ImageLabel_2.ImageTransparency = 0.55000001192093
+espheadthing = BillboardGui
+end
+
+
+
+f = {}
+f.UpdateHeadUI = function(v)
+    
+        
+            if v.Adornee and v.Adornee ~= nil then
+                local destr = false
+                if TeamBased then
+                    destr = true
+                    local plr = plrs:GetPlayerFromCharacter(v.Adornee.Parent)
+                    if plr and plr.Team and plr.Team.Name ~= lplr.Team.Name then
+                        destr = false
+                    end
+                end
+                if lightesp == true then
+                    v.Pdist.TextColor3 = Color3.new(1,1,1)
+                    v.PName.TextColor3 = Color3.new(1,1,1)
+                else
+                    v.Pdist.TextColor3 = Color3.new(0,0,0)
+                    v.PName.TextColor3 = Color3.new(0,0,0)
+                end
+                local d = math.floor((cam.CFrame.p - v.Adornee.CFrame.p).magnitude)
+                v.Pdist.Text = tostring(d)
+                if d < 14 then
+                    v.Enabled = false
+                else
+                    v.Enabled = true
+                end
+                v.StudsOffset = Vector3.new(0,.6+d/14,0)
+                if destr then
+                    v:Destroy()
+                end
+            else
+                v:Destroy()
+            end
+        
+    
+end
+st1.Text = uc(aimbotstatus)
+local espforlder
+local partconverter = Instance.new("Part")
+--local headsupdatelist = {}
+st1_3.FocusLost:connect(function()
+    if tonumber(st1_3.Text) then
+        bspeed = tonumber(st1_3.Text)
+    else
+        
+    end
+end)
+f.addesp = function()
+    pcall(function()
+    --print("ESP ran")
+    if espforlder then
+        espforlder:Destroy()
+        espforlder = Instance.new("Folder")
+        espforlder.Parent = game.Workspace.CurrentCamera
+    else
+        espforlder = Instance.new("Folder")
+        espforlder.Parent = game.Workspace.CurrentCamera
+    end
+    for i, v in pairs(espforlder:GetChildren()) do
+        v:Destroy()
+    end
+    for _, plr in pairs(plrs:GetChildren()) do
+        if plr.Character and plr.Character.Humanoid.Health > 0 and plr.Name ~= lplr.Name then
+            if TeamBased == true then
+                
+                if plr.Team.Name ~= plrs.LocalPlayer.Team.Name  then
+                    pcall(function()
+                    local e = espforlder:FindFirstChild(plr.Name)
+                    if not e then
+                        local fold = Instance.new("Folder", espforlder)
+                        fold.Name = plr.Name
+                        
+                        --partconverter.BrickColor = plr.Team.Color
+                        --local teamc = partconverter.Color
+                        for i, p in pairs(plr.Character:GetChildren()) do
+                            if p:IsA("BasePart") and p.Name ~= "HumanoidRootPart" then
+                                if charmsesp then
+                                local urmom = Instance.new("BoxHandleAdornment")
+                                urmom.ZIndex = 10
+                                urmom.AlwaysOnTop = true
+                                urmom.Color3 = espcolor
+                                urmom.Size = p.Size
+                                urmom.Adornee = p
+                                urmom.Name = tick().." Ur mom has big gay"
+                                urmom.Transparency = wallhack_esp_transparency
+                                urmom.Parent = fold
+                                if p.Name == "Head" then
+                                    local th = p:FindFirstChild("headoverthing")
+                                    if not th then
+                                        local ht = espheadthing:Clone()
+                                        ht.PName.Text = p.Parent.Name
+                                        ht.Adornee = p
+                                        --table.insert(headsupdatelist, ht)
+                                        delay(0, function()
+                                            while wait(0.08) and plr and p do
+                                                f.UpdateHeadUI(ht)
+                                            end
+                                        end)
+                                        ht.Parent = p
+                                    end
+                                end
+                                end
+                            end
+                        end
+                        plr.Character.Humanoid.Died:Connect(function()
+                            fold:Destroy()
+                        end)
+                        
+                    end
+                    end)
+                end
+            else
+                local e = espforlder:FindFirstChild(plr.Name)
+                if not e then
+                    local fold = Instance.new("Folder", espforlder)
+                        fold.Name = plr.Name
+                        
+                        --partconverter.BrickColor = plr.Team.Color
+                        --local teamc = Move.BackgroundColor3
+                        for i, p in pairs(plr.Character:GetChildren()) do
+                            if p:IsA("BasePart") and p.Name ~= "HumanoidRootPart" then
+                                pcall(function()
+                                if charmsesp then
+                                local urmom = Instance.new("BoxHandleAdornment")
+                                urmom.ZIndex = 10
+                                urmom.AlwaysOnTop = true
+                                urmom.Color3 = espcolor
+                                urmom.Size = p.Size
+                                urmom.Adornee = p
+                                urmom.Name = tick().." Ur mom has big gay"
+                                urmom.Transparency = wallhack_esp_transparency
+                                urmom.Parent = fold
+                                end
+                                if p.Name == "Head" then
+                                    local th = p:FindFirstChild("headoverthing")
+                                    if not th then
+                                        local ht = espheadthing:Clone()
+                                        ht.PName.Text = p.Parent.Name
+                                        ht.Adornee = p
+                                        delay(0, function()
+                                            while wait(0.08) and plr and p do
+                                                f.UpdateHeadUI(ht)
+                                            end
+                                        end)
+                                        --table.insert(headsupdatelist, ht)
+                                        ht.Parent = p
+                                    end
+                                end
+                                end)
+                            end
+                        end
+                        plr.Character.Humanoid.Died:Connect(function()
+                            fold:Destroy()
+                        end)
+                end
+            end
+            
+            
+        end
+    end
+    end)
+end
+
+local uis = game:GetService("UserInputService")
+local bringall = false
+local hided2 = false
+local upping = false
+local downing = false
+mouse.KeyDown:Connect(function(a)
+    
+    if a == "t" then
+        --print("worked1")
+        f.addesp()
+    elseif a == gui_hide_button[2] and uis:IsKeyDown(gui_hide_button[1]) then
+        if hided2 == false then
+            hided2 = true
+            autoesp =false
+            if espforlder then
+                espforlder:Destroy()
+            end
+            Gui.Enabled = false
+        else
+            Gui.Enabled = true
+            hided2 = false
+        end
+            
+    elseif a == "y" then
+        if aimbothider == false then
+            aimbothider = true
+            if aimbothider == true then
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." on"
+        else
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." off"
+        end
+        else
+            
+            aimbothider = false
+            if aimbothider == true then
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." on"
+        else
+            aimbothiderbox.Text = "Speed :"..tostring(aimbothiderspeed).." off"
+        end
+        end
+        if aimbothider == true then
+            aimbothiderbox.TextColor3 =Color3.fromRGB(11, 255, 19)
+        else
+            aimbothiderbox.TextColor3 =Color3.fromRGB(255, 0, 0)
+        end
+    elseif a == "l" then
+        if not uis:IsKeyDown(Enum.KeyCode.LeftControl) then
+            if autoesp == false then
+                autoesp = true
+            else
+                autoesp = false
+            end
+        else
+            if lightesp == true then
+                lightesp = false
+            else
+                lightesp = true
+            end
+        end
+    elseif a == "]" then
+        upping = true
+        downing = false
+    elseif a== "[" then
+        downing = true
+        upping = false
+    elseif a == Aim_Assist_Key[2] and uis:IsKeyDown(Aim_Assist_Key[1]) then
+        if Aim_Assist == true then
+            Aim_Assist = false
+            --print("disabled")
+        else
+            Aim_Assist = true
+        end
+    end
+    if a == "j" then
+        if mouse.Target then
+            mouse.Target:Destroy()
+        end
+    end
+    if a == key then
+        if switch == false then
+            switch = true
+        else
+            switch = false
+            if aimatpart ~= nil then
+                aimatpart = nil
+            end
+        end
+    elseif a == "b" and uis:IsKeyDown(Enum.KeyCode.LeftControl) and not uis:IsKeyDown(Enum.KeyCode.R) then
+        if movementcounting then
+            movementcounting = false
+        else
+            movementcounting = true
+        end
+    elseif a == teambasedswitch then
+        if TeamBased == true then
+            TeamBased = false
+            teambasedstatus.Text = "Team Based: "..tostring(TeamBased)
+        else
+            TeamBased = true
+            teambasedstatus.Text = "Team Based: "..tostring(TeamBased)
+        end
+    elseif a == "b" and uis:IsKeyDown(Enum.KeyCode.LeftControl) and uis:IsKeyDown(Enum.KeyCode.R) then
+        ballisticsboost = 0
+    elseif a == aimkey then
+        if not aimatpart then
+            local maxangle = math.rad(20)
+            for i, plr in pairs(plrs:GetChildren()) do
+                if plr.Name ~= lplr.Name and plr.Character and plr.Character.Head and plr.Character.Humanoid and plr.Character.Humanoid.Health > 1 then
+                    if TeamBased == true then
+                        if plr.Team.Name ~= lplr.Team.Name then
+                            local an = checkfov(plr.Character.Head)
+                            if an < maxangle then
+                                maxangle = an
+                                aimatpart = plr.Character.Head
+                            end
+                        end
+                    else
+                        local an = checkfov(plr.Character.Head)
+                            if an < maxangle then
+                                maxangle = an
+                                aimatpart = plr.Character.Head
+                            end
+                            --print(plr)
+                    end
+                    local old = aimatpart
+                    plr.Character.Humanoid.Died:Connect(function()
+                        --print("died")
+                        if aimatpart and aimatpart == old then
+                            aimatpart = nil
+                        end
+                    end)
+                    
+                end
+            end
+        else
+            aimatpart = nil
+            canaimat = false
+            delay(1.1, function()
+                canaimat = true
+            end)
+        end
+    end
+end)
+
+function getfovxyz (p0, p1, deg)
+    local x1, y1, z1 = p0:ToOrientation()
+    local cf = CFrame.new(p0.p, p1.p)
+    local x2, y2, z2 = cf:ToOrientation()
+    local d = math.deg
+    if deg then
+        return Vector3.new(d(x1-x2), d(y1-y2), d(z1-z2))
+    else
+        return Vector3.new((x1-x2), (y1-y2), (z1-z2))
+    end
+end
+
+
+function aimat(part)
+    if part then
+        --print(part)
+        local d = (cam.CFrame.p - part.CFrame.p).magnitude
+        local calculatedrop
+        local timetoaim = 0
+        local pos2 = Vector3.new()
+        if movementcounting == true then
+            timetoaim = d/bspeed
+            pos2 = part.Velocity * timetoaim
+        end
+        local minuseddrop = (ballisticsboost+50)/50
+        if ballisticsboost ~= 0 then
+            calculatedrop = d - (d/minuseddrop)
+            
+        else
+            calculatedrop = 0
+        end
+        --print(calculatedrop)
+        local addative = Vector3.new()
+        if movementcounting then
+            addative = pos2
+        end
+        local cf = CFrame.new(cam.CFrame.p, (addative + part.CFrame.p+ Vector3.new(0, calculatedrop, 0)))
+        if aimbothider == true or Aim_Assist == true then
+            cam.CFrame = cam.CFrame:Lerp(cf, aimbothiderspeed)
+        else
+            
+            cam.CFrame = cf
+        end
+        --print(cf)
+    end
+end
+function checkfov (part)
+    local fov = getfovxyz(game.Workspace.CurrentCamera.CFrame, part.CFrame)
+    local angle = math.abs(fov.X) + math.abs(fov.Y)
+    return angle
+end
+pcall(function()
+    delay(0, function()
+        while wait(.32) do
+            if Aim_Assist and not aimatpart and canaimat and lplr.Character and lplr.Character.Humanoid and lplr.Character.Humanoid.Health > 0 then
+                for i, plr in pairs(plrs:GetChildren()) do
+                    
+                    
+                        local minangle = math.rad(5.5)
+                        local lastpart = nil
+                        local function gg(plr)
+                            pcall(function()
+                            if plr.Name ~= lplr.Name and plr.Character and plr.Character.Humanoid and plr.Character.Humanoid.Health > 0 and plr.Character.Head then
+                                local raycasted = false
+                                local cf1 = CFrame.new(cam.CFrame.p, plr.Character.Head.CFrame.p) * CFrame.new(0, 0, -4)
+                                local r1 = Ray.new(cf1.p, cf1.LookVector * 9000)
+                                local obj, pos = game.Workspace:FindPartOnRayWithIgnoreList(r1,  {lplr.Character.Head})
+                                local dist = (plr.Character.Head.CFrame.p- pos).magnitude
+                                if dist < 4 then
+                                    raycasted = true
+                                end
+                                if raycasted == true then
+                                    local an1 = getfovxyz(cam.CFrame, plr.Character.Head.CFrame)
+                                    local an = abs(an1.X) + abs(an1.Y)
+                                    if an < minangle then
+                                        minangle = an
+                                        lastpart = plr.Character.Head
+                                    end
+                                end
+                            end
+                            end)
+                        end
+                        if TeamBased then
+                            if plr.Team.Name ~= lplr.Team.Name then
+                                gg(plr)
+                            end
+                        else
+                            gg(plr)
+                        end
+                        --print(math.deg(minangle))
+                        if lastpart then
+                            aimatpart = lastpart
+                            aimatpart.Parent.Humanoid.Died:Connect(function()
+                                if aimatpart == lastpart then
+                                    aimatpart = nil
+                                end
+                            end)
+                        
+                    end
+                end
+            end
+        end
+    end)
+end)
+local oldheadpos
+local lastaimapart
+game:GetService("RunService").RenderStepped:Connect(function(dt)
+    if uis:IsKeyDown(Enum.KeyCode.RightBracket) or uis:IsKeyDown(Enum.KeyCode.LeftBracket) then
+        if upping then
+            ballisticsboost = ballisticsboost + dt/1.9
+        elseif downing then
+            ballisticsboost = ballisticsboost - dt/1.9
+        end
+    end
+    if movementcounting then
+        st1_2.TextColor3 = Color3.new(0.0431373, 1, 0.0745098)
+        st1_2.Text = "Current ballistics: "..tostring(math.floor(ballisticsboost*10)/10)
+    else
+        st1_2.TextColor3 = Color3.new(1,0,0)
+    end
+    espstatustext.Text = "Esp loop :"..tostring(autoesp)
+    if aimatpart and lplr.Character and lplr.Character.Head then
+        if BetterDeathCount and lastaimapart and lastaimapart == aimatpart then
+            local dist = (oldheadpos - aimatpart.CFrame.p).magnitude
+            if dist > 40 then
+                aimatpart = nil
+            end
+        end
+        lastaimapart = aimatpart
+        oldheadpos = lastaimapart.CFrame.p
+        do 
+            if aimatpart.Parent == plrs.LocalPlayer.Character then
+                aimatpart = nil
+            end
+            aimat(aimatpart)
+            pcall(function()
+                if Aim_Assist == true then
+                    local cf1 = CFrame.new(cam.CFrame.p, aimatpart.CFrame.p) * CFrame.new(0, 0, -4)
+                    local r1 = Ray.new(cf1.p, cf1.LookVector * 1000)
+                    local obj, pos = game.Workspace:FindPartOnRayWithIgnoreList(r1,  {lplr.Character.Head})
+                    local dist = (aimatpart.CFrame.p- pos).magnitude
+                    if obj then
+                        --print(obj:GetFullName())
+                    end
+                    if not obj or dist > 6 then
+                        aimatpart = nil
+                        --print("ooof")
+                    end
+                    canaimat = false
+                    delay(.5, function()
+                        canaimat = true
+                    end)
+                end
+            end)
+        end
+        
+        
+        
+    end
+end)
+
+
+delay(0, function()
+    while wait(espupdatetime) do
+        if autoesp == true then
+            pcall(function()
+            f.addesp()
+            end)
+        end
+    end
+end)
+warn("loaded")
+end)
+end)
+
+ThirdPersonLabel.Name = "ThirdPersonLabel"
+ThirdPersonLabel.Parent = VisualsTab
+ThirdPersonLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ThirdPersonLabel.BorderSizePixel = 0
+ThirdPersonLabel.Position = UDim2.new(0.0698630139, 0, 0.303571463, 0)
+ThirdPersonLabel.Size = UDim2.new(0, 112, 0, 30)
+ThirdPersonLabel.Font = Enum.Font.Gotham
+ThirdPersonLabel.Text = "Toggle ThirdPerson"
+ThirdPersonLabel.TextColor3 = Color3.new(1, 1, 1)
+ThirdPersonLabel.TextSize = 14
+ThirdPersonLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ThirdPersonCheckBox.Name = "ThirdPersonCheckBox"
+ThirdPersonCheckBox.Parent = VisualsTab
+ThirdPersonCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+ThirdPersonCheckBox.Position = UDim2.new(0.0149999997, 0, 0.306428611, 0)
+ThirdPersonCheckBox.Size = UDim2.new(0, 30, 0, 30)
+ThirdPersonCheckBox.Style = Enum.ButtonStyle.RobloxButton
+ThirdPersonCheckBox.Font = Enum.Font.Gotham
+ThirdPersonCheckBox.Text = ""
+ThirdPersonCheckBox.TextColor3 = Color3.new(1, 1, 1)
+ThirdPersonCheckBox.TextSize = 14
+ThirdPersonCheckBox.MouseButton1Down:connect(function()
+    if not thirdperson
+    then
+        thirdperson = true
+        ThirdPersonCheckBox.Text = ("?")
+    repeat if thirdperson then
+	wait()
+    game.Players.LocalPlayer.CameraMaxZoomDistance = 15
+    game.Players.LocalPlayer.CameraMinZoomDistance = 15
+    game.Players.LocalPlayer.CameraMode = "Classic"
+    game.Workspace.Camera.Arms.IDFArms:Destroy()
+    end 
+    until thirdperson == false
+    else
+        thirdperson = false
+        ThirdPersonCheckBox.Text = ("")
+        end
+end)
+
+FOVChangerLabel.Name = "FOVChangerLabel"
+FOVChangerLabel.Parent = VisualsTab
+FOVChangerLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+FOVChangerLabel.BorderSizePixel = 0
+FOVChangerLabel.Position = UDim2.new(0.0698630139, 0, 0.442857176, 0)
+FOVChangerLabel.Size = UDim2.new(0, 112, 0, 30)
+FOVChangerLabel.Font = Enum.Font.Gotham
+FOVChangerLabel.Text = "Toggle FOV Changer"
+FOVChangerLabel.TextColor3 = Color3.new(1, 1, 1)
+FOVChangerLabel.TextSize = 14
+FOVChangerLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+FOVChangerCheckBox.Name = "FOVChangerCheckBox"
+FOVChangerCheckBox.Parent = VisualsTab
+FOVChangerCheckBox.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+FOVChangerCheckBox.Position = UDim2.new(0.0149999997, 0, 0.445714325, 0)
+FOVChangerCheckBox.Size = UDim2.new(0, 30, 0, 30)
+FOVChangerCheckBox.Style = Enum.ButtonStyle.RobloxButton
+FOVChangerCheckBox.Font = Enum.Font.Gotham
+FOVChangerCheckBox.Text = ""
+FOVChangerCheckBox.TextColor3 = Color3.new(1, 1, 1)
+FOVChangerCheckBox.TextSize = 14
+FOVChangerCheckBox.MouseButton1Down:connect(function()
+    if not fovchanger then
+        fovchanger = true
+        FOVChangerSettings.Visible = true
+        repeat if fovchanger then
+        wait(.1)
+            game.Workspace.Camera.FieldOfView = FOVValue.Text
+            end
+        until fovchanger == false
+    else
+        fovchanger = false
+        FOVChangerSettings.Visible = false
+    end
+end)
+
+FOVChangerSettings.Name = "FOVChangerSettings"
+FOVChangerSettings.Parent = VisualsTab
+FOVChangerSettings.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+FOVChangerSettings.BorderSizePixel = 0
+FOVChangerSettings.Position = UDim2.new(0.269794494, 0, 0.442142874, 0)
+FOVChangerSettings.Size = UDim2.new(0, 30, 0, 30)
+FOVChangerSettings.Visible = false
+FOVChangerSettings.Font = Enum.Font.Gotham
+FOVChangerSettings.Text = ">"
+FOVChangerSettings.TextColor3 = Color3.new(1, 1, 1)
+FOVChangerSettings.TextSize = 14
+
+FOVValue.Name              = "FOVValue"
+FOVValue.Parent            = VisualsTab
+FOVValue.BackgroundColor3  = Color3.new(0.137255, 0.137255, 0.137255)
+FOVValue.BorderColor3      = Color3.new(0, 0, 0)
+FOVValue.Position          = UDim2.new(0.33561644, 0, 0.439285725, 0)
+FOVValue.Size              = UDim2.new(0, 200, 0, 32)
+FOVValue.Visible           = false
+FOVValue.Font              = Enum.Font.Gotham
+FOVValue.PlaceholderColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+FOVValue.Text              = "75"
+FOVValue.TextColor3        = Color3.new(1, 1, 1)
+FOVValue.TextSize          = 14
+
+SkinChangerTab.Name = "SkinChangerTab"
+SkinChangerTab.Parent = ChillwareMain
+SkinChangerTab.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+SkinChangerTab.BorderColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+SkinChangerTab.BorderSizePixel = 5
+SkinChangerTab.Position = UDim2.new(0.0434999838, 0, 0.224999994, 0)
+SkinChangerTab.Size = UDim2.new(0, 730, 0, 280)
+SkinChangerTab.Visible = false
+
+SkinChangerLabel.Name = "SkinChangerLabel"
+SkinChangerLabel.Parent = SkinChangerTab
+SkinChangerLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+SkinChangerLabel.BorderSizePixel = 0
+SkinChangerLabel.Position = UDim2.new(0.0356164351, 0, 0.107142858, 0)
+SkinChangerLabel.Size = UDim2.new(0, 677, 0, 220)
+SkinChangerLabel.Font = Enum.Font.Gotham
+SkinChangerLabel.Text = "Oops.. Looks like there's nothing. Work In Progress."
+SkinChangerLabel.TextColor3 = Color3.new(1, 1, 1)
+SkinChangerLabel.TextSize = 25
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = ChillwareMain
+MiscTab.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MiscTab.BorderColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+MiscTab.BorderSizePixel = 5
+MiscTab.Position = UDim2.new(0.0434999838, 0, 0.224999994, 0)
+MiscTab.Size = UDim2.new(0, 730, 0, 280)
+MiscTab.Visible = false
+
+RespawnButton.Name = "RespawnButton"
+RespawnButton.Parent = MiscTab
+RespawnButton.BackgroundColor3 = Color3.new(1, 1, 1)
+RespawnButton.Position = UDim2.new(0.01369863, 0, 0.0357142873, 0)
+RespawnButton.Size = UDim2.new(0, 201, 0, 31)
+RespawnButton.Style = Enum.ButtonStyle.RobloxButton
+RespawnButton.Font = Enum.Font.Gotham
+RespawnButton.Text = "Respawn"
+RespawnButton.TextColor3 = Color3.new(1, 1, 1)
+RespawnButton.TextSize = 14
+RespawnButton.MouseButton1Down:connect(function()
+    game.ReplicatedStorage.Events:FindFirstChild("Spawnme"):FireServer()
+end)
+
+JoinCTButton.Name = "JoinCTButton"
+JoinCTButton.Parent = MiscTab
+JoinCTButton.BackgroundColor3 = Color3.new(1, 1, 1)
+JoinCTButton.Position = UDim2.new(0.01369863, 0, 0.257142872, 0)
+JoinCTButton.Size = UDim2.new(0, 201, 0, 31)
+JoinCTButton.Style = Enum.ButtonStyle.RobloxButton
+JoinCTButton.Font = Enum.Font.Gotham
+JoinCTButton.Text = "Join CT"
+JoinCTButton.TextColor3 = Color3.new(1, 1, 1)
+JoinCTButton.TextSize = 14
+JoinCTButton.MouseButton1Down:connect(function()
+    game.ReplicatedStorage.Events:FindFirstChild("JoinTeam"):FireServer("CT")
+end)
+
+JoinTButton.Name = "JoinTButton"
+JoinTButton.Parent = MiscTab
+JoinTButton.BackgroundColor3 = Color3.new(1, 1, 1)
+JoinTButton.Position = UDim2.new(0.01369863, 0, 0.14642857, 0)
+JoinTButton.Size = UDim2.new(0, 201, 0, 31)
+JoinTButton.Style = Enum.ButtonStyle.RobloxButton
+JoinTButton.Font = Enum.Font.Gotham
+JoinTButton.Text = "Join T"
+JoinTButton.TextColor3 = Color3.new(1, 1, 1)
+JoinTButton.TextSize = 14
+JoinTButton.MouseButton1Down:connect(function()
+    game.ReplicatedStorage.Events:FindFirstChild("JoinTeam"):FireServer("T")
+end)
+
+game:GetService("UserInputService").InputBegan:connect(function(key)
+if key.KeyCode == Enum.KeyCode.Insert then
+if opened == true then
+opened = false
+ChillwareMain.Visible = false
+elseif opened == false then
+opened = true
+ChillwareMain.Visible = true
+end
+end
+end)
+
+game.StarterGui:SetCore("SendNotification",{Title="Chillware",Text="Loaded."})
+wait(1)
+game.StarterGui:SetCore("SendNotification",{Title="Chillware",Text="Press [Insert] to close/open menu"})
