@@ -1,0 +1,4810 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local JailBrokenbyVynixuAli = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Mini = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Cover = Instance.new("TextLabel")
+local CarFlyR = Instance.new("TextButton")
+local InfJump = Instance.new("TextButton")
+local Walkspeed = Instance.new("TextButton")
+local InfNitro = Instance.new("TextButton")
+local GiveItems = Instance.new("TextButton")
+local AutoArrest = Instance.new("TextButton")
+local RemoveCity = Instance.new("TextButton")
+local InfDonut = Instance.new("TextButton")
+local RGBCar = Instance.new("TextButton")
+local Delete = Instance.new("TextButton")
+local PlatformM = Instance.new("TextButton")
+local Nodoors = Instance.new("TextButton")
+local PassengerTrain = Instance.new("TextLabel")
+local BankSt = Instance.new("TextLabel")
+local Jewst = Instance.new("TextLabel")
+local DropESP = Instance.new("TextButton")
+local Keycard = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local ESPFrame = Instance.new("Frame")
+local NoESP = Instance.new("TextButton")
+local CrimESP = Instance.new("TextButton")
+local PrisonESP = Instance.new("TextButton")
+local CopESP = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local ClickTP = Instance.new("TextButton")
+local BuildNoclip = Instance.new("TextButton")
+local Tracers = Instance.new("TextButton")
+local TracerFrame = Instance.new("Frame")
+local NoESP_2 = Instance.new("TextButton")
+local CrimESP_2 = Instance.new("TextButton")
+local PrisonESP_2 = Instance.new("TextButton")
+local CopESP_2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Jew = Instance.new("TextLabel")
+local Bank = Instance.new("TextLabel")
+local AirdropTP = Instance.new("TextButton")
+local MobileGarage = Instance.new("TextButton")
+local SmallStores = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Tabs = Instance.new("Frame")
+local Page1 = Instance.new("TextButton")
+local Page2 = Instance.new("TextButton")
+local Page3 = Instance.new("TextButton")
+local Devide2 = Instance.new("TextLabel")
+local Devide1 = Instance.new("TextLabel")
+local Devide3 = Instance.new("TextLabel")
+local Page4 = Instance.new("TextButton")
+local CargoTrain = Instance.new("TextLabel")
+local Teleports1 = Instance.new("Frame")
+local Top_2 = Instance.new("Frame")
+local Close_2 = Instance.new("TextButton")
+local Mini_2 = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local BankOut = Instance.new("TextButton")
+local BankIn = Instance.new("TextButton")
+local JewOut = Instance.new("TextButton")
+local MuseumOut = Instance.new("TextButton")
+local JewIn = Instance.new("TextButton")
+local MuseumIn = Instance.new("TextButton")
+local PPout = Instance.new("TextButton")
+local Donut = Instance.new("TextButton")
+local PPin = Instance.new("TextButton")
+local Gas = Instance.new("TextButton")
+local Train = Instance.new("TextButton")
+local Prison = Instance.new("TextButton")
+local Crim1 = Instance.new("TextButton")
+local Airport = Instance.new("TextButton")
+local Crim2 = Instance.new("TextButton")
+local Police2 = Instance.new("TextButton")
+local _1Mil = Instance.new("TextButton")
+local Military = Instance.new("TextButton")
+local GunShop = Instance.new("TextButton")
+local TrainStation = Instance.new("TextButton")
+local Garage = Instance.new("TextButton")
+local Police1 = Instance.new("TextButton")
+local BankVault = Instance.new("TextButton")
+local TrainIn = Instance.new("TextButton")
+local Police3 = Instance.new("TextButton")
+local Museumst = Instance.new("TextLabel")
+local Museum = Instance.new("TextLabel")
+local Teleports2 = Instance.new("Frame")
+local Top_3 = Instance.new("Frame")
+local Close_3 = Instance.new("TextButton")
+local Mini_3 = Instance.new("TextButton")
+local Title_3 = Instance.new("TextLabel")
+local Camaro = Instance.new("TextButton")
+local Pickup = Instance.new("TextButton")
+local Jetski = Instance.new("TextButton")
+local ATV = Instance.new("TextButton")
+local Dirtbike = Instance.new("TextButton")
+local Jetpack = Instance.new("TextButton")
+local Ferrari = Instance.new("TextButton")
+local Bugatti = Instance.new("TextButton")
+local Audi = Instance.new("TextButton")
+local Volt = Instance.new("TextButton")
+local Jet = Instance.new("TextButton")
+local Wraith = Instance.new("TextButton")
+local Model3 = Instance.new("TextButton")
+local Porsche = Instance.new("TextButton")
+local Mini_4 = Instance.new("TextButton")
+local Buggy = Instance.new("TextButton")
+local Lambo = Instance.new("TextButton")
+local Stunt = Instance.new("TextButton")
+local ArmyHeli = Instance.new("TextButton")
+local UFO = Instance.new("TextButton")
+local Monster = Instance.new("TextButton")
+local SUV = Instance.new("TextButton")
+local Carspeed = Instance.new("TextButton")
+local GotoPlayer = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Day = Instance.new("TextButton")
+local NoLasers = Instance.new("TextButton")
+local LaserFrame = Instance.new("Frame")
+local Bank_2 = Instance.new("TextButton")
+local Mus = Instance.new("TextButton")
+local PP = Instance.new("TextButton")
+local Jew_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Gravity = Instance.new("TextButton")
+local CarTeleports = Instance.new("Frame")
+local Top_4 = Instance.new("Frame")
+local Close_4 = Instance.new("TextButton")
+local Mini_5 = Instance.new("TextButton")
+local Title_4 = Instance.new("TextLabel")
+local BankOut_2 = Instance.new("TextButton")
+local Police3_2 = Instance.new("TextButton")
+local JewOut_2 = Instance.new("TextButton")
+local MuseumOut_2 = Instance.new("TextButton")
+local TrainStation_2 = Instance.new("TextButton")
+local Police1_2 = Instance.new("TextButton")
+local PPout_2 = Instance.new("TextButton")
+local Donut_2 = Instance.new("TextButton")
+local Garage_2 = Instance.new("TextButton")
+local Gas_2 = Instance.new("TextButton")
+local Jetpack_2 = Instance.new("TextButton")
+local Prison_2 = Instance.new("TextButton")
+local Crim1_2 = Instance.new("TextButton")
+local Airport_2 = Instance.new("TextButton")
+local Crim2_2 = Instance.new("TextButton")
+local Police2_2 = Instance.new("TextButton")
+local _1Mil_2 = Instance.new("TextButton")
+local Military_2 = Instance.new("TextButton")
+local GunShop_2 = Instance.new("TextButton")
+local Yard = Instance.new("TextButton")
+local Airdrop = Instance.new("TextButton")
+local TextBox_2 = Instance.new("TextBox")
+local Goto = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local Logo = Instance.new("ImageLabel")
+local Title_5 = Instance.new("TextLabel")
+local MinimizeStatus = Instance.new("Frame")
+local BankSt_2 = Instance.new("TextLabel")
+local CargoTrain_2 = Instance.new("TextLabel")
+local Jewst_2 = Instance.new("TextLabel")
+local Museumst_2 = Instance.new("TextLabel")
+local PassengerTrain_2 = Instance.new("TextLabel")
+--Properties:
+JailBrokenbyVynixuAli.Name = "JailBroken by Vynixu & Ali"
+JailBrokenbyVynixuAli.Parent = game.CoreGui
+JailBrokenbyVynixuAli.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JailBrokenbyVynixuAli.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = JailBrokenbyVynixuAli
+Main.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Main.BorderColor3 = Color3.new(1, 1, 1)
+Main.Position = UDim2.new(0, 100, 0.5, -170)
+Main.Size = UDim2.new(0, 495, 0, 310)
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.new(1, 1, 1)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(1, 0, 0, 20)
+
+Close.Name = "Close"
+Close.Parent = Top
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(1, -20, 0, 0)
+Close.Size = UDim2.new(0, 20, 0, 20)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "x"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+Mini.Name = "Mini"
+Mini.Parent = Top
+Mini.BackgroundColor3 = Color3.new(1, 1, 1)
+Mini.BorderSizePixel = 0
+Mini.Position = UDim2.new(1, -40, 0, 0)
+Mini.Size = UDim2.new(0, 20, 0, 20)
+Mini.Font = Enum.Font.Cartoon
+Mini.Text = "-"
+Mini.TextColor3 = Color3.new(0, 0, 0)
+Mini.TextScaled = true
+Mini.TextSize = 14
+Mini.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 10, 0, 0)
+Title.Size = UDim2.new(1, 0, 0, 20)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Stuff"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 16
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Credits.Name = "Credits"
+Credits.Parent = Top
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, -1, -5)
+Credits.Size = UDim2.new(1, 0, 0, 20)
+Credits.Font = Enum.Font.Cartoon
+Credits.Text = "RegularVynixu#8795 and aLiMK06#0319"
+Credits.TextColor3 = Color3.new(1, 1, 1)
+Credits.TextSize = 18
+Credits.TextStrokeTransparency = 0
+Credits.TextWrapped = true
+Credits.TextXAlignment = Enum.TextXAlignment.Left
+
+Cover.Name = "Cover"
+Cover.Parent = Credits
+Cover.BackgroundColor3 = Color3.new(1, 1, 1)
+Cover.BackgroundTransparency = 1
+Cover.BorderSizePixel = 0
+Cover.Position = UDim2.new(0, 156, 0, 0)
+Cover.Size = UDim2.new(0, 50, 0, 20)
+Cover.Font = Enum.Font.Cartoon
+Cover.Text = "and"
+Cover.TextColor3 = Color3.new(1, 1, 1)
+Cover.TextSize = 18
+Cover.TextStrokeTransparency = 0
+Cover.TextWrapped = true
+Cover.TextXAlignment = Enum.TextXAlignment.Left
+
+CarFlyR.Name = "CarFlyR"
+CarFlyR.Parent = Main
+CarFlyR.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+CarFlyR.BorderColor3 = Color3.new(1, 1, 1)
+CarFlyR.Position = UDim2.new(0, 6, 0, 25)
+CarFlyR.Size = UDim2.new(0, 117, 0, 35)
+CarFlyR.Font = Enum.Font.Cartoon
+CarFlyR.Text = "Car fly [R]"
+CarFlyR.TextColor3 = Color3.new(1, 1, 1)
+CarFlyR.TextSize = 14
+
+InfJump.Name = "InfJump"
+InfJump.Parent = Main
+InfJump.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+InfJump.BorderColor3 = Color3.new(1, 1, 1)
+InfJump.Position = UDim2.new(0, 128, 0, 25)
+InfJump.Size = UDim2.new(0, 117, 0, 35)
+InfJump.Font = Enum.Font.Cartoon
+InfJump.Text = "Infinite Jump"
+InfJump.TextColor3 = Color3.new(1, 1, 1)
+InfJump.TextSize = 14
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = Main
+Walkspeed.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Walkspeed.BorderColor3 = Color3.new(1, 1, 1)
+Walkspeed.Position = UDim2.new(0, 128, 0, 270)
+Walkspeed.Size = UDim2.new(0, 117, 0, 35)
+Walkspeed.Font = Enum.Font.Cartoon
+Walkspeed.Text = "Walkspeed"
+Walkspeed.TextColor3 = Color3.new(1, 1, 1)
+Walkspeed.TextSize = 12
+
+InfNitro.Name = "InfNitro"
+InfNitro.Parent = Main
+InfNitro.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+InfNitro.BorderColor3 = Color3.new(1, 1, 1)
+InfNitro.Position = UDim2.new(0, 6, 0, 107)
+InfNitro.Size = UDim2.new(0, 117, 0, 35)
+InfNitro.Font = Enum.Font.Cartoon
+InfNitro.Text = "Infinite Nitro"
+InfNitro.TextColor3 = Color3.new(1, 1, 1)
+InfNitro.TextSize = 14
+
+GiveItems.Name = "GiveItems"
+GiveItems.Parent = Main
+GiveItems.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GiveItems.BorderColor3 = Color3.new(1, 1, 1)
+GiveItems.Position = UDim2.new(0, 128, 0, 66)
+GiveItems.Size = UDim2.new(0, 117, 0, 35)
+GiveItems.Font = Enum.Font.Cartoon
+GiveItems.Text = "Items Giver"
+GiveItems.TextColor3 = Color3.new(1, 1, 1)
+GiveItems.TextSize = 14
+
+AutoArrest.Name = "AutoArrest"
+AutoArrest.Parent = Main
+AutoArrest.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AutoArrest.BorderColor3 = Color3.new(1, 1, 1)
+AutoArrest.Position = UDim2.new(0, 128, 0, 107)
+AutoArrest.Size = UDim2.new(0, 117, 0, 35)
+AutoArrest.Font = Enum.Font.Cartoon
+AutoArrest.Text = "Auto Arrest"
+AutoArrest.TextColor3 = Color3.new(1, 1, 1)
+AutoArrest.TextSize = 14
+
+RemoveCity.Name = "RemoveCity"
+RemoveCity.Parent = Main
+RemoveCity.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+RemoveCity.BorderColor3 = Color3.new(1, 1, 1)
+RemoveCity.Position = UDim2.new(0, 6, 0, 148)
+RemoveCity.Size = UDim2.new(0, 117, 0, 35)
+RemoveCity.Font = Enum.Font.Cartoon
+RemoveCity.Text = "Remove City"
+RemoveCity.TextColor3 = Color3.new(1, 1, 1)
+RemoveCity.TextSize = 14
+RemoveCity.TextWrapped = true
+
+InfDonut.Name = "InfDonut"
+InfDonut.Parent = Main
+InfDonut.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+InfDonut.BorderColor3 = Color3.new(1, 1, 1)
+InfDonut.Position = UDim2.new(0, 6, 0, 189)
+InfDonut.Size = UDim2.new(0, 117, 0, 35)
+InfDonut.Font = Enum.Font.Cartoon
+InfDonut.Text = "Infinite Donut"
+InfDonut.TextColor3 = Color3.new(1, 1, 1)
+InfDonut.TextSize = 14
+
+RGBCar.Name = "RGBCar"
+RGBCar.Parent = Main
+RGBCar.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+RGBCar.BorderColor3 = Color3.new(1, 1, 1)
+RGBCar.Position = UDim2.new(0, 128, 0, 148)
+RGBCar.Size = UDim2.new(0, 117, 0, 35)
+RGBCar.Font = Enum.Font.Cartoon
+RGBCar.Text = "RGB Car"
+RGBCar.TextColor3 = Color3.new(1, 1, 1)
+RGBCar.TextSize = 14
+
+Delete.Name = "Delete"
+Delete.Parent = Main
+Delete.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Delete.BorderColor3 = Color3.new(1, 1, 1)
+Delete.Position = UDim2.new(0, 128, 0, 189)
+Delete.Size = UDim2.new(0, 117, 0, 35)
+Delete.Font = Enum.Font.Cartoon
+Delete.Text = "Click Delete"
+Delete.TextColor3 = Color3.new(1, 1, 1)
+Delete.TextSize = 14
+
+PlatformM.Name = "PlatformM"
+PlatformM.Parent = Main
+PlatformM.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+PlatformM.BorderColor3 = Color3.new(1, 1, 1)
+PlatformM.Position = UDim2.new(0, 6, 0, 230)
+PlatformM.Size = UDim2.new(0, 117, 0, 35)
+PlatformM.Font = Enum.Font.Cartoon
+PlatformM.Text = "Platform [M]"
+PlatformM.TextColor3 = Color3.new(1, 1, 1)
+PlatformM.TextSize = 14
+
+Nodoors.Name = "Nodoors"
+Nodoors.Parent = Main
+Nodoors.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Nodoors.BorderColor3 = Color3.new(1, 1, 1)
+Nodoors.Position = UDim2.new(0, 128, 0, 230)
+Nodoors.Size = UDim2.new(0, 117, 0, 35)
+Nodoors.Font = Enum.Font.Cartoon
+Nodoors.Text = "No Doors"
+Nodoors.TextColor3 = Color3.new(1, 1, 1)
+Nodoors.TextSize = 14
+
+PassengerTrain.Name = "PassengerTrain"
+PassengerTrain.Parent = Main
+PassengerTrain.BackgroundColor3 = Color3.new(1, 1, 1)
+PassengerTrain.BackgroundTransparency = 1
+PassengerTrain.BorderSizePixel = 0
+PassengerTrain.Position = UDim2.new(0, 340, 1, 17)
+PassengerTrain.Size = UDim2.new(1, 0, 0, 30)
+PassengerTrain.Font = Enum.Font.Cartoon
+PassengerTrain.Text = "Passenger Train"
+PassengerTrain.TextColor3 = Color3.new(1, 0, 0)
+PassengerTrain.TextSize = 20
+PassengerTrain.TextStrokeTransparency = 0
+PassengerTrain.TextWrapped = true
+PassengerTrain.TextXAlignment = Enum.TextXAlignment.Left
+
+BankSt.Name = "BankSt"
+BankSt.Parent = Main
+BankSt.BackgroundColor3 = Color3.new(1, 1, 1)
+BankSt.BackgroundTransparency = 1
+BankSt.BorderSizePixel = 0
+BankSt.Position = UDim2.new(0, 0, 1, -3)
+BankSt.Size = UDim2.new(1, 0, 0, 30)
+BankSt.Font = Enum.Font.Cartoon
+BankSt.Text = "Bank: Closed"
+BankSt.TextColor3 = Color3.new(1, 0, 0)
+BankSt.TextSize = 20
+BankSt.TextStrokeTransparency = 0
+BankSt.TextWrapped = true
+BankSt.TextXAlignment = Enum.TextXAlignment.Left
+
+Jewst.Name = "Jewst"
+Jewst.Parent = Main
+Jewst.BackgroundColor3 = Color3.new(1, 1, 1)
+Jewst.BackgroundTransparency = 1
+Jewst.BorderSizePixel = 0
+Jewst.Position = UDim2.new(0, 0, 1, 17)
+Jewst.Size = UDim2.new(1, 0, 0, 30)
+Jewst.Font = Enum.Font.Cartoon
+Jewst.Text = "Jewelry: Closed"
+Jewst.TextColor3 = Color3.new(1, 0, 0)
+Jewst.TextSize = 20
+Jewst.TextStrokeTransparency = 0
+Jewst.TextWrapped = true
+Jewst.TextXAlignment = Enum.TextXAlignment.Left
+
+DropESP.Name = "DropESP"
+DropESP.Parent = Main
+DropESP.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+DropESP.BorderColor3 = Color3.new(1, 1, 1)
+DropESP.Position = UDim2.new(0, 372, 0, 25)
+DropESP.Size = UDim2.new(0, 117, 0, 35)
+DropESP.Font = Enum.Font.Cartoon
+DropESP.Text = "Airdrop Locator"
+DropESP.TextColor3 = Color3.new(1, 1, 1)
+DropESP.TextSize = 14
+
+Keycard.Name = "Keycard"
+Keycard.Parent = Main
+Keycard.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Keycard.BorderColor3 = Color3.new(1, 1, 1)
+Keycard.Position = UDim2.new(0, 372, 0, 66)
+Keycard.Size = UDim2.new(0, 117, 0, 35)
+Keycard.Font = Enum.Font.Cartoon
+Keycard.Text = "Keycard"
+Keycard.TextColor3 = Color3.new(1, 1, 1)
+Keycard.TextSize = 14
+
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ESP.BorderColor3 = Color3.new(1, 1, 1)
+ESP.Position = UDim2.new(0, 372, 0, 107)
+ESP.Size = UDim2.new(0, 117, 0, 35)
+ESP.Font = Enum.Font.Cartoon
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.new(1, 1, 1)
+ESP.TextSize = 14
+
+ESPFrame.Name = "ESPFrame"
+ESPFrame.Parent = ESP
+ESPFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ESPFrame.BorderColor3 = Color3.new(1, 1, 1)
+ESPFrame.Position = UDim2.new(1, 7, 0.5, -50)
+ESPFrame.Size = UDim2.new(0, 100, 0, 100)
+ESPFrame.Visible = false
+
+NoESP.Name = "NoESP"
+NoESP.Parent = ESPFrame
+NoESP.BackgroundColor3 = Color3.new(1, 1, 1)
+NoESP.BackgroundTransparency = 1
+NoESP.BorderSizePixel = 0
+NoESP.Size = UDim2.new(1, 0, 0, 25)
+NoESP.Font = Enum.Font.Cartoon
+NoESP.Text = "None"
+NoESP.TextColor3 = Color3.new(0, 1, 0)
+NoESP.TextSize = 14
+NoESP.TextWrapped = true
+
+CrimESP.Name = "CrimESP"
+CrimESP.Parent = ESPFrame
+CrimESP.BackgroundColor3 = Color3.new(1, 1, 1)
+CrimESP.BackgroundTransparency = 1
+CrimESP.BorderSizePixel = 0
+CrimESP.Position = UDim2.new(0, 0, 0, 50)
+CrimESP.Size = UDim2.new(1, 0, 0, 25)
+CrimESP.Font = Enum.Font.Cartoon
+CrimESP.Text = "Criminal"
+CrimESP.TextColor3 = Color3.new(1, 1, 1)
+CrimESP.TextSize = 14
+CrimESP.TextWrapped = true
+
+PrisonESP.Name = "PrisonESP"
+PrisonESP.Parent = ESPFrame
+PrisonESP.BackgroundColor3 = Color3.new(1, 1, 1)
+PrisonESP.BackgroundTransparency = 1
+PrisonESP.BorderSizePixel = 0
+PrisonESP.Position = UDim2.new(0, 0, 0, 75)
+PrisonESP.Size = UDim2.new(1, 0, 0, 25)
+PrisonESP.Font = Enum.Font.Cartoon
+PrisonESP.Text = "Prisoner"
+PrisonESP.TextColor3 = Color3.new(1, 1, 1)
+PrisonESP.TextSize = 14
+PrisonESP.TextWrapped = true
+
+CopESP.Name = "CopESP"
+CopESP.Parent = ESPFrame
+CopESP.BackgroundColor3 = Color3.new(1, 1, 1)
+CopESP.BackgroundTransparency = 1
+CopESP.BorderSizePixel = 0
+CopESP.Position = UDim2.new(0, 0, 0, 25)
+CopESP.Size = UDim2.new(1, 0, 0, 25)
+CopESP.Font = Enum.Font.Cartoon
+CopESP.Text = "Police"
+CopESP.TextColor3 = Color3.new(1, 1, 1)
+CopESP.TextSize = 14
+CopESP.TextWrapped = true
+
+TextLabel.Parent = ESPFrame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -1, 75)
+TextLabel.Size = UDim2.new(1, 0, 0, 25)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "ESP:"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 20
+TextLabel.TextStrokeTransparency = 0
+TextLabel.TextWrapped = true
+
+ClickTP.Name = "ClickTP"
+ClickTP.Parent = Main
+ClickTP.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ClickTP.BorderColor3 = Color3.new(1, 1, 1)
+ClickTP.Position = UDim2.new(0, 250, 0, 107)
+ClickTP.Size = UDim2.new(0, 117, 0, 35)
+ClickTP.Font = Enum.Font.Cartoon
+ClickTP.Text = "Click TP"
+ClickTP.TextColor3 = Color3.new(1, 1, 1)
+ClickTP.TextSize = 14
+
+BuildNoclip.Name = "BuildNoclip"
+BuildNoclip.Parent = Main
+BuildNoclip.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BuildNoclip.BorderColor3 = Color3.new(1, 1, 1)
+BuildNoclip.Position = UDim2.new(0, 372, 0, 189)
+BuildNoclip.Size = UDim2.new(0, 117, 0, 35)
+BuildNoclip.Font = Enum.Font.Cartoon
+BuildNoclip.Text = "Building Noclip"
+BuildNoclip.TextColor3 = Color3.new(1, 1, 1)
+BuildNoclip.TextSize = 14
+
+Tracers.Name = "Tracers"
+Tracers.Parent = Main
+Tracers.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Tracers.BorderColor3 = Color3.new(1, 1, 1)
+Tracers.Position = UDim2.new(0, 372, 0, 148)
+Tracers.Size = UDim2.new(0, 117, 0, 35)
+Tracers.Font = Enum.Font.Cartoon
+Tracers.Text = "Tracers"
+Tracers.TextColor3 = Color3.new(1, 1, 1)
+Tracers.TextSize = 14
+
+TracerFrame.Name = "TracerFrame"
+TracerFrame.Parent = Tracers
+TracerFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TracerFrame.BorderColor3 = Color3.new(1, 1, 1)
+TracerFrame.Position = UDim2.new(1, 7, 0.5, -50)
+TracerFrame.Size = UDim2.new(0, 100, 0, 100)
+TracerFrame.Visible = false
+
+NoESP_2.Name = "NoESP"
+NoESP_2.Parent = TracerFrame
+NoESP_2.BackgroundColor3 = Color3.new(1, 1, 1)
+NoESP_2.BackgroundTransparency = 1
+NoESP_2.BorderSizePixel = 0
+NoESP_2.Size = UDim2.new(1, 0, 0, 25)
+NoESP_2.Font = Enum.Font.Cartoon
+NoESP_2.Text = "None"
+NoESP_2.TextColor3 = Color3.new(0, 1, 0)
+NoESP_2.TextSize = 14
+NoESP_2.TextWrapped = true
+
+CrimESP_2.Name = "CrimESP"
+CrimESP_2.Parent = TracerFrame
+CrimESP_2.BackgroundColor3 = Color3.new(1, 1, 1)
+CrimESP_2.BackgroundTransparency = 1
+CrimESP_2.BorderSizePixel = 0
+CrimESP_2.Position = UDim2.new(0, 0, 0, 50)
+CrimESP_2.Size = UDim2.new(1, 0, 0, 25)
+CrimESP_2.Font = Enum.Font.Cartoon
+CrimESP_2.Text = "Criminal"
+CrimESP_2.TextColor3 = Color3.new(1, 1, 1)
+CrimESP_2.TextSize = 14
+CrimESP_2.TextWrapped = true
+
+PrisonESP_2.Name = "PrisonESP"
+PrisonESP_2.Parent = TracerFrame
+PrisonESP_2.BackgroundColor3 = Color3.new(1, 1, 1)
+PrisonESP_2.BackgroundTransparency = 1
+PrisonESP_2.BorderSizePixel = 0
+PrisonESP_2.Position = UDim2.new(0, 0, 0, 75)
+PrisonESP_2.Size = UDim2.new(1, 0, 0, 25)
+PrisonESP_2.Font = Enum.Font.Cartoon
+PrisonESP_2.Text = "Prisoner"
+PrisonESP_2.TextColor3 = Color3.new(1, 1, 1)
+PrisonESP_2.TextSize = 14
+PrisonESP_2.TextWrapped = true
+
+CopESP_2.Name = "CopESP"
+CopESP_2.Parent = TracerFrame
+CopESP_2.BackgroundColor3 = Color3.new(1, 1, 1)
+CopESP_2.BackgroundTransparency = 1
+CopESP_2.BorderSizePixel = 0
+CopESP_2.Position = UDim2.new(0, 0, 0, 25)
+CopESP_2.Size = UDim2.new(1, 0, 0, 25)
+CopESP_2.Font = Enum.Font.Cartoon
+CopESP_2.Text = "Police"
+CopESP_2.TextColor3 = Color3.new(1, 1, 1)
+CopESP_2.TextSize = 14
+CopESP_2.TextWrapped = true
+
+TextLabel_2.Parent = TracerFrame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, -1, 75)
+TextLabel_2.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Tracers:"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 20
+TextLabel_2.TextStrokeTransparency = 0
+TextLabel_2.TextWrapped = true
+
+Jew.Name = "Jew"
+Jew.Parent = Main
+Jew.BackgroundColor3 = Color3.new(1, 1, 1)
+Jew.BackgroundTransparency = 1
+Jew.BorderSizePixel = 0
+Jew.Position = UDim2.new(0, 0, 1, 17)
+Jew.Size = UDim2.new(1, 0, 0, 30)
+Jew.Font = Enum.Font.Cartoon
+Jew.Text = "Jewelry:"
+Jew.TextColor3 = Color3.new(1, 1, 1)
+Jew.TextSize = 20
+Jew.TextStrokeTransparency = 0
+Jew.TextWrapped = true
+Jew.TextXAlignment = Enum.TextXAlignment.Left
+
+Bank.Name = "Bank"
+Bank.Parent = Main
+Bank.BackgroundColor3 = Color3.new(1, 1, 1)
+Bank.BackgroundTransparency = 1
+Bank.BorderSizePixel = 0
+Bank.Position = UDim2.new(0, 0, 1, -3)
+Bank.Size = UDim2.new(1, 0, 0, 30)
+Bank.Font = Enum.Font.Cartoon
+Bank.Text = "Bank:"
+Bank.TextColor3 = Color3.new(1, 1, 1)
+Bank.TextSize = 20
+Bank.TextStrokeTransparency = 0
+Bank.TextWrapped = true
+Bank.TextXAlignment = Enum.TextXAlignment.Left
+
+AirdropTP.Name = "AirdropTP"
+AirdropTP.Parent = Main
+AirdropTP.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+AirdropTP.BorderColor3 = Color3.new(1, 1, 1)
+AirdropTP.Position = UDim2.new(0, 250, 0, 148)
+AirdropTP.Size = UDim2.new(0, 117, 0, 35)
+AirdropTP.Font = Enum.Font.Cartoon
+AirdropTP.Text = "TP to Airdrop"
+AirdropTP.TextColor3 = Color3.new(1, 1, 1)
+AirdropTP.TextSize = 14
+
+MobileGarage.Name = "MobileGarage"
+MobileGarage.Parent = Main
+MobileGarage.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MobileGarage.BorderColor3 = Color3.new(1, 1, 1)
+MobileGarage.Position = UDim2.new(0, 250, 0, 25)
+MobileGarage.Size = UDim2.new(0, 117, 0, 35)
+MobileGarage.Font = Enum.Font.Cartoon
+MobileGarage.Text = "Unlock Garage"
+MobileGarage.TextColor3 = Color3.new(1, 1, 1)
+MobileGarage.TextSize = 14
+
+SmallStores.Name = "SmallStores"
+SmallStores.Parent = Main
+SmallStores.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+SmallStores.BorderColor3 = Color3.new(1, 1, 1)
+SmallStores.Position = UDim2.new(0, 250, 0, 66)
+SmallStores.Size = UDim2.new(0, 117, 0, 35)
+SmallStores.Font = Enum.Font.Cartoon
+SmallStores.Text = "Rob Small Stores"
+SmallStores.TextColor3 = Color3.new(1, 1, 1)
+SmallStores.TextSize = 14
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Main
+Noclip.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Noclip.BorderColor3 = Color3.new(1, 1, 1)
+Noclip.Position = UDim2.new(0, 250, 0, 230)
+Noclip.Size = UDim2.new(0, 117, 0, 35)
+Noclip.Font = Enum.Font.Cartoon
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.new(1, 1, 1)
+Noclip.TextSize = 14
+Noclip.TextWrapped = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.new(1, 1, 1)
+Tabs.BackgroundTransparency = 1
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(1, -90, 0, -28)
+Tabs.Size = UDim2.new(0, 85, 0, 25)
+
+Page1.Name = "Page1"
+Page1.Parent = Tabs
+Page1.BackgroundColor3 = Color3.new(1, 1, 1)
+Page1.BackgroundTransparency = 1
+Page1.BorderSizePixel = 0
+Page1.Size = UDim2.new(0, 15, 0, 25)
+Page1.Font = Enum.Font.Cartoon
+Page1.Text = "1"
+Page1.TextColor3 = Color3.new(0, 0.784314, 0)
+Page1.TextScaled = true
+Page1.TextSize = 14
+Page1.TextStrokeTransparency = 0
+Page1.TextWrapped = true
+
+Page2.Name = "Page2"
+Page2.Parent = Tabs
+Page2.BackgroundColor3 = Color3.new(1, 1, 1)
+Page2.BackgroundTransparency = 1
+Page2.BorderSizePixel = 0
+Page2.Position = UDim2.new(0, 24, 0, 0)
+Page2.Size = UDim2.new(0, 15, 0, 25)
+Page2.Font = Enum.Font.Cartoon
+Page2.Text = "2"
+Page2.TextColor3 = Color3.new(1, 1, 1)
+Page2.TextScaled = true
+Page2.TextSize = 14
+Page2.TextStrokeTransparency = 0
+Page2.TextWrapped = true
+
+Page3.Name = "Page3"
+Page3.Parent = Tabs
+Page3.BackgroundColor3 = Color3.new(1, 1, 1)
+Page3.BackgroundTransparency = 1
+Page3.BorderSizePixel = 0
+Page3.Position = UDim2.new(0, 48, 0, 0)
+Page3.Size = UDim2.new(0, 15, 0, 25)
+Page3.Font = Enum.Font.Cartoon
+Page3.Text = "3"
+Page3.TextColor3 = Color3.new(1, 1, 1)
+Page3.TextScaled = true
+Page3.TextSize = 14
+Page3.TextStrokeTransparency = 0
+Page3.TextWrapped = true
+
+Devide2.Name = "Devide2"
+Devide2.Parent = Tabs
+Devide2.BackgroundColor3 = Color3.new(1, 1, 1)
+Devide2.BackgroundTransparency = 1
+Devide2.BorderSizePixel = 0
+Devide2.Position = UDim2.new(0, 36, 0, 0)
+Devide2.Size = UDim2.new(0, 15, 0, 25)
+Devide2.Font = Enum.Font.Cartoon
+Devide2.Text = ","
+Devide2.TextColor3 = Color3.new(1, 1, 1)
+Devide2.TextScaled = true
+Devide2.TextSize = 14
+Devide2.TextStrokeTransparency = 0
+Devide2.TextWrapped = true
+
+Devide1.Name = "Devide1"
+Devide1.Parent = Tabs
+Devide1.BackgroundColor3 = Color3.new(1, 1, 1)
+Devide1.BackgroundTransparency = 1
+Devide1.BorderSizePixel = 0
+Devide1.Position = UDim2.new(0, 12, 0, 0)
+Devide1.Size = UDim2.new(0, 15, 0, 25)
+Devide1.Font = Enum.Font.Cartoon
+Devide1.Text = ","
+Devide1.TextColor3 = Color3.new(1, 1, 1)
+Devide1.TextScaled = true
+Devide1.TextSize = 14
+Devide1.TextStrokeTransparency = 0
+Devide1.TextWrapped = true
+
+Devide3.Name = "Devide3"
+Devide3.Parent = Tabs
+Devide3.BackgroundColor3 = Color3.new(1, 1, 1)
+Devide3.BackgroundTransparency = 1
+Devide3.BorderSizePixel = 0
+Devide3.Position = UDim2.new(0, 60, 0, 0)
+Devide3.Size = UDim2.new(0, 15, 0, 25)
+Devide3.Font = Enum.Font.Cartoon
+Devide3.Text = ","
+Devide3.TextColor3 = Color3.new(1, 1, 1)
+Devide3.TextScaled = true
+Devide3.TextSize = 14
+Devide3.TextStrokeTransparency = 0
+Devide3.TextWrapped = true
+
+Page4.Name = "Page4"
+Page4.Parent = Tabs
+Page4.BackgroundColor3 = Color3.new(1, 1, 1)
+Page4.BackgroundTransparency = 1
+Page4.BorderSizePixel = 0
+Page4.Position = UDim2.new(0, 72, 0, 0)
+Page4.Size = UDim2.new(0, 15, 0, 25)
+Page4.Font = Enum.Font.Cartoon
+Page4.Text = "4"
+Page4.TextColor3 = Color3.new(1, 1, 1)
+Page4.TextScaled = true
+Page4.TextSize = 14
+Page4.TextStrokeTransparency = 0
+Page4.TextWrapped = true
+
+CargoTrain.Name = "CargoTrain"
+CargoTrain.Parent = Main
+CargoTrain.BackgroundColor3 = Color3.new(1, 1, 1)
+CargoTrain.BackgroundTransparency = 1
+CargoTrain.BorderSizePixel = 0
+CargoTrain.Position = UDim2.new(0, 340, 1, -3)
+CargoTrain.Size = UDim2.new(1, 0, 0, 30)
+CargoTrain.ZIndex = 0
+CargoTrain.Font = Enum.Font.Cartoon
+CargoTrain.Text = "Cargo Train"
+CargoTrain.TextColor3 = Color3.new(1, 0, 0)
+CargoTrain.TextSize = 20
+CargoTrain.TextStrokeTransparency = 0
+CargoTrain.TextWrapped = true
+CargoTrain.TextXAlignment = Enum.TextXAlignment.Left
+
+Teleports1.Name = "Teleports1"
+Teleports1.Parent = Main
+Teleports1.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Teleports1.BorderColor3 = Color3.new(1, 1, 1)
+Teleports1.Size = UDim2.new(0, 495, 0, 310)
+Teleports1.Visible = false
+Teleports1.ZIndex = 2
+
+Top_2.Name = "Top"
+Top_2.Parent = Teleports1
+Top_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Top_2.BorderSizePixel = 0
+Top_2.Size = UDim2.new(1, 0, 0, 20)
+
+Close_2.Name = "Close"
+Close_2.Parent = Top_2
+Close_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(1, -20, 0, 0)
+Close_2.Size = UDim2.new(0, 20, 0, 20)
+Close_2.Font = Enum.Font.Cartoon
+Close_2.Text = "x"
+Close_2.TextColor3 = Color3.new(0, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14
+Close_2.TextWrapped = true
+
+Mini_2.Name = "Mini"
+Mini_2.Parent = Top_2
+Mini_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Mini_2.BorderSizePixel = 0
+Mini_2.Position = UDim2.new(1, -40, 0, 0)
+Mini_2.Size = UDim2.new(0, 20, 0, 20)
+Mini_2.Font = Enum.Font.Cartoon
+Mini_2.Text = "-"
+Mini_2.TextColor3 = Color3.new(0, 0, 0)
+Mini_2.TextScaled = true
+Mini_2.TextSize = 14
+Mini_2.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Top_2
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0, 10, 0, 0)
+Title_2.Size = UDim2.new(1, 0, 0, 20)
+Title_2.Font = Enum.Font.Cartoon
+Title_2.Text = "Locations 1"
+Title_2.TextColor3 = Color3.new(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 16
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+BankOut.Name = "BankOut"
+BankOut.Parent = Teleports1
+BankOut.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BankOut.BorderColor3 = Color3.new(1, 1, 1)
+BankOut.Position = UDim2.new(0, 6, 0, 25)
+BankOut.Size = UDim2.new(0, 117, 0, 35)
+BankOut.Font = Enum.Font.Cartoon
+BankOut.Text = "Bank [Out]"
+BankOut.TextColor3 = Color3.new(1, 1, 1)
+BankOut.TextSize = 14
+
+BankIn.Name = "BankIn"
+BankIn.Parent = Teleports1
+BankIn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BankIn.BorderColor3 = Color3.new(1, 1, 1)
+BankIn.Position = UDim2.new(0, 128, 0, 25)
+BankIn.Size = UDim2.new(0, 117, 0, 35)
+BankIn.Font = Enum.Font.Cartoon
+BankIn.Text = "Bank [In]"
+BankIn.TextColor3 = Color3.new(1, 1, 1)
+BankIn.TextSize = 14
+
+JewOut.Name = "JewOut"
+JewOut.Parent = Teleports1
+JewOut.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+JewOut.BorderColor3 = Color3.new(1, 1, 1)
+JewOut.Position = UDim2.new(0, 6, 0, 66)
+JewOut.Size = UDim2.new(0, 117, 0, 35)
+JewOut.Font = Enum.Font.Cartoon
+JewOut.Text = "Jewelry [Out]"
+JewOut.TextColor3 = Color3.new(1, 1, 1)
+JewOut.TextSize = 12
+
+MuseumOut.Name = "MuseumOut"
+MuseumOut.Parent = Teleports1
+MuseumOut.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MuseumOut.BorderColor3 = Color3.new(1, 1, 1)
+MuseumOut.Position = UDim2.new(0, 6, 0, 107)
+MuseumOut.Size = UDim2.new(0, 117, 0, 35)
+MuseumOut.Font = Enum.Font.Cartoon
+MuseumOut.Text = "Museum [Out]"
+MuseumOut.TextColor3 = Color3.new(1, 1, 1)
+MuseumOut.TextSize = 14
+
+JewIn.Name = "JewIn"
+JewIn.Parent = Teleports1
+JewIn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+JewIn.BorderColor3 = Color3.new(1, 1, 1)
+JewIn.Position = UDim2.new(0, 128, 0, 66)
+JewIn.Size = UDim2.new(0, 117, 0, 35)
+JewIn.Font = Enum.Font.Cartoon
+JewIn.Text = "Jewelry [In]"
+JewIn.TextColor3 = Color3.new(1, 1, 1)
+JewIn.TextSize = 14
+
+MuseumIn.Name = "MuseumIn"
+MuseumIn.Parent = Teleports1
+MuseumIn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MuseumIn.BorderColor3 = Color3.new(1, 1, 1)
+MuseumIn.Position = UDim2.new(0, 128, 0, 107)
+MuseumIn.Size = UDim2.new(0, 117, 0, 35)
+MuseumIn.Font = Enum.Font.Cartoon
+MuseumIn.Text = "Museum [In]"
+MuseumIn.TextColor3 = Color3.new(1, 1, 1)
+MuseumIn.TextSize = 14
+
+PPout.Name = "PPout"
+PPout.Parent = Teleports1
+PPout.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+PPout.BorderColor3 = Color3.new(1, 1, 1)
+PPout.Position = UDim2.new(0, 6, 0, 148)
+PPout.Size = UDim2.new(0, 117, 0, 35)
+PPout.Font = Enum.Font.Cartoon
+PPout.Text = "Power Plant [Out]"
+PPout.TextColor3 = Color3.new(1, 1, 1)
+PPout.TextSize = 14
+PPout.TextWrapped = true
+
+Donut.Name = "Donut"
+Donut.Parent = Teleports1
+Donut.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Donut.BorderColor3 = Color3.new(1, 1, 1)
+Donut.Position = UDim2.new(0, 6, 0, 189)
+Donut.Size = UDim2.new(0, 117, 0, 35)
+Donut.Font = Enum.Font.Cartoon
+Donut.Text = "Donut Shop"
+Donut.TextColor3 = Color3.new(1, 1, 1)
+Donut.TextSize = 14
+
+PPin.Name = "PPin"
+PPin.Parent = Teleports1
+PPin.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+PPin.BorderColor3 = Color3.new(1, 1, 1)
+PPin.Position = UDim2.new(0, 128, 0, 148)
+PPin.Size = UDim2.new(0, 117, 0, 35)
+PPin.Font = Enum.Font.Cartoon
+PPin.Text = "Power Plant [In]"
+PPin.TextColor3 = Color3.new(1, 1, 1)
+PPin.TextSize = 14
+
+Gas.Name = "Gas"
+Gas.Parent = Teleports1
+Gas.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Gas.BorderColor3 = Color3.new(1, 1, 1)
+Gas.Position = UDim2.new(0, 128, 0, 189)
+Gas.Size = UDim2.new(0, 117, 0, 35)
+Gas.Font = Enum.Font.Cartoon
+Gas.Text = "Gas Station"
+Gas.TextColor3 = Color3.new(1, 1, 1)
+Gas.TextSize = 14
+
+Train.Name = "Train"
+Train.Parent = Teleports1
+Train.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Train.BorderColor3 = Color3.new(1, 1, 1)
+Train.Position = UDim2.new(0, 6, 0, 230)
+Train.Size = UDim2.new(0, 117, 0, 35)
+Train.Font = Enum.Font.Cartoon
+Train.Text = "Train"
+Train.TextColor3 = Color3.new(1, 1, 1)
+Train.TextSize = 14
+
+Prison.Name = "Prison"
+Prison.Parent = Teleports1
+Prison.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Prison.BorderColor3 = Color3.new(1, 1, 1)
+Prison.Position = UDim2.new(0, 128, 0, 230)
+Prison.Size = UDim2.new(0, 117, 0, 35)
+Prison.Font = Enum.Font.Cartoon
+Prison.Text = "Prison"
+Prison.TextColor3 = Color3.new(1, 1, 1)
+Prison.TextSize = 14
+
+Crim1.Name = "Crim1"
+Crim1.Parent = Teleports1
+Crim1.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Crim1.BorderColor3 = Color3.new(1, 1, 1)
+Crim1.Position = UDim2.new(0, 250, 0, 25)
+Crim1.Size = UDim2.new(0, 117, 0, 35)
+Crim1.Font = Enum.Font.Cartoon
+Crim1.Text = "Criminal Base 1"
+Crim1.TextColor3 = Color3.new(1, 1, 1)
+Crim1.TextSize = 14
+
+Airport.Name = "Airport"
+Airport.Parent = Teleports1
+Airport.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Airport.BorderColor3 = Color3.new(1, 1, 1)
+Airport.Position = UDim2.new(0, 250, 0, 107)
+Airport.Size = UDim2.new(0, 117, 0, 35)
+Airport.Font = Enum.Font.Cartoon
+Airport.Text = "Airport"
+Airport.TextColor3 = Color3.new(1, 1, 1)
+Airport.TextSize = 14
+
+Crim2.Name = "Crim2"
+Crim2.Parent = Teleports1
+Crim2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Crim2.BorderColor3 = Color3.new(1, 1, 1)
+Crim2.Position = UDim2.new(0, 372, 0, 25)
+Crim2.Size = UDim2.new(0, 117, 0, 35)
+Crim2.Font = Enum.Font.Cartoon
+Crim2.Text = "Criminal Base 2"
+Crim2.TextColor3 = Color3.new(1, 1, 1)
+Crim2.TextSize = 14
+
+Police2.Name = "Police2"
+Police2.Parent = Teleports1
+Police2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police2.BorderColor3 = Color3.new(1, 1, 1)
+Police2.Position = UDim2.new(0, 372, 0, 66)
+Police2.Size = UDim2.new(0, 117, 0, 35)
+Police2.Font = Enum.Font.Cartoon
+Police2.Text = "Police Base 2"
+Police2.TextColor3 = Color3.new(1, 1, 1)
+Police2.TextSize = 14
+
+_1Mil.Name = "1Mil"
+_1Mil.Parent = Teleports1
+_1Mil.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+_1Mil.BorderColor3 = Color3.new(1, 1, 1)
+_1Mil.Position = UDim2.new(0, 372, 0, 107)
+_1Mil.Size = UDim2.new(0, 117, 0, 35)
+_1Mil.Font = Enum.Font.Cartoon
+_1Mil.Text = "1Mil Dealership"
+_1Mil.TextColor3 = Color3.new(1, 1, 1)
+_1Mil.TextSize = 14
+
+Military.Name = "Military"
+Military.Parent = Teleports1
+Military.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Military.BorderColor3 = Color3.new(1, 1, 1)
+Military.Position = UDim2.new(0, 250, 0, 148)
+Military.Size = UDim2.new(0, 117, 0, 35)
+Military.Font = Enum.Font.Cartoon
+Military.Text = "Military Base"
+Military.TextColor3 = Color3.new(1, 1, 1)
+Military.TextSize = 12
+
+GunShop.Name = "GunShop"
+GunShop.Parent = Teleports1
+GunShop.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GunShop.BorderColor3 = Color3.new(1, 1, 1)
+GunShop.Position = UDim2.new(0, 372, 0, 189)
+GunShop.Size = UDim2.new(0, 117, 0, 35)
+GunShop.Font = Enum.Font.Cartoon
+GunShop.Text = "Gun Shop [City]"
+GunShop.TextColor3 = Color3.new(1, 1, 1)
+GunShop.TextSize = 14
+
+TrainStation.Name = "TrainStation"
+TrainStation.Parent = Teleports1
+TrainStation.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TrainStation.BorderColor3 = Color3.new(1, 1, 1)
+TrainStation.Position = UDim2.new(0, 372, 0, 148)
+TrainStation.Size = UDim2.new(0, 117, 0, 35)
+TrainStation.Font = Enum.Font.Cartoon
+TrainStation.Text = "Train Station"
+TrainStation.TextColor3 = Color3.new(1, 1, 1)
+TrainStation.TextSize = 14
+
+Garage.Name = "Garage"
+Garage.Parent = Teleports1
+Garage.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Garage.BorderColor3 = Color3.new(1, 1, 1)
+Garage.Position = UDim2.new(0, 250, 0, 189)
+Garage.Size = UDim2.new(0, 117, 0, 35)
+Garage.Font = Enum.Font.Cartoon
+Garage.Text = "Garage [City]"
+Garage.TextColor3 = Color3.new(1, 1, 1)
+Garage.TextSize = 14
+
+Police1.Name = "Police1"
+Police1.Parent = Teleports1
+Police1.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police1.BorderColor3 = Color3.new(1, 1, 1)
+Police1.Position = UDim2.new(0, 250, 0, 66)
+Police1.Size = UDim2.new(0, 117, 0, 35)
+Police1.Font = Enum.Font.Cartoon
+Police1.Text = "Police Base 1"
+Police1.TextColor3 = Color3.new(1, 1, 1)
+Police1.TextSize = 14
+
+BankVault.Name = "BankVault"
+BankVault.Parent = Teleports1
+BankVault.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BankVault.BorderColor3 = Color3.new(1, 1, 1)
+BankVault.Position = UDim2.new(0, 250, 0, 230)
+BankVault.Size = UDim2.new(0, 117, 0, 35)
+BankVault.Font = Enum.Font.Cartoon
+BankVault.Text = "Bank Vault"
+BankVault.TextColor3 = Color3.new(1, 1, 1)
+BankVault.TextSize = 14
+
+TrainIn.Name = "TrainIn"
+TrainIn.Parent = Teleports1
+TrainIn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TrainIn.BorderColor3 = Color3.new(1, 1, 1)
+TrainIn.Position = UDim2.new(0, 372, 0, 230)
+TrainIn.Size = UDim2.new(0, 117, 0, 35)
+TrainIn.Font = Enum.Font.Cartoon
+TrainIn.Text = "Train [In]"
+TrainIn.TextColor3 = Color3.new(1, 1, 1)
+TrainIn.TextSize = 14
+
+Police3.Name = "Police3"
+Police3.Parent = Teleports1
+Police3.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police3.BorderColor3 = Color3.new(1, 1, 1)
+Police3.Position = UDim2.new(0, 6, 0, 270)
+Police3.Size = UDim2.new(0, 117, 0, 35)
+Police3.Font = Enum.Font.Cartoon
+Police3.Text = "Police Base 3"
+Police3.TextColor3 = Color3.new(1, 1, 1)
+Police3.TextSize = 14
+
+Museumst.Name = "Museumst"
+Museumst.Parent = Main
+Museumst.BackgroundColor3 = Color3.new(1, 1, 1)
+Museumst.BackgroundTransparency = 1
+Museumst.BorderSizePixel = 0
+Museumst.Position = UDim2.new(0, 150, 1, -3)
+Museumst.Size = UDim2.new(1, 0, 0, 30)
+Museumst.Font = Enum.Font.Cartoon
+Museumst.Text = "Museum: Closed"
+Museumst.TextColor3 = Color3.new(1, 0, 0)
+Museumst.TextSize = 20
+Museumst.TextStrokeTransparency = 0
+Museumst.TextWrapped = true
+Museumst.TextXAlignment = Enum.TextXAlignment.Left
+
+Museum.Name = "Museum"
+Museum.Parent = Main
+Museum.BackgroundColor3 = Color3.new(1, 1, 1)
+Museum.BackgroundTransparency = 1
+Museum.BorderSizePixel = 0
+Museum.Position = UDim2.new(0, 150, 1, -3)
+Museum.Size = UDim2.new(1, 0, 0, 30)
+Museum.Font = Enum.Font.Cartoon
+Museum.Text = "Museum:"
+Museum.TextColor3 = Color3.new(1, 1, 1)
+Museum.TextSize = 20
+Museum.TextStrokeTransparency = 0
+Museum.TextWrapped = true
+Museum.TextXAlignment = Enum.TextXAlignment.Left
+
+Teleports2.Name = "Teleports2"
+Teleports2.Parent = Main
+Teleports2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Teleports2.BorderColor3 = Color3.new(1, 1, 1)
+Teleports2.Size = UDim2.new(0, 495, 0, 310)
+Teleports2.Visible = false
+Teleports2.ZIndex = 2
+
+Top_3.Name = "Top"
+Top_3.Parent = Teleports2
+Top_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Top_3.BorderSizePixel = 0
+Top_3.Size = UDim2.new(1, 0, 0, 20)
+
+Close_3.Name = "Close"
+Close_3.Parent = Top_3
+Close_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Close_3.BorderSizePixel = 0
+Close_3.Position = UDim2.new(1, -20, 0, 0)
+Close_3.Size = UDim2.new(0, 20, 0, 20)
+Close_3.Font = Enum.Font.Cartoon
+Close_3.Text = "x"
+Close_3.TextColor3 = Color3.new(0, 0, 0)
+Close_3.TextScaled = true
+Close_3.TextSize = 14
+Close_3.TextWrapped = true
+
+Mini_3.Name = "Mini"
+Mini_3.Parent = Top_3
+Mini_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Mini_3.BorderSizePixel = 0
+Mini_3.Position = UDim2.new(1, -40, 0, 0)
+Mini_3.Size = UDim2.new(0, 20, 0, 20)
+Mini_3.Font = Enum.Font.Cartoon
+Mini_3.Text = "-"
+Mini_3.TextColor3 = Color3.new(0, 0, 0)
+Mini_3.TextScaled = true
+Mini_3.TextSize = 14
+Mini_3.TextWrapped = true
+
+Title_3.Name = "Title"
+Title_3.Parent = Top_3
+Title_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_3.BackgroundTransparency = 1
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0, 10, 0, 0)
+Title_3.Size = UDim2.new(1, 0, 0, 20)
+Title_3.Font = Enum.Font.Cartoon
+Title_3.Text = "Locations 2"
+Title_3.TextColor3 = Color3.new(0, 0, 0)
+Title_3.TextScaled = true
+Title_3.TextSize = 16
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Camaro.Name = "Camaro"
+Camaro.Parent = Teleports2
+Camaro.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Camaro.BorderColor3 = Color3.new(1, 1, 1)
+Camaro.Position = UDim2.new(0, 6, 0, 25)
+Camaro.Size = UDim2.new(0, 117, 0, 35)
+Camaro.Font = Enum.Font.Cartoon
+Camaro.Text = "Camaro"
+Camaro.TextColor3 = Color3.new(1, 1, 1)
+Camaro.TextSize = 14
+
+Pickup.Name = "Pickup"
+Pickup.Parent = Teleports2
+Pickup.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Pickup.BorderColor3 = Color3.new(1, 1, 1)
+Pickup.Position = UDim2.new(0, 128, 0, 25)
+Pickup.Size = UDim2.new(0, 117, 0, 35)
+Pickup.Font = Enum.Font.Cartoon
+Pickup.Text = "Pickup Truck"
+Pickup.TextColor3 = Color3.new(1, 1, 1)
+Pickup.TextSize = 14
+
+Jetski.Name = "Jetski"
+Jetski.Parent = Teleports2
+Jetski.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Jetski.BorderColor3 = Color3.new(1, 1, 1)
+Jetski.Position = UDim2.new(0, 6, 0, 66)
+Jetski.Size = UDim2.new(0, 117, 0, 35)
+Jetski.Font = Enum.Font.Cartoon
+Jetski.Text = "Jet Ski"
+Jetski.TextColor3 = Color3.new(1, 1, 1)
+Jetski.TextSize = 12
+
+ATV.Name = "ATV"
+ATV.Parent = Teleports2
+ATV.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ATV.BorderColor3 = Color3.new(1, 1, 1)
+ATV.Position = UDim2.new(0, 6, 0, 107)
+ATV.Size = UDim2.new(0, 117, 0, 35)
+ATV.Font = Enum.Font.Cartoon
+ATV.Text = "ATV"
+ATV.TextColor3 = Color3.new(1, 1, 1)
+ATV.TextSize = 14
+
+Dirtbike.Name = "Dirtbike"
+Dirtbike.Parent = Teleports2
+Dirtbike.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Dirtbike.BorderColor3 = Color3.new(1, 1, 1)
+Dirtbike.Position = UDim2.new(0, 128, 0, 66)
+Dirtbike.Size = UDim2.new(0, 117, 0, 35)
+Dirtbike.Font = Enum.Font.Cartoon
+Dirtbike.Text = "Dirtbike"
+Dirtbike.TextColor3 = Color3.new(1, 1, 1)
+Dirtbike.TextSize = 14
+
+Jetpack.Name = "Jetpack"
+Jetpack.Parent = Teleports2
+Jetpack.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Jetpack.BorderColor3 = Color3.new(1, 1, 1)
+Jetpack.Position = UDim2.new(0, 128, 0, 107)
+Jetpack.Size = UDim2.new(0, 117, 0, 35)
+Jetpack.Font = Enum.Font.Cartoon
+Jetpack.Text = "Jetpack"
+Jetpack.TextColor3 = Color3.new(1, 1, 1)
+Jetpack.TextSize = 14
+
+Ferrari.Name = "Ferrari"
+Ferrari.Parent = Teleports2
+Ferrari.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Ferrari.BorderColor3 = Color3.new(1, 1, 1)
+Ferrari.Position = UDim2.new(0, 6, 0, 148)
+Ferrari.Size = UDim2.new(0, 117, 0, 35)
+Ferrari.Font = Enum.Font.Cartoon
+Ferrari.Text = "Ferrari"
+Ferrari.TextColor3 = Color3.new(1, 1, 1)
+Ferrari.TextSize = 14
+Ferrari.TextWrapped = true
+
+Bugatti.Name = "Bugatti"
+Bugatti.Parent = Teleports2
+Bugatti.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Bugatti.BorderColor3 = Color3.new(1, 1, 1)
+Bugatti.Position = UDim2.new(0, 6, 0, 189)
+Bugatti.Size = UDim2.new(0, 117, 0, 35)
+Bugatti.Font = Enum.Font.Cartoon
+Bugatti.Text = "Bugatti"
+Bugatti.TextColor3 = Color3.new(1, 1, 1)
+Bugatti.TextSize = 14
+
+Audi.Name = "Audi"
+Audi.Parent = Teleports2
+Audi.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Audi.BorderColor3 = Color3.new(1, 1, 1)
+Audi.Position = UDim2.new(0, 128, 0, 148)
+Audi.Size = UDim2.new(0, 117, 0, 35)
+Audi.Font = Enum.Font.Cartoon
+Audi.Text = "Audi R8"
+Audi.TextColor3 = Color3.new(1, 1, 1)
+Audi.TextSize = 14
+
+Volt.Name = "Volt"
+Volt.Parent = Teleports2
+Volt.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Volt.BorderColor3 = Color3.new(1, 1, 1)
+Volt.Position = UDim2.new(0, 128, 0, 189)
+Volt.Size = UDim2.new(0, 117, 0, 35)
+Volt.Font = Enum.Font.Cartoon
+Volt.Text = "Volt Bike"
+Volt.TextColor3 = Color3.new(1, 1, 1)
+Volt.TextSize = 14
+
+Jet.Name = "Jet"
+Jet.Parent = Teleports2
+Jet.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Jet.BorderColor3 = Color3.new(1, 1, 1)
+Jet.Position = UDim2.new(0, 6, 0, 230)
+Jet.Size = UDim2.new(0, 117, 0, 35)
+Jet.Font = Enum.Font.Cartoon
+Jet.Text = "Jet"
+Jet.TextColor3 = Color3.new(1, 1, 1)
+Jet.TextSize = 14
+
+Wraith.Name = "Wraith"
+Wraith.Parent = Teleports2
+Wraith.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Wraith.BorderColor3 = Color3.new(1, 1, 1)
+Wraith.Position = UDim2.new(0, 128, 0, 230)
+Wraith.Size = UDim2.new(0, 117, 0, 35)
+Wraith.Font = Enum.Font.Cartoon
+Wraith.Text = "Wraith"
+Wraith.TextColor3 = Color3.new(1, 1, 1)
+Wraith.TextSize = 14
+
+Model3.Name = "Model3"
+Model3.Parent = Teleports2
+Model3.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Model3.BorderColor3 = Color3.new(1, 1, 1)
+Model3.Position = UDim2.new(0, 250, 0, 25)
+Model3.Size = UDim2.new(0, 117, 0, 35)
+Model3.Font = Enum.Font.Cartoon
+Model3.Text = "Tesla"
+Model3.TextColor3 = Color3.new(1, 1, 1)
+Model3.TextSize = 14
+
+Porsche.Name = "Porsche"
+Porsche.Parent = Teleports2
+Porsche.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Porsche.BorderColor3 = Color3.new(1, 1, 1)
+Porsche.Position = UDim2.new(0, 250, 0, 107)
+Porsche.Size = UDim2.new(0, 117, 0, 35)
+Porsche.Font = Enum.Font.Cartoon
+Porsche.Text = "Porsche"
+Porsche.TextColor3 = Color3.new(1, 1, 1)
+Porsche.TextSize = 14
+
+Mini_4.Name = "Mini"
+Mini_4.Parent = Teleports2
+Mini_4.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Mini_4.BorderColor3 = Color3.new(1, 1, 1)
+Mini_4.Position = UDim2.new(0, 372, 0, 25)
+Mini_4.Size = UDim2.new(0, 117, 0, 35)
+Mini_4.Font = Enum.Font.Cartoon
+Mini_4.Text = "Mini-Cooper"
+Mini_4.TextColor3 = Color3.new(1, 1, 1)
+Mini_4.TextSize = 14
+
+Buggy.Name = "Buggy"
+Buggy.Parent = Teleports2
+Buggy.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Buggy.BorderColor3 = Color3.new(1, 1, 1)
+Buggy.Position = UDim2.new(0, 372, 0, 66)
+Buggy.Size = UDim2.new(0, 117, 0, 35)
+Buggy.Font = Enum.Font.Cartoon
+Buggy.Text = "Dune Buggy"
+Buggy.TextColor3 = Color3.new(1, 1, 1)
+Buggy.TextSize = 14
+
+Lambo.Name = "Lambo"
+Lambo.Parent = Teleports2
+Lambo.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Lambo.BorderColor3 = Color3.new(1, 1, 1)
+Lambo.Position = UDim2.new(0, 372, 0, 107)
+Lambo.Size = UDim2.new(0, 117, 0, 35)
+Lambo.Font = Enum.Font.Cartoon
+Lambo.Text = "Lambo"
+Lambo.TextColor3 = Color3.new(1, 1, 1)
+Lambo.TextSize = 14
+
+Stunt.Name = "Stunt"
+Stunt.Parent = Teleports2
+Stunt.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Stunt.BorderColor3 = Color3.new(1, 1, 1)
+Stunt.Position = UDim2.new(0, 250, 0, 148)
+Stunt.Size = UDim2.new(0, 117, 0, 35)
+Stunt.Font = Enum.Font.Cartoon
+Stunt.Text = "Stunt Plane"
+Stunt.TextColor3 = Color3.new(1, 1, 1)
+Stunt.TextSize = 12
+
+ArmyHeli.Name = "ArmyHeli"
+ArmyHeli.Parent = Teleports2
+ArmyHeli.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ArmyHeli.BorderColor3 = Color3.new(1, 1, 1)
+ArmyHeli.Position = UDim2.new(0, 372, 0, 189)
+ArmyHeli.Size = UDim2.new(0, 117, 0, 35)
+ArmyHeli.Font = Enum.Font.Cartoon
+ArmyHeli.Text = "BlackHawk"
+ArmyHeli.TextColor3 = Color3.new(1, 1, 1)
+ArmyHeli.TextSize = 14
+
+UFO.Name = "UFO"
+UFO.Parent = Teleports2
+UFO.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+UFO.BorderColor3 = Color3.new(1, 1, 1)
+UFO.Position = UDim2.new(0, 372, 0, 148)
+UFO.Size = UDim2.new(0, 117, 0, 35)
+UFO.Font = Enum.Font.Cartoon
+UFO.Text = "UFO"
+UFO.TextColor3 = Color3.new(1, 1, 1)
+UFO.TextSize = 14
+
+Monster.Name = "Monster"
+Monster.Parent = Teleports2
+Monster.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Monster.BorderColor3 = Color3.new(1, 1, 1)
+Monster.Position = UDim2.new(0, 250, 0, 189)
+Monster.Size = UDim2.new(0, 117, 0, 35)
+Monster.Font = Enum.Font.Cartoon
+Monster.Text = "Monster Truck"
+Monster.TextColor3 = Color3.new(1, 1, 1)
+Monster.TextSize = 14
+
+SUV.Name = "SUV"
+SUV.Parent = Teleports2
+SUV.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+SUV.BorderColor3 = Color3.new(1, 1, 1)
+SUV.Position = UDim2.new(0, 250, 0, 66)
+SUV.Size = UDim2.new(0, 117, 0, 35)
+SUV.Font = Enum.Font.Cartoon
+SUV.Text = "SUV"
+SUV.TextColor3 = Color3.new(1, 1, 1)
+SUV.TextSize = 14
+
+Carspeed.Name = "Carspeed"
+Carspeed.Parent = Main
+Carspeed.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Carspeed.BorderColor3 = Color3.new(1, 1, 1)
+Carspeed.Position = UDim2.new(0, 6, 0, 66)
+Carspeed.Size = UDim2.new(0, 117, 0, 35)
+Carspeed.Font = Enum.Font.Cartoon
+Carspeed.Text = "Vehicle Speed"
+Carspeed.TextColor3 = Color3.new(1, 1, 1)
+Carspeed.TextSize = 14
+
+GotoPlayer.Name = "GotoPlayer"
+GotoPlayer.Parent = Main
+GotoPlayer.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GotoPlayer.BorderColor3 = Color3.new(1, 1, 1)
+GotoPlayer.Position = UDim2.new(0, 250, 0, 270)
+GotoPlayer.Size = UDim2.new(0, 117, 0, 35)
+GotoPlayer.Font = Enum.Font.Cartoon
+GotoPlayer.Text = "Go to Player"
+GotoPlayer.TextColor3 = Color3.new(1, 1, 1)
+GotoPlayer.TextSize = 14
+GotoPlayer.TextWrapped = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+TextBox.BorderColor3 = Color3.new(1, 1, 1)
+TextBox.Position = UDim2.new(0, 372, 0, 270)
+TextBox.Size = UDim2.new(0, 117, 0, 35)
+TextBox.Font = Enum.Font.Cartoon
+TextBox.PlaceholderText = "Player Name"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.TextSize = 14
+
+Day.Name = "Day"
+Day.Parent = Main
+Day.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Day.BorderColor3 = Color3.new(1, 1, 1)
+Day.Position = UDim2.new(0, 250, 0, 189)
+Day.Size = UDim2.new(0, 117, 0, 35)
+Day.Font = Enum.Font.Cartoon
+Day.Text = "Make it day"
+Day.TextColor3 = Color3.new(1, 1, 1)
+Day.TextSize = 14
+
+NoLasers.Name = "NoLasers"
+NoLasers.Parent = Main
+NoLasers.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+NoLasers.BorderColor3 = Color3.new(1, 1, 1)
+NoLasers.Position = UDim2.new(0, 372, 0, 230)
+NoLasers.Size = UDim2.new(0, 117, 0, 35)
+NoLasers.Font = Enum.Font.Cartoon
+NoLasers.Text = "Remove Lasers"
+NoLasers.TextColor3 = Color3.new(1, 1, 1)
+NoLasers.TextSize = 14
+
+LaserFrame.Name = "LaserFrame"
+LaserFrame.Parent = NoLasers
+LaserFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+LaserFrame.BorderColor3 = Color3.new(1, 1, 1)
+LaserFrame.Position = UDim2.new(1, 7, 0.5, -50)
+LaserFrame.Size = UDim2.new(0, 100, 0, 100)
+LaserFrame.Visible = false
+
+Bank_2.Name = "Bank"
+Bank_2.Parent = LaserFrame
+Bank_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Bank_2.BackgroundTransparency = 1
+Bank_2.BorderSizePixel = 0
+Bank_2.Size = UDim2.new(1, 0, 0, 25)
+Bank_2.Font = Enum.Font.Cartoon
+Bank_2.Text = "Bank"
+Bank_2.TextColor3 = Color3.new(1, 1, 1)
+Bank_2.TextSize = 14
+Bank_2.TextWrapped = true
+
+Mus.Name = "Mus"
+Mus.Parent = LaserFrame
+Mus.BackgroundColor3 = Color3.new(1, 1, 1)
+Mus.BackgroundTransparency = 1
+Mus.BorderSizePixel = 0
+Mus.Position = UDim2.new(0, 0, 0, 50)
+Mus.Size = UDim2.new(1, 0, 0, 25)
+Mus.Visible = false
+Mus.Font = Enum.Font.Cartoon
+Mus.Text = "Museum"
+Mus.TextColor3 = Color3.new(1, 1, 1)
+Mus.TextSize = 14
+Mus.TextWrapped = true
+
+PP.Name = "PP"
+PP.Parent = LaserFrame
+PP.BackgroundColor3 = Color3.new(1, 1, 1)
+PP.BackgroundTransparency = 1
+PP.BorderSizePixel = 0
+PP.Position = UDim2.new(0, 0, 0, 75)
+PP.Size = UDim2.new(1, 0, 0, 25)
+PP.Visible = false
+PP.Font = Enum.Font.Cartoon
+PP.Text = "Power Plant"
+PP.TextColor3 = Color3.new(1, 1, 1)
+PP.TextSize = 14
+PP.TextWrapped = true
+
+Jew_2.Name = "Jew"
+Jew_2.Parent = LaserFrame
+Jew_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Jew_2.BackgroundTransparency = 1
+Jew_2.BorderSizePixel = 0
+Jew_2.Position = UDim2.new(0, 0, 0, 25)
+Jew_2.Size = UDim2.new(1, 0, 0, 25)
+Jew_2.Font = Enum.Font.Cartoon
+Jew_2.Text = "Jewelry"
+Jew_2.TextColor3 = Color3.new(1, 1, 1)
+Jew_2.TextSize = 14
+Jew_2.TextWrapped = true
+
+TextLabel_3.Parent = LaserFrame
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, -1, 75)
+TextLabel_3.Size = UDim2.new(1, 0, 0, 25)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "No Lasers:"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 20
+TextLabel_3.TextStrokeTransparency = 0
+TextLabel_3.TextWrapped = true
+
+Gravity.Name = "Gravity"
+Gravity.Parent = Main
+Gravity.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Gravity.BorderColor3 = Color3.new(1, 1, 1)
+Gravity.Position = UDim2.new(0, 6, 0, 270)
+Gravity.Size = UDim2.new(0, 117, 0, 35)
+Gravity.Font = Enum.Font.Cartoon
+Gravity.Text = "Low Gravity"
+Gravity.TextColor3 = Color3.new(1, 1, 1)
+Gravity.TextSize = 14
+
+CarTeleports.Name = "CarTeleports"
+CarTeleports.Parent = Main
+CarTeleports.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+CarTeleports.BorderColor3 = Color3.new(1, 1, 1)
+CarTeleports.Size = UDim2.new(0, 495, 0, 310)
+CarTeleports.Visible = false
+CarTeleports.ZIndex = 2
+
+Top_4.Name = "Top"
+Top_4.Parent = CarTeleports
+Top_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Top_4.BorderSizePixel = 0
+Top_4.Size = UDim2.new(1, 0, 0, 20)
+
+Close_4.Name = "Close"
+Close_4.Parent = Top_4
+Close_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Close_4.BorderSizePixel = 0
+Close_4.Position = UDim2.new(1, -20, 0, 0)
+Close_4.Size = UDim2.new(0, 20, 0, 20)
+Close_4.Font = Enum.Font.Cartoon
+Close_4.Text = "x"
+Close_4.TextColor3 = Color3.new(0, 0, 0)
+Close_4.TextScaled = true
+Close_4.TextSize = 14
+Close_4.TextWrapped = true
+
+Mini_5.Name = "Mini"
+Mini_5.Parent = Top_4
+Mini_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Mini_5.BorderSizePixel = 0
+Mini_5.Position = UDim2.new(1, -40, 0, 0)
+Mini_5.Size = UDim2.new(0, 20, 0, 20)
+Mini_5.Font = Enum.Font.Cartoon
+Mini_5.Text = "-"
+Mini_5.TextColor3 = Color3.new(0, 0, 0)
+Mini_5.TextScaled = true
+Mini_5.TextSize = 14
+Mini_5.TextWrapped = true
+
+Title_4.Name = "Title"
+Title_4.Parent = Top_4
+Title_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_4.BackgroundTransparency = 1
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0, 10, 0, 0)
+Title_4.Size = UDim2.new(1, 0, 0, 20)
+Title_4.Font = Enum.Font.Cartoon
+Title_4.Text = "Car Teleports"
+Title_4.TextColor3 = Color3.new(0, 0, 0)
+Title_4.TextScaled = true
+Title_4.TextSize = 16
+Title_4.TextWrapped = true
+Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+BankOut_2.Name = "BankOut"
+BankOut_2.Parent = CarTeleports
+BankOut_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BankOut_2.BorderColor3 = Color3.new(1, 1, 1)
+BankOut_2.Position = UDim2.new(0, 6, 0, 25)
+BankOut_2.Size = UDim2.new(0, 117, 0, 35)
+BankOut_2.Font = Enum.Font.Cartoon
+BankOut_2.Text = "Bank"
+BankOut_2.TextColor3 = Color3.new(1, 1, 1)
+BankOut_2.TextSize = 14
+
+Police3_2.Name = "Police3"
+Police3_2.Parent = CarTeleports
+Police3_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police3_2.BorderColor3 = Color3.new(1, 1, 1)
+Police3_2.Position = UDim2.new(0, 6, 0, 189)
+Police3_2.Size = UDim2.new(0, 117, 0, 35)
+Police3_2.Font = Enum.Font.Cartoon
+Police3_2.Text = "Police Base 3"
+Police3_2.TextColor3 = Color3.new(1, 1, 1)
+Police3_2.TextSize = 14
+
+JewOut_2.Name = "JewOut"
+JewOut_2.Parent = CarTeleports
+JewOut_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+JewOut_2.BorderColor3 = Color3.new(1, 1, 1)
+JewOut_2.Position = UDim2.new(0, 128, 0, 25)
+JewOut_2.Size = UDim2.new(0, 117, 0, 35)
+JewOut_2.Font = Enum.Font.Cartoon
+JewOut_2.Text = "Jewelry Store"
+JewOut_2.TextColor3 = Color3.new(1, 1, 1)
+JewOut_2.TextSize = 12
+
+MuseumOut_2.Name = "MuseumOut"
+MuseumOut_2.Parent = CarTeleports
+MuseumOut_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MuseumOut_2.BorderColor3 = Color3.new(1, 1, 1)
+MuseumOut_2.Position = UDim2.new(0, 6, 0, 66)
+MuseumOut_2.Size = UDim2.new(0, 117, 0, 35)
+MuseumOut_2.Font = Enum.Font.Cartoon
+MuseumOut_2.Text = "Museum Roof"
+MuseumOut_2.TextColor3 = Color3.new(1, 1, 1)
+MuseumOut_2.TextSize = 14
+
+TrainStation_2.Name = "TrainStation"
+TrainStation_2.Parent = CarTeleports
+TrainStation_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TrainStation_2.BorderColor3 = Color3.new(1, 1, 1)
+TrainStation_2.Position = UDim2.new(0, 372, 0, 148)
+TrainStation_2.Size = UDim2.new(0, 117, 0, 35)
+TrainStation_2.Font = Enum.Font.Cartoon
+TrainStation_2.Text = "Train Station"
+TrainStation_2.TextColor3 = Color3.new(1, 1, 1)
+TrainStation_2.TextSize = 14
+
+Police1_2.Name = "Police1"
+Police1_2.Parent = CarTeleports
+Police1_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police1_2.BorderColor3 = Color3.new(1, 1, 1)
+Police1_2.Position = UDim2.new(0, 250, 0, 66)
+Police1_2.Size = UDim2.new(0, 117, 0, 35)
+Police1_2.Font = Enum.Font.Cartoon
+Police1_2.Text = "Police Base 1"
+Police1_2.TextColor3 = Color3.new(1, 1, 1)
+Police1_2.TextSize = 14
+
+PPout_2.Name = "PPout"
+PPout_2.Parent = CarTeleports
+PPout_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+PPout_2.BorderColor3 = Color3.new(1, 1, 1)
+PPout_2.Position = UDim2.new(0, 128, 0, 66)
+PPout_2.Size = UDim2.new(0, 117, 0, 35)
+PPout_2.Font = Enum.Font.Cartoon
+PPout_2.Text = "Power Plant"
+PPout_2.TextColor3 = Color3.new(1, 1, 1)
+PPout_2.TextSize = 14
+PPout_2.TextWrapped = true
+
+Donut_2.Name = "Donut"
+Donut_2.Parent = CarTeleports
+Donut_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Donut_2.BorderColor3 = Color3.new(1, 1, 1)
+Donut_2.Position = UDim2.new(0, 6, 0, 107)
+Donut_2.Size = UDim2.new(0, 117, 0, 35)
+Donut_2.Font = Enum.Font.Cartoon
+Donut_2.Text = "Donut Shop"
+Donut_2.TextColor3 = Color3.new(1, 1, 1)
+Donut_2.TextSize = 14
+
+Garage_2.Name = "Garage"
+Garage_2.Parent = CarTeleports
+Garage_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Garage_2.BorderColor3 = Color3.new(1, 1, 1)
+Garage_2.Position = UDim2.new(0, 128, 0, 189)
+Garage_2.Size = UDim2.new(0, 117, 0, 35)
+Garage_2.Font = Enum.Font.Cartoon
+Garage_2.Text = "Garage [City]"
+Garage_2.TextColor3 = Color3.new(1, 1, 1)
+Garage_2.TextSize = 14
+
+Gas_2.Name = "Gas"
+Gas_2.Parent = CarTeleports
+Gas_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Gas_2.BorderColor3 = Color3.new(1, 1, 1)
+Gas_2.Position = UDim2.new(0, 128, 0, 107)
+Gas_2.Size = UDim2.new(0, 117, 0, 35)
+Gas_2.Font = Enum.Font.Cartoon
+Gas_2.Text = "Gas Station"
+Gas_2.TextColor3 = Color3.new(1, 1, 1)
+Gas_2.TextSize = 14
+
+Jetpack_2.Name = "Jetpack"
+Jetpack_2.Parent = CarTeleports
+Jetpack_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Jetpack_2.BorderColor3 = Color3.new(1, 1, 1)
+Jetpack_2.Position = UDim2.new(0, 6, 0, 148)
+Jetpack_2.Size = UDim2.new(0, 117, 0, 35)
+Jetpack_2.Font = Enum.Font.Cartoon
+Jetpack_2.Text = "Jetpack"
+Jetpack_2.TextColor3 = Color3.new(1, 1, 1)
+Jetpack_2.TextSize = 14
+
+Prison_2.Name = "Prison"
+Prison_2.Parent = CarTeleports
+Prison_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Prison_2.BorderColor3 = Color3.new(1, 1, 1)
+Prison_2.Position = UDim2.new(0, 128, 0, 148)
+Prison_2.Size = UDim2.new(0, 117, 0, 35)
+Prison_2.Font = Enum.Font.Cartoon
+Prison_2.Text = "Prison"
+Prison_2.TextColor3 = Color3.new(1, 1, 1)
+Prison_2.TextSize = 14
+
+Crim1_2.Name = "Crim1"
+Crim1_2.Parent = CarTeleports
+Crim1_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Crim1_2.BorderColor3 = Color3.new(1, 1, 1)
+Crim1_2.Position = UDim2.new(0, 250, 0, 25)
+Crim1_2.Size = UDim2.new(0, 117, 0, 35)
+Crim1_2.Font = Enum.Font.Cartoon
+Crim1_2.Text = "Criminal Base 1"
+Crim1_2.TextColor3 = Color3.new(1, 1, 1)
+Crim1_2.TextSize = 14
+
+Airport_2.Name = "Airport"
+Airport_2.Parent = CarTeleports
+Airport_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Airport_2.BorderColor3 = Color3.new(1, 1, 1)
+Airport_2.Position = UDim2.new(0, 250, 0, 107)
+Airport_2.Size = UDim2.new(0, 117, 0, 35)
+Airport_2.Font = Enum.Font.Cartoon
+Airport_2.Text = "Airport"
+Airport_2.TextColor3 = Color3.new(1, 1, 1)
+Airport_2.TextSize = 14
+
+Crim2_2.Name = "Crim2"
+Crim2_2.Parent = CarTeleports
+Crim2_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Crim2_2.BorderColor3 = Color3.new(1, 1, 1)
+Crim2_2.Position = UDim2.new(0, 372, 0, 25)
+Crim2_2.Size = UDim2.new(0, 117, 0, 35)
+Crim2_2.Font = Enum.Font.Cartoon
+Crim2_2.Text = "Criminal Base 2"
+Crim2_2.TextColor3 = Color3.new(1, 1, 1)
+Crim2_2.TextSize = 14
+
+Police2_2.Name = "Police2"
+Police2_2.Parent = CarTeleports
+Police2_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Police2_2.BorderColor3 = Color3.new(1, 1, 1)
+Police2_2.Position = UDim2.new(0, 372, 0, 66)
+Police2_2.Size = UDim2.new(0, 117, 0, 35)
+Police2_2.Font = Enum.Font.Cartoon
+Police2_2.Text = "Police Base 2"
+Police2_2.TextColor3 = Color3.new(1, 1, 1)
+Police2_2.TextSize = 14
+
+_1Mil_2.Name = "1Mil"
+_1Mil_2.Parent = CarTeleports
+_1Mil_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+_1Mil_2.BorderColor3 = Color3.new(1, 1, 1)
+_1Mil_2.Position = UDim2.new(0, 372, 0, 107)
+_1Mil_2.Size = UDim2.new(0, 117, 0, 35)
+_1Mil_2.Font = Enum.Font.Cartoon
+_1Mil_2.Text = "1Mil Dealership"
+_1Mil_2.TextColor3 = Color3.new(1, 1, 1)
+_1Mil_2.TextSize = 14
+
+Military_2.Name = "Military"
+Military_2.Parent = CarTeleports
+Military_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Military_2.BorderColor3 = Color3.new(1, 1, 1)
+Military_2.Position = UDim2.new(0, 250, 0, 148)
+Military_2.Size = UDim2.new(0, 117, 0, 35)
+Military_2.Font = Enum.Font.Cartoon
+Military_2.Text = "Military Base"
+Military_2.TextColor3 = Color3.new(1, 1, 1)
+Military_2.TextSize = 12
+
+GunShop_2.Name = "GunShop"
+GunShop_2.Parent = CarTeleports
+GunShop_2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GunShop_2.BorderColor3 = Color3.new(1, 1, 1)
+GunShop_2.Position = UDim2.new(0, 250, 0, 189)
+GunShop_2.Size = UDim2.new(0, 117, 0, 35)
+GunShop_2.Font = Enum.Font.Cartoon
+GunShop_2.Text = "Gun Shop [City]"
+GunShop_2.TextColor3 = Color3.new(1, 1, 1)
+GunShop_2.TextSize = 14
+
+Yard.Name = "Yard"
+Yard.Parent = CarTeleports
+Yard.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Yard.BorderColor3 = Color3.new(1, 1, 1)
+Yard.Position = UDim2.new(0, 372, 0, 189)
+Yard.Size = UDim2.new(0, 117, 0, 35)
+Yard.Font = Enum.Font.Cartoon
+Yard.Text = "Prison Yard"
+Yard.TextColor3 = Color3.new(1, 1, 1)
+Yard.TextSize = 14
+
+Airdrop.Name = "Airdrop"
+Airdrop.Parent = CarTeleports
+Airdrop.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Airdrop.BorderColor3 = Color3.new(1, 1, 1)
+Airdrop.Position = UDim2.new(0, 6, 0, 270)
+Airdrop.Size = UDim2.new(0, 117, 0, 35)
+Airdrop.Font = Enum.Font.Cartoon
+Airdrop.Text = "TP to Airdrop"
+Airdrop.TextColor3 = Color3.new(1, 1, 1)
+Airdrop.TextSize = 14
+
+TextBox_2.Parent = CarTeleports
+TextBox_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+TextBox_2.BorderColor3 = Color3.new(1, 1, 1)
+TextBox_2.Position = UDim2.new(0, 372, 0, 270)
+TextBox_2.Size = UDim2.new(0, 117, 0, 35)
+TextBox_2.Font = Enum.Font.Cartoon
+TextBox_2.PlaceholderText = "Player Name"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.new(1, 1, 1)
+TextBox_2.TextSize = 14
+
+Goto.Name = "Goto"
+Goto.Parent = CarTeleports
+Goto.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Goto.BorderColor3 = Color3.new(1, 1, 1)
+Goto.Position = UDim2.new(0, 250, 0, 270)
+Goto.Size = UDim2.new(0, 117, 0, 35)
+Goto.Font = Enum.Font.Cartoon
+Goto.Text = "Bring Car to Player"
+Goto.TextColor3 = Color3.new(1, 1, 1)
+Goto.TextSize = 14
+Goto.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = JailBrokenbyVynixuAli
+Open.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Open.BorderColor3 = Color3.new(1, 1, 1)
+Open.Position = UDim2.new(0.5, -62, 1, -40)
+Open.Size = UDim2.new(0, 125, 0, 35)
+Open.Visible = false
+Open.Font = Enum.Font.Cartoon
+Open.Text = "Open"
+Open.TextColor3 = Color3.new(1, 1, 1)
+Open.TextSize = 18
+Open.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = JailBrokenbyVynixuAli
+Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo.BackgroundTransparency = 1
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.5, -125, -1, 0)
+Logo.Size = UDim2.new(0, 250, 0, 250)
+Logo.Image = "rbxassetid://3536880538"
+
+Title_5.Name = "Title"
+Title_5.Parent = Logo
+Title_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_5.BackgroundTransparency = 1
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(-1, 0, 1, 4)
+Title_5.Size = UDim2.new(3, 0, 0, 30)
+Title_5.Font = Enum.Font.Cartoon
+Title_5.Text = "Jailbroken v1.3"
+Title_5.TextColor3 = Color3.new(1, 1, 1)
+Title_5.TextScaled = true
+Title_5.TextSize = 14
+Title_5.TextStrokeTransparency = 0
+Title_5.TextWrapped = true
+
+MinimizeStatus.Name = "MinimizeStatus"
+MinimizeStatus.Parent = JailBrokenbyVynixuAli
+MinimizeStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+MinimizeStatus.BackgroundTransparency = 1
+MinimizeStatus.BorderSizePixel = 0
+MinimizeStatus.Position = UDim2.new(1, -155, 1, -125)
+MinimizeStatus.Size = UDim2.new(0, 150, 0, 125)
+
+BankSt_2.Name = "BankSt"
+BankSt_2.Parent = MinimizeStatus
+BankSt_2.BackgroundColor3 = Color3.new(1, 1, 1)
+BankSt_2.BackgroundTransparency = 1
+BankSt_2.BorderSizePixel = 0
+BankSt_2.Size = UDim2.new(1, 0, 0, 30)
+BankSt_2.Font = Enum.Font.Cartoon
+BankSt_2.Text = "Bank"
+BankSt_2.TextColor3 = Color3.new(1, 0, 0)
+BankSt_2.TextSize = 20
+BankSt_2.TextStrokeTransparency = 0
+BankSt_2.TextWrapped = true
+BankSt_2.TextXAlignment = Enum.TextXAlignment.Right
+
+CargoTrain_2.Name = "CargoTrain"
+CargoTrain_2.Parent = MinimizeStatus
+CargoTrain_2.BackgroundColor3 = Color3.new(1, 1, 1)
+CargoTrain_2.BackgroundTransparency = 1
+CargoTrain_2.BorderSizePixel = 0
+CargoTrain_2.Position = UDim2.new(0, 0, 0, 70)
+CargoTrain_2.Size = UDim2.new(1, 0, 0, 30)
+CargoTrain_2.ZIndex = 0
+CargoTrain_2.Font = Enum.Font.Cartoon
+CargoTrain_2.Text = "Cargo Train"
+CargoTrain_2.TextColor3 = Color3.new(1, 0, 0)
+CargoTrain_2.TextSize = 20
+CargoTrain_2.TextStrokeTransparency = 0
+CargoTrain_2.TextWrapped = true
+CargoTrain_2.TextXAlignment = Enum.TextXAlignment.Right
+
+Jewst_2.Name = "Jewst"
+Jewst_2.Parent = MinimizeStatus
+Jewst_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Jewst_2.BackgroundTransparency = 1
+Jewst_2.BorderSizePixel = 0
+Jewst_2.Position = UDim2.new(0, 0, 0, 20)
+Jewst_2.Size = UDim2.new(1, 0, 0, 30)
+Jewst_2.Font = Enum.Font.Cartoon
+Jewst_2.Text = "Jewelry"
+Jewst_2.TextColor3 = Color3.new(1, 0, 0)
+Jewst_2.TextSize = 20
+Jewst_2.TextStrokeTransparency = 0
+Jewst_2.TextWrapped = true
+Jewst_2.TextXAlignment = Enum.TextXAlignment.Right
+
+Museumst_2.Name = "Museumst"
+Museumst_2.Parent = MinimizeStatus
+Museumst_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Museumst_2.BackgroundTransparency = 1
+Museumst_2.BorderSizePixel = 0
+Museumst_2.Position = UDim2.new(0, 0, 0, 40)
+Museumst_2.Size = UDim2.new(1, 0, 0, 30)
+Museumst_2.Font = Enum.Font.Cartoon
+Museumst_2.Text = "Museum"
+Museumst_2.TextColor3 = Color3.new(1, 0, 0)
+Museumst_2.TextSize = 20
+Museumst_2.TextStrokeTransparency = 0
+Museumst_2.TextWrapped = true
+Museumst_2.TextXAlignment = Enum.TextXAlignment.Right
+
+PassengerTrain_2.Name = "PassengerTrain"
+PassengerTrain_2.Parent = MinimizeStatus
+PassengerTrain_2.BackgroundColor3 = Color3.new(1, 1, 1)
+PassengerTrain_2.BackgroundTransparency = 1
+PassengerTrain_2.BorderSizePixel = 0
+PassengerTrain_2.Position = UDim2.new(0, 0, 0, 90)
+PassengerTrain_2.Size = UDim2.new(1, 0, 0, 30)
+PassengerTrain_2.Font = Enum.Font.Cartoon
+PassengerTrain_2.Text = "Passenger Train"
+PassengerTrain_2.TextColor3 = Color3.new(1, 0, 0)
+PassengerTrain_2.TextSize = 20
+PassengerTrain_2.TextStrokeTransparency = 0
+PassengerTrain_2.TextWrapped = true
+PassengerTrain_2.TextXAlignment = Enum.TextXAlignment.Right
+-- Scripts:
+function SCRIPT_ZPMY73_FAKESCRIPT() -- Close.Close 
+	local script = Instance.new('LocalScript')
+	script.Parent = Close
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Parent:Destroy()
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZPMY73_FAKESCRIPT))
+function SCRIPT_ZUJU81_FAKESCRIPT() -- Mini.Mini 
+	local script = Instance.new('LocalScript')
+	script.Parent = Mini
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		script.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.ESP.ESPFrame.Visible = false
+		script.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.Tabs.Page1.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Parent.Tabs.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Tabs.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Tabs.Page4.TextColor3 = Color3.fromRGB(255,255,255)
+		
+		
+		script.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Open.Visible = true
+		
+		
+		script.Parent.Parent.Parent.Parent.MinimizeStatus.Visible = true
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZUJU81_FAKESCRIPT))
+function SCRIPT_USPL90_FAKESCRIPT() -- Credits.Rainbow 
+	local script = Instance.new('LocalScript')
+	script.Parent = Credits
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	    
+		counter = 0
+	    
+		while wait()do
+			script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	     
+			counter = counter + 0.01
+		 end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_USPL90_FAKESCRIPT))
+function SCRIPT_ZVVC65_FAKESCRIPT() -- CarFlyR.CarFlyR 
+	local script = Instance.new('LocalScript')
+	script.Parent = CarFlyR
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end		
+			
+	    local plr = game:GetService"Players".LocalPlayer
+	    local r = plr:GetMouse()
+	    r.KeyDown:connect(function(k)
+	    if k == "r" then
+			if toggle then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	        wait()
+	        	game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+			end        
+	    end
+	    end)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZVVC65_FAKESCRIPT))
+function SCRIPT_XKDK76_FAKESCRIPT() -- InfJump.InfJump 
+	local script = Instance.new('LocalScript')
+	script.Parent = InfJump
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle then
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		else
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		end
+		
+		game:GetService("UserInputService").JumpRequest:connect(function()	
+			if toggle then	
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_XKDK76_FAKESCRIPT))
+function SCRIPT_EMLU66_FAKESCRIPT() -- Walkspeed.Walkspeed 
+	local script = Instance.new('LocalScript')
+	script.Parent = Walkspeed
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+		
+		
+		if toggle then
+			wait()
+			_G.WS = 85;					
+			
+			local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+			end)
+				
+			Humanoid.WalkSpeed = _G.WS;	
+		
+		else
+			
+			_G.WS = 16;					
+			
+			local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+			end)
+				
+			Humanoid.WalkSpeed = _G.WS;			
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EMLU66_FAKESCRIPT))
+function SCRIPT_POTY87_FAKESCRIPT() -- InfNitro.InfNitro 
+	local script = Instance.new('LocalScript')
+	script.Parent = InfNitro
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+		
+		
+		if toggle then				
+			local player = game:GetService("Players").LocalPlayer
+			local playergui = player:WaitForChild("PlayerGui")
+			local nitro = playergui.MainGui.Nitro
+			local pguin = playergui.ProductGui.Nitro
+			local pgui = playergui.ProductGui
+			
+			nitro.Name = "big_oofs"
+			pguin.Parent = game.StarterGui
+			
+			local new = Instance.new("Model", pgui)
+			new.Name = "Nitro"
+			
+		else
+			
+			local player = game:GetService("Players").LocalPlayer
+			local playergui = player:WaitForChild("PlayerGui")
+			local nitro = playergui.MainGui["big_oofs"]
+			local pguin = game.StarterGui["Nitro"]
+			local pgui = playergui.ProductGui
+			
+			nitro.Name = "Nitro"
+			pgui["Nitro"]:Destroy()
+			pguin.Parent = pgui
+		end
+	end)	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_POTY87_FAKESCRIPT))
+function SCRIPT_VWHN86_FAKESCRIPT() -- GiveItems.GiveItems 
+	local script = Instance.new('LocalScript')
+	script.Parent = GiveItems
+	script.Parent.MouseButton1Down:connect(function()
+		if not workspace:FindFirstChild("Givers") then return end
+		    if Giver then
+		        for i,v in pairs(Giver) do
+		            v.ClickDetector.Parent = v.OriginalParent
+		            v.Event:Disconnect()
+		        end
+		        getmetatable(Giver):Destroy()
+		    end
+		    Giver = {}
+		    local g = Giver
+		    local p = Instance.new("Part", workspace)
+		    p.Anchored = true
+		    p.CanCollide = false
+		    p.CFrame = game:GetService("Players").LocalPlayer.Character:WaitForChild"HumanoidRootPart".CFrame
+		    setmetatable(Giver, {__metatable = p})
+		    for i,v in pairs(workspace.Givers:GetChildren()) do
+		        local cd = v:FindFirstChildOfClass"ClickDetector"
+		        if cd then
+		            local newt = {}
+		            newt.ClickDetector = cd
+		            newt.OriginalParent = v
+		            cd.Parent = p
+		            newt.Event = cd.MouseClick:connect(function()
+		                cd.Parent = v
+		            end)
+		            table.insert(Giver, newt)
+		        end
+		    end
+		    spawn(function()
+		        wait(10)
+		        if Giver == g then
+		            Giver = nil
+		            for i,v in pairs(g) do
+		                v.ClickDetector.Parent = v.OriginalParent
+		                v.Event:Disconnect()
+		            end
+		            getmetatable(g):Destroy()
+		        end
+			end)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VWHN86_FAKESCRIPT))
+function SCRIPT_REBD71_FAKESCRIPT() -- AutoArrest.AutoArrest 
+	local script = Instance.new('LocalScript')
+	script.Parent = AutoArrest
+	local toggle = false	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+		else
+			toggle = false
+		end
+		
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+		local list = game:GetService('Teams').Criminal:GetPlayers()
+	wait(0.5)
+		for i,v in pairs(list) do
+			repeat wait()
+				if toggle then
+					loc.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+					script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+				end
+				
+			until v.Team.Name ~= 'Criminal'
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_REBD71_FAKESCRIPT))
+function SCRIPT_JGMX71_FAKESCRIPT() -- RemoveCity.RemoveCity 
+	local script = Instance.new('LocalScript')
+	script.Parent = RemoveCity
+	local city = workspace.Buildings:GetChildren()
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+		if toggle then
+			for i,build in pairs(city) do
+				build.Transparency = 1
+				build.CanCollide = false
+			
+				local pic = build:GetChildren()
+				for i,decal in pairs(pic) do
+					decal.Transparency = 1
+				end
+			end
+			
+		else
+			
+			for i,build in pairs(city) do
+				build.Transparency = 0
+				build.CanCollide = true
+			
+				local pic = build:GetChildren()
+				for i,decal in pairs(pic) do
+					decal.Transparency = 0
+				end
+			end
+		end
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JGMX71_FAKESCRIPT))
+function SCRIPT_HHYW88_FAKESCRIPT() -- InfDonut.InfDonut 
+	local script = Instance.new('LocalScript')
+	script.Parent = InfDonut
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+		while toggle do
+			wait(5)
+					
+			local ex = game:GetService('Workspace').TouchTrigger.Donut.Position.X
+			local why = game:GetService('Workspace').TouchTrigger.Donut.Position.Y
+			local zee = game:GetService('Workspace').TouchTrigger.Donut.Position.Z
+			
+			game:GetService('Workspace').TouchTrigger.Donut.Position = game:GetService("Players").LocalPlayer.Character.Head.Position
+		wait(.5)
+			game:GetService('Workspace').TouchTrigger.Donut.Position = Vector3.new(ex, why, zee)
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HHYW88_FAKESCRIPT))
+function SCRIPT_SXTR85_FAKESCRIPT() -- RGBCar.RGBCar 
+	local script = Instance.new('LocalScript')
+	script.Parent = RGBCar
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then	
+			
+															
+							local Brick = playername.Parent.Parent.Model.Body
+							local speed = 10 --Change to speed you want
+							
+							while true do
+								for i = 0,1,0.001*speed do
+									Brick.Color = Color3.fromHSV(i,1,1) --creates a color using i
+									wait()
+								end
+							end
+							
+							
+		                end
+		            end	
+		        end
+		    end	
+		end	
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_SXTR85_FAKESCRIPT))
+function SCRIPT_HZZX78_FAKESCRIPT() -- Delete.Delete 
+	local script = Instance.new('LocalScript')
+	script.Parent = Delete
+	local Plr = game:GetService("Players").LocalPlayer
+	local Mouse = Plr:GetMouse()
+	local toggle = false
+	local box = Instance.new("SelectionBox", workspace.CurrentCamera)
+		
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+			
+			box.LineThickness = 0.1
+			box.Color3 = Color3.fromRGB(255,0,0)
+			box.SurfaceColor3 = Color3.fromRGB(255,0,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			
+			box.LineThickness = -1
+		end	
+		
+		while toggle do
+			wait()
+			box.Adornee = Mouse.Target
+		end
+	end)
+		
+	Mouse.Button1Down:connect(function()
+		if toggle then
+			Mouse.Target:Destroy()
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HZZX78_FAKESCRIPT))
+function SCRIPT_GXMK89_FAKESCRIPT() -- PlatformM.PlatformM 
+	local script = Instance.new('LocalScript')
+	script.Parent = PlatformM
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+			
+	print("Platform script made by Vynixu :)")
+	
+	local plr = game:GetService"Players".LocalPlayer
+	local r = plr:GetMouse()
+	r.KeyDown:connect(function(k)
+	if k == "m" then
+		if toggle == true then				
+				
+	        local a = Instance.new("Part", game.workspace)
+			a.Anchored = true
+	   		a.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0, -2, 0)     	
+	     	a.Size = Vector3.new(5, 0.25, 5)
+	  	 	a.Transparency = 0.5
+	  		a.Material = Enum.Material.SmoothPlastic
+	    	a.FrontSurface = Enum.SurfaceType.Smooth
+	    	a.BackSurface = Enum.SurfaceType.Smooth
+	   		a.RightSurface = Enum.SurfaceType.Smooth
+	    	a.LeftSurface = Enum.SurfaceType.Smooth
+	    	a.TopSurface = Enum.SurfaceType.Smooth
+	   		a.BottomSurface = Enum.SurfaceType.Smooth
+			a.BrickColor = BrickColor.Random()
+	
+		wait(3)
+	    	repeat wait()
+				a.Transparency = a.Transparency + 0.025
+			until
+	        	a.Transparency >= 1
+	    	a:Destroy()
+		else
+			--print("No platform for u")
+		end
+	end
+	end)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GXMK89_FAKESCRIPT))
+function SCRIPT_RSVC83_FAKESCRIPT() -- Nodoors.Nodoors 
+	local script = Instance.new('LocalScript')
+	script.Parent = Nodoors
+	local toggle = false
+	
+	script.Parent.MouseButton1Down:connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+		if toggle then
+			local doors = workspace.Doors
+			doors.Parent = game.StarterGui
+			
+			
+			local cells = workspace:GetChildren()
+			for i,v in pairs(cells) do
+			    if v.Name == "Cell" then
+			        local children = v:GetChildren()
+			        for i,v in pairs(children) do
+			            if v.Name == "Door" then
+			                v.Model.Union.CFrame = v.Model.Union.CFrame - Vector3.new(0,100,0)
+			            end
+			        end
+			    end
+			end
+			
+		else
+			
+			local newdoors = game.StarterGui.Doors
+			newdoors.Parent = workspace
+			
+			
+			local cells = workspace:GetChildren()
+			for i,v in pairs(cells) do
+			    if v.Name == "Cell" then
+			        local children = v:GetChildren()
+			        for i,v in pairs(children) do
+			            if v.Name == "Door" then
+			                v.Model.Union.CFrame = v.Model.Union.CFrame + Vector3.new(0,100,0)
+			            end
+			        end
+			    end
+			end
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RSVC83_FAKESCRIPT))
+function SCRIPT_VIEL79_FAKESCRIPT() -- PassengerTrain.PassengerTrain 
+	local script = Instance.new('LocalScript')
+	script.Parent = PassengerTrain
+	local train = workspace.Trains
+	
+	
+	while wait(1) do	
+		if train.Passenger1 then
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)	
+		else
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)				
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VIEL79_FAKESCRIPT))
+function SCRIPT_JBFX84_FAKESCRIPT() -- BankSt.BankSt 
+	local script = Instance.new('LocalScript')
+	script.Parent = BankSt
+	local Bank = workspace:FindFirstChild("Banks"):GetChildren()[1]
+	local Info = Bank.Extra.Sign
+	
+	
+	while wait(1) do
+		if Info.Decal.Transparency ~= 0 then	
+			script.Parent.Text = "Bank: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		else
+			script.Parent.Text = "Bank: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)	
+			
+			script.Parent.Parent.NoLasers.LaserFrame.Bank.TextColor3 = Color3.fromRGB(255,255,255) -- nolasers reset	
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JBFX84_FAKESCRIPT))
+function SCRIPT_WOVD75_FAKESCRIPT() -- Jewst.Jewst 
+	local script = Instance.new('LocalScript')
+	script.Parent = Jewst
+	local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+	local Info = Jewelry.Extra.Sign.Decal
+	
+	Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+		if Info.Transparency ~= 0 then
+			script.Parent.Text = "Jewelry: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0, 200, 0)
+		else
+			script.Parent.Text = "Jewelry: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)			
+		end
+	end)	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WOVD75_FAKESCRIPT))
+function SCRIPT_KKJV67_FAKESCRIPT() -- Jewst.Update 
+	local script = Instance.new('LocalScript')
+	script.Parent = Jewst
+	local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+	local Info = Jewelry.Extra.Sign.Decal
+	
+	
+	wait(1)
+	
+	if Info.Transparency ~= 0 then
+		script.Parent.Text = "Jewelry: Open"
+		script.Parent.TextColor3 = Color3.fromRGB(0, 200, 0)
+	else
+		script.Parent.Text = "Jewelry: Closed"
+		script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)			
+	end
+	
+	script:Destroy()
+
+end
+coroutine.resume(coroutine.create(SCRIPT_KKJV67_FAKESCRIPT))
+function SCRIPT_YKKV90_FAKESCRIPT() -- DropESP.DropESP 
+	local script = Instance.new('LocalScript')
+	script.Parent = DropESP
+	local toggle = false
+	
+	local DropBeam = Instance.new("Beam")
+	local DropBox = Instance.new("BoxHandleAdornment")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+		else
+			toggle = false
+		end
+		
+		
+		if not workspace.Drop then
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "No Airdrops Found!",
+				Text = "There are currently no airdrops!",
+				Duration = 3	
+			})
+		end
+		
+		
+		if toggle then
+			local player = game:GetService('Players').LocalPlayer.Character.UpperTorso
+			local f = workspace:GetChildren()
+			for i,Folder in pairs(f) do
+			    if Folder.Name == "Drop" then
+			        local Children = Folder:GetChildren()
+			        for i,Airdrop in pairs(Children) do
+			            if Airdrop.Name == "Briefcase" then  
+				 
+							script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)      
+							
+							local Attach0 = Instance.new("Attachment", player)
+							local Attach1 = Instance.new("Attachment", Airdrop)
+							
+							local clone = DropBeam:Clone()
+							clone.Name = "DropBeam"
+							clone.Parent = workspace
+							clone.Width0 = 0.15
+							clone.Width1 = 0.15
+							clone.Color = ColorSequence.new(Color3.fromRGB(89,34,89), Color3.fromRGB(89,34,89))
+							clone.Transparency = 0
+							clone.FaceCamera = true
+							
+							clone.Attachment0 = Attach0					
+							clone.Attachment1 = Attach1
+							
+							local clonebox = DropBox:Clone()
+							clonebox.Name = "DropBox"
+							clonebox.Parent = Airdrop
+							clonebox.Adornee = Airdrop
+							clonebox.Size = Airdrop.Size + Vector3.new(0.1, 0.1, 0.1)
+							clone.Color3 = Color3.fromRGB(89, 34, 89)
+							clonebox.AlwaysOnTop = true
+							clonebox.Transparency = 0.5
+							clonebox.ZIndex = 5
+							
+						end
+					end	
+				end
+			end	
+			
+		else
+				 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)  
+			
+			local l = workspace:GetChildren()
+			for i,v in pairs(l) do
+				if v.Name == "DropBeam" then
+					v:Destroy()
+				end
+				
+				if v.Name == "Drop" then
+					v.Briefcase.DropBox:Destroy()
+				end
+			end
+				
+		end
+	end)
+	
+	
+	-- Button updater
+	while wait() do
+		if not workspace.Drop then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YKKV90_FAKESCRIPT))
+function SCRIPT_JCUW65_FAKESCRIPT() -- Keycard.Keycard 
+	local script = Instance.new('LocalScript')
+	script.Parent = Keycard
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.TeamValue.Value = 'Police'
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JCUW65_FAKESCRIPT))
+function SCRIPT_RTET66_FAKESCRIPT() -- NoESP.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = NoESP
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.CrimESP.TextColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.CopESP .TextColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.PrisonESP.TextColor3 = Color3.new(255,255,255)		
+		
+		local loc = game:GetService('Players').LocalPlayer
+	  
+		for i,v in pairs(loc.Character:GetDescendants()) do
+			if v.ClassName:find("BoxHandleAdornment") then
+				if v.Name ~= "AirdropBox" or v.Name ~= "AirdropBeam" then
+	           		v:Destroy()
+				end
+	        end
+		end
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RTET66_FAKESCRIPT))
+function SCRIPT_GBMJ76_FAKESCRIPT() -- CrimESP.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = CrimESP
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)	
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Criminal:GetPlayers()
+	    	
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+			
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(196,40,28)		
+				espbox.ZIndex = 5
+	        
+			end
+	    end
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GBMJ76_FAKESCRIPT))
+function SCRIPT_FFCR70_FAKESCRIPT() -- PrisonESP.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = PrisonESP
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Prisoner:GetPlayers()
+	    	
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+				
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(218,133,65)
+				espbox.ZIndex = 5
+	        
+			end
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FFCR70_FAKESCRIPT))
+function SCRIPT_RETL79_FAKESCRIPT() -- CopESP.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = CopESP
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Police:GetPlayers()
+	        
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+				
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(13,105,172)
+				espbox.ZIndex = 5
+				
+			end        
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RETL79_FAKESCRIPT))
+function SCRIPT_QMVB86_FAKESCRIPT() -- ESP.ESPopen 
+	local script = Instance.new('LocalScript')
+	script.Parent = ESP
+	script.Parent.MouseButton1Click:Connect(function()	
+	
+		if script.Parent.ESPFrame.Visible == false then
+			script.Parent.ESPFrame.Visible = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+			
+			script.Parent.Parent.Tracers.TracerFrame.Visible = false
+			script.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			
+			script.Parent.Parent.NoLasers.LaserFrame.Visible = false
+			script.Parent.Parent.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			
+		else
+			script.Parent.ESPFrame.Visible = false		
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_QMVB86_FAKESCRIPT))
+function SCRIPT_XAUR81_FAKESCRIPT() -- ClickTP.ClickTP 
+	local script = Instance.new('LocalScript')
+	script.Parent = ClickTP
+	local plr = game:GetService("Players").LocalPlayer
+	local m = plr:GetMouse()
+	local toggle = false
+	
+	local function Create(classname)
+		return function(t)
+			local ins = Instance.new(classname)
+			for i,v in pairs(t) do
+				ins[i] = v
+			end
+			return ins
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+			
+			
+			m.Button1Down:connect(function()
+				if toggle and m.Target then
+					plr.Character:MoveTo(m.Hit.p)
+				end
+			end)
+			
+			
+			local ind = Create "Part" {
+				Anchored = true,
+				CanCollide = false,
+				Transparency = 0.3,
+				Size = Vector3.new(1.2,0.3,1.2),
+				BrickColor = BrickColor.new("Lime green"),
+				Parent = workspace
+			}
+			Instance.new("CylinderMesh", ind)
+			m.TargetFilter = ind
+			
+			local beam = Instance.new("Beam", plr.Character.UpperTorso)
+			local A0 = Instance.new("Attachment", plr.Character.UpperTorso)
+			local A1 = Instance.new("Attachment", ind)
+			beam.Attachment0 = A0
+			beam.Attachment1 = A1
+			beam.Width0 = 0.35
+			beam.Width1 = 0.35
+			beam.FaceCamera = true
+			beam.Color = ColorSequence.new(Color3.new(0,255,0),Color3.new(0,255,0))
+			
+			
+			while toggle do
+				wait()
+				ind.CFrame = CFrame.new(m.Hit.p)
+				local humrootpos = plr.Character:WaitForChild'HumanoidRootPart'.Position
+				local dist = (Vector3.new(m.Hit.p.X,0,m.Hit.p.Z) - Vector3.new(humrootpos.X,0,humrootpos.Z)).magnitude			
+			end
+			ind:Destroy()
+			beam:Destroy()		
+		else
+			
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_XAUR81_FAKESCRIPT))
+function SCRIPT_BWLW87_FAKESCRIPT() -- BuildNoclip.BuildNoclip 
+	local script = Instance.new('LocalScript')
+	script.Parent = BuildNoclip
+	local buildings = game.Workspace.Buildings:GetChildren()
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+		if toggle then
+			for i,v in pairs(buildings) do
+				v.CanCollide = false
+			end
+			
+		else
+			
+			for i,v in pairs(buildings) do
+				v.CanCollide = true
+			end
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_BWLW87_FAKESCRIPT))
+function SCRIPT_TAQF69_FAKESCRIPT() -- NoESP_2.NoESP 
+	local script = Instance.new('LocalScript')
+	script.Parent = NoESP_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.CrimESP.TextColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.CopESP .TextColor3 = Color3.new(255,255,255)
+		script.Parent.Parent.PrisonESP.TextColor3 = Color3.new(255,255,255)		
+		
+		local loc = game:GetService('Players').LocalPlayer
+	  
+		for i,v in pairs(loc.Character:GetDescendants()) do
+			if v.ClassName:find("Beam") then
+				if v.Name ~= "AirdropBox" or v.Name ~= "AirdropBeam" then
+	           		v:Destroy()
+				end
+				
+			elseif v.ClassName:find("BoxHandleAdornment") then
+				if v.Name ~= "AirdropBox" or v.Name ~= "AirdropBeam" then
+	           		v:Destroy()
+				end
+	        end
+		end
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_TAQF69_FAKESCRIPT))
+function SCRIPT_JQLK80_FAKESCRIPT() -- CrimESP_2.CrimESP 
+	local script = Instance.new('LocalScript')
+	script.Parent = CrimESP_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Criminal:GetPlayers()
+	    
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+	        
+		        local beam = Instance.new("Beam", loc)
+		        local A0 = Instance.new("Attachment", loc)
+		        local A1 = Instance.new("Attachment", v.Character.HumanoidRootPart)
+		        beam.Attachment0 = A0
+		        beam.Attachment1 = A1
+		        beam.Color = ColorSequence.new(Color3.fromRGB(13,105,172),Color3.fromRGB(13,105,172))
+				beam.Width0 = .15
+				beam.Width1 = .15
+				beam.FaceCamera = true
+				
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(13,105,172)
+				espbox.ZIndex = 5	
+				
+			end        
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JQLK80_FAKESCRIPT))
+function SCRIPT_WTYA83_FAKESCRIPT() -- PrisonESP_2.PrisonESP 
+	local script = Instance.new('LocalScript')
+	script.Parent = PrisonESP_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Prisoner:GetPlayers()
+	    	
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+	        
+		        local beam = Instance.new("Beam", loc)
+		        local A0 = Instance.new("Attachment", loc)
+		        local A1 = Instance.new("Attachment", v.Character.HumanoidRootPart)
+		        beam.Attachment0 = A0
+		        beam.Attachment1 = A1
+		        beam.Color = ColorSequence.new(Color3.fromRGB(218,133,65),Color3.fromRGB(218,133,65))
+				beam.Width0 = .15
+				beam.Width1 = .15
+				beam.FaceCamera = true
+				
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(218,133,65)
+				espbox.ZIndex = 5
+	        
+			end	
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WTYA83_FAKESCRIPT))
+function SCRIPT_EYGE69_FAKESCRIPT() -- CopESP_2.CopESP 
+	local script = Instance.new('LocalScript')
+	script.Parent = CopESP_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.new(0,255,0)
+		script.Parent.Parent.NoESP.TextColor3 = Color3.new(255,255,255)
+		
+		local loc = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+	    local list = game:GetService('Teams').Police:GetPlayers()
+	    
+	    for i,v in pairs(list) do
+			if v.Name ~= game:GetService("Players").LocalPlayer.Name then
+	        
+		        local beam = Instance.new("Beam", loc)
+		        local A0 = Instance.new("Attachment", loc)
+		        local A1 = Instance.new("Attachment", v.Character.HumanoidRootPart)
+		        beam.Attachment0 = A0
+		        beam.Attachment1 = A1
+		        beam.Color = ColorSequence.new(Color3.fromRGB(13,105,172),Color3.fromRGB(13,105,172))
+				beam.Width0 = .15
+				beam.Width1 = .15
+				beam.FaceCamera = true
+				
+				local espbox = Instance.new("BoxHandleAdornment")
+				espbox.Parent = v.Character.UpperTorso
+				espbox.Adornee = v.Character.UpperTorso
+				espbox.Size = v.Character.UpperTorso.Size + Vector3.new(.1,.1,.1)
+				espbox.Transparency = 0.5
+				espbox.AlwaysOnTop = true
+				espbox.Color3 = Color3.fromRGB(13,105,172)
+				espbox.ZIndex = 5	
+				
+			end        
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EYGE69_FAKESCRIPT))
+function SCRIPT_TYJM66_FAKESCRIPT() -- Tracers.Tracersopen 
+	local script = Instance.new('LocalScript')
+	script.Parent = Tracers
+	script.Parent.MouseButton1Click:Connect(function()	
+	
+		if script.Parent.TracerFrame.Visible == false then
+			script.Parent.TracerFrame.Visible = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+			
+			script.Parent.Parent.ESP.ESPFrame.Visible = false
+			script.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			
+			script.Parent.Parent.NoLasers.LaserFrame.Visible = false
+			script.Parent.Parent.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			
+		else
+			script.Parent.TracerFrame.Visible = false		
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_TYJM66_FAKESCRIPT))
+function SCRIPT_LDSR80_FAKESCRIPT() -- AirdropTP.AirdropTP 
+	local script = Instance.new('LocalScript')
+	script.Parent = AirdropTP
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		local Folder = workspace.Drop:GetChildren()
+	
+		for i,v in pairs(Folder) do
+		    if v.Name == "Briefcase" then
+		        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,7,0)
+			else
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "No Airdrops Found!",	
+					Text = "There are currently no airdrops!",
+					Duration = 3
+				})
+			end			
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_LDSR80_FAKESCRIPT))
+function SCRIPT_COEM80_FAKESCRIPT() -- MobileGarage.MobileGarage 
+	local script = Instance.new('LocalScript')
+	script.Parent = MobileGarage
+	script.Parent.MouseButton1Click:Connect(function()
+	-- Objects
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local opentoggle = Instance.new("ImageButton")
+	local ImageButton = Instance.new("ImageButton")
+	
+	local plr = game:GetService("Players").LocalPlayer  
+	local garage = plr:WaitForChild("PlayerGui").Garage:GetChildren()
+	
+	-- Properties
+	
+	ScreenGui.Parent = game.CoreGui
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+	Frame.BackgroundTransparency = 1
+	Frame.Position = UDim2.new(0, 0, 0.338499993, 0)
+	Frame.Size = UDim2.new(0.0781660005, 0, 0.323000014, 0)
+	
+	opentoggle.Name = "opentoggle"
+	opentoggle.Parent = Frame
+	opentoggle.BackgroundColor3 = Color3.new(1, 1, 1)
+	opentoggle.BackgroundTransparency = 1
+	opentoggle.Position = UDim2.new(0, 15, 0.484848499, 0)
+	opentoggle.Size = UDim2.new(0, 50, 0.24242425, 0)
+	opentoggle.MouseButton1Click:Connect(function()	
+		for i,v in pairs(garage) do
+			if v.Name == "Buttons" or v.Name == "ExitGarage" then
+				v.Visible = true
+			end
+		end
+	end)
+	
+	ImageButton.Parent = ScreenGui
+	ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+	ImageButton.BackgroundTransparency = 1
+	ImageButton.Image = ""
+	ImageButton.Position = UDim2.new(0.5, -100, 0.800000012, -20)
+	ImageButton.Size = UDim2.new(0, 200, 0, 40)
+	ImageButton.MouseButton1Click:Connect(function()
+		local plr = game:GetService("Players").LocalPlayer  
+		local garage = plr:WaitForChild("PlayerGui").Garage:GetChildren()
+		for i,v in pairs(garage) do
+			v.Visible = false
+			toggle = false
+		end
+	end)
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_COEM80_FAKESCRIPT))
+function SCRIPT_BHPD71_FAKESCRIPT() -- SmallStores.SmallStores 
+	local script = Instance.new('LocalScript')
+	script.Parent = SmallStores
+	script.Parent.MouseButton1Click:Connect(function()
+		local robstable = workspace:WaitForChild("SmallStores")
+		local modeltable = robstable:GetChildren()
+		local randompick = modeltable[math.random(#modeltable)]
+		
+		
+		for i,v in pairs(modeltable) do
+			v.Transparency = 0.5
+			
+			if v == randompick then
+				v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(3,0,0)
+			else
+				v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(6,0,0)
+			end
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_BHPD71_FAKESCRIPT))
+function SCRIPT_XOJS86_FAKESCRIPT() -- Noclip.Noclip 
+	local script = Instance.new('LocalScript')
+	script.Parent = Noclip
+	local toggle = false
+	 
+	script.Parent.MouseButton1Click:connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end	
+		
+		workspace:FindFirstChild(game:GetService("Players").LocalPlayer.Name).RightHand.Touched:Connect(function(obj)
+			if obj ~= workspace.Terrain then
+				if obj.CanCollide == true then
+					
+					
+					if toggle then				
+						obj.CanCollide = false
+					wait(10)
+						obj.CanCollide = true					
+					else
+						-- obj is already uncollidable
+					end
+					
+					
+				end
+			end
+		end)
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_XOJS86_FAKESCRIPT))
+function SCRIPT_CLAU68_FAKESCRIPT() -- Page1.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Page1
+	local main = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Teleports1.Visible = false
+		main.Teleports2.Visible = false
+		main.CarTeleports.Visible = false
+		
+		script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page4.TextColor3 = Color3.fromRGB(255,255,255)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_CLAU68_FAKESCRIPT))
+function SCRIPT_ACIL85_FAKESCRIPT() -- Page2.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Page2
+	local main = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Teleports1.Visible = true
+		main.Teleports2.Visible = false
+		main.CarTeleports.Visible = false
+		
+		script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Page1.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page4.TextColor3 = Color3.fromRGB(255,255,255)
+		
+		script.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.ESP.ESPFrame.Visible = false
+		script.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.NoLasers.LaserFrame.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ACIL85_FAKESCRIPT))
+function SCRIPT_GGFH75_FAKESCRIPT() -- Page3.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Page3
+	local main = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Teleports1.Visible = false
+		main.Teleports2.Visible = true
+		main.CarTeleports.Visible = false
+		
+		script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page1.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page4.TextColor3 = Color3.fromRGB(255,255,255)
+		
+		script.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.ESP.ESPFrame.Visible = false
+		script.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.NoLasers.LaserFrame.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GGFH75_FAKESCRIPT))
+function SCRIPT_PHAS83_FAKESCRIPT() -- Page4.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Page4
+	local main = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Teleports1.Visible = false
+		main.Teleports2.Visible = false
+		main.CarTeleports.Visible = true
+		
+		script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page1.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		
+		script.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.ESP.ESPFrame.Visible = false
+		script.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.NoLasers.LaserFrame.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_PHAS83_FAKESCRIPT))
+function SCRIPT_PPUE76_FAKESCRIPT() -- Tabs.Open 
+	local script = Instance.new('LocalScript')
+	script.Parent = Tabs
+	while wait() do
+		
+	    if workspace:FindFirstChild(game:GetService("Players").LocalPlayer.Name).InVehicle then
+			script.Parent.Page4.Visible = true
+			script.Parent.Devide3.Visible = true
+			script.Parent.Position = UDim2.new(1, -90,0, -28)		    
+		else
+			script.Parent.Page4.Visible = false
+			script.Parent.Devide3.Visible = false
+			script.Parent.Position = UDim2.new(1, -66,0, -28)			
+				
+			if script.Parent.Parent.CarTeleports.Visible == true then -- checks if page 4 was selected or not
+				script.Parent.Page1.TextColor3 = Color3.fromRGB(0,200,0)
+				script.Parent.Page4.TextColor3 = Color3.fromRGB(255,255,255)		
+				script.Parent.Parent.CarTeleports.Visible = false	
+			end
+		end
+	
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_PPUE76_FAKESCRIPT))
+function SCRIPT_IZRX86_FAKESCRIPT() -- CargoTrain.CargoTrain 
+	local script = Instance.new('LocalScript')
+	script.Parent = CargoTrain
+	local train = workspace.Trains
+	
+	while wait(3) do
+		if train.LocomotiveFront then
+			if train.BoxCar then
+				script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+				--print("Cargo train arrived")						
+			else
+				script.Parent.TextColor3 = Color3.fromRGB(4,175,236)
+				--print("Cargo train arrived, but doesn't have a red BoxCar")
+			end	
+			
+		else		
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)	
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_IZRX86_FAKESCRIPT))
+function SCRIPT_UQGJ71_FAKESCRIPT() -- Close_2.Close 
+	local script = Instance.new('LocalScript')
+	script.Parent = Close_2
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_UQGJ71_FAKESCRIPT))
+function SCRIPT_LCAZ86_FAKESCRIPT() -- Mini_2.Mini 
+	local script = Instance.new('LocalScript')
+	script.Parent = Mini_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Teleports1.Visible = false
+		script.Parent.Parent.Parent.Parent.Teleports2.Visible = false	
+		script.Parent.Parent.Parent.Parent.CarTeleports.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.Parent.ESP.ESPFrame.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.Parent.Tabs.Page1.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Parent.Parent.Tabs.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Parent.Tabs.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Parent.Tabs.Page4.TextColor3 = Color3.fromRGB(255,255,255)		
+		
+		script.Parent.Parent.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		
+		
+		script.Parent.Parent.Parent.Parent.Parent.MinimizeStatus.Visible = true
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_LCAZ86_FAKESCRIPT))
+function SCRIPT_WFXS78_FAKESCRIPT() -- Teleports1.MainTp 
+	local script = Instance.new('LocalScript')
+	script.Parent = Teleports1
+	local teleport = script.Parent
+	local plr = game:GetService("Players").LocalPlayer
+	
+	local TpMethod = 1
+	
+	function JailbreakTp(...)
+		getfenv()["TpMethod" .. TpMethod](...)
+	end
+	
+	function TpMethod1(...)
+		local char = plr.Character
+		local root = char.HumanoidRootPart
+		local args = {...}
+		for i=0,1,0.08 do
+			wait()
+			root.CFrame = root.CFrame:lerp(CFrame.new(unpack(args,1,3)), i)
+		end
+	end
+	
+	teleport.BankOut.MouseButton1Click:Connect(function()
+		JailbreakTp(14, 18, 794, true)
+	end)
+	
+	teleport.BankIn.MouseButton1Click:Connect(function()
+		JailbreakTp(21, 19, 856, true)
+	end)
+	
+	teleport.JewOut.MouseButton1Click:Connect(function()
+		JailbreakTp(90, 18, 1351, true)
+	end)
+	
+	teleport.JewIn.MouseButton1Click:Connect(function()
+		JailbreakTp(96, 18, 1281, true)	
+	end)
+	
+	teleport.MuseumOut.MouseButton1Click:Connect(function()
+		JailbreakTp(1047, 134, 1251, true)
+	end)
+	
+	teleport.MuseumIn.MouseButton1Click:Connect(function()
+		JailbreakTp(1062, 102, 1250, true)
+	end)
+	
+	teleport.PPout.MouseButton1Click:Connect(function()
+		JailbreakTp(615, 37, 2383, true)
+	end)
+	
+	teleport.PPin.MouseButton1Click:Connect(function()
+		JailbreakTp(649, 57, 2390, true)
+	end)
+	
+	teleport.Donut.MouseButton1Click:Connect(function()
+		JailbreakTp(269, 18, -1760, true)
+	end)
+	
+	teleport.Gas.MouseButton1Click:Connect(function()
+		JailbreakTp(-1583, 18, 721, true)
+	end)
+	
+	teleport.Train.MouseButton1Click:Connect(function()
+		JailbreakTp(1920, 18, -590, true)
+	end)
+	
+	teleport.Prison.MouseButton1Click:Connect(function()
+		JailbreakTp(-1147, 19, -1445, true)
+	end)
+	
+	teleport.Crim1.MouseButton1Click:Connect(function()
+		JailbreakTp(-221, 21, 1577, true)
+	end)
+	
+	teleport.Crim2.MouseButton1Click:Connect(function()
+		JailbreakTp(1659, 50, -1824, true)
+	end)
+	
+	teleport.Police1.MouseButton1Click:Connect(function()
+		JailbreakTp(-1153, 19, -1549, true)
+	end)
+	
+	teleport.Police2.MouseButton1Click:Connect(function()
+		JailbreakTp(717, 39, 1120, true)
+	end)
+	
+	teleport.Airport.MouseButton1Click:Connect(function()
+		JailbreakTp(-1350, 41, 2793, true)
+	end)
+	
+	teleport["1Mil"].MouseButton1Click:Connect(function()
+		JailbreakTp(400, 24, -1717, true)
+	end)
+	
+	teleport.Military.MouseButton1Click:Connect(function()
+		JailbreakTp(683, 18, -281, true)
+	end)
+	
+	teleport.TrainStation.MouseButton1Click:Connect(function()
+		JailbreakTp(1644, 18, 235, true)
+	end)
+	
+	teleport.Garage.MouseButton1Click:Connect(function()
+		JailbreakTp(-340, 18, 1132, true)
+	end)
+	
+	teleport.GunShop.MouseButton1Click:Connect(function()
+		JailbreakTp(410, 19, 526, true)
+	end)
+	
+	teleport.TrainIn.MouseButton1Click:Connect(function()
+		local ex = ""
+		local why = ""
+		local zee = ""
+		
+		if workspace.Trains.Passenger1 then
+		    ex = workspace.Trains.Passenger1.Model.Glass.CFrame.X
+		    why = workspace.Trains.Passenger1.Model.Glass.CFrame.Y
+		    zee = workspace.Trains.Passenger1.Model.Glass.CFrame.Z		
+	
+		elseif workspace.Trains.BoxCar then
+			ex = workspace.Trains.BoxCar.Skeleton.RoofDoor.CFrame.X
+		    why = workspace.Trains.BoxCar.Skeleton.RoofDoor.CFrame.Y
+		    zee = workspace.Trains.BoxCar.Skeleton.RoofDoor.CFrame.Z
+		end
+		
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(ex, why, zee)
+	wait(.05)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(ex, why, zee)
+	end)
+	
+	teleport.BankVault.MouseButton1Click:Connect(function()
+		local Bank = workspace:FindFirstChild("Banks"):GetChildren()
+		local oof = ""
+		local layout = ""
+		
+		for i,v in pairs(Bank) do
+			oof = v.Name
+		end
+		
+		local design = workspace:FindFirstChild("Banks")[oof].Layout:GetChildren()
+		for i,v in pairs(design) do
+			layout = v.Name
+		end
+		
+		local ex = workspace:FindFirstChild("Banks")[oof].Layout[layout].TriggerDoor.CFrame.X
+		local why = workspace:FindFirstChild("Banks")[oof].Layout[layout].TriggerDoor.CFrame.Y
+		local zee = workspace:FindFirstChild("Banks")[oof].Layout[layout].TriggerDoor.CFrame.Z	
+		
+		JailbreakTp(ex, why, zee)
+	end)
+	
+	teleport.Police3.MouseButton1Click:Connect(function()
+		JailbreakTp(-206, 25, 2860, true)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WFXS78_FAKESCRIPT))
+function SCRIPT_WERP68_FAKESCRIPT() -- Museumst.Museumst 
+	local script = Instance.new('LocalScript')
+	script.Parent = Museumst
+	while wait(1) do
+		if workspace.Museum.Roof.Hole.Part.Transparency == 1 then			
+			script.Parent.Text = "Museum: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)			
+		end	
+		
+		
+		if workspace.Museum.Roof.Hole.Part.Transparency == 0 then
+			script.Parent.Text = "Museum: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+		end		
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WERP68_FAKESCRIPT))
+function SCRIPT_IACN90_FAKESCRIPT() -- Close_3.Close 
+	local script = Instance.new('LocalScript')
+	script.Parent = Close_3
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_IACN90_FAKESCRIPT))
+function SCRIPT_GKGN77_FAKESCRIPT() -- Mini_3.Mini 
+	local script = Instance.new('LocalScript')
+	script.Parent = Mini_3
+	script.Parent.MouseButton1Click:Connect(function()
+				
+		script.Parent.Parent.Parent.Parent.CarTeleports.Visible = false	
+		script.Parent.Parent.Parent.Parent.Teleports1.Visible = false
+		script.Parent.Parent.Parent.Parent.Teleports2.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.Parent.ESP.ESPFrame.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.Parent.Tabs.Page1.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Parent.Parent.Tabs.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Parent.Tabs.Page3.TextColor3 = Color3.fromRGB(255,255,255)	
+		script.Parent.Parent.Parent.Parent.Tabs.Page4.TextColor3 = Color3.fromRGB(255,255,255)	
+		
+		script.Parent.Parent.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		
+		
+		script.Parent.Parent.Parent.Parent.Parent.MinimizeStatus.Visible = true
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GKGN77_FAKESCRIPT))
+function SCRIPT_REMR71_FAKESCRIPT() -- Teleports2.MainTp 
+	local script = Instance.new('LocalScript')
+	script.Parent = Teleports2
+	local teleport = script.Parent
+	local plr = game:GetService("Players").LocalPlayer
+	
+	local TpMethod = 1
+	
+	function JailbreakTp(...)
+		getfenv()["TpMethod" .. TpMethod](...)
+	end
+	
+	function TpMethod1(...)
+		local char = plr.Character
+		local root = char.HumanoidRootPart
+		local args = {...}
+		for i=0,1,0.08 do
+			wait()
+			root.CFrame = root.CFrame:lerp(CFrame.new(unpack(args,1,3)), i)
+		end
+	end
+	
+	teleport.Camaro.MouseButton1Click:Connect(function()
+		JailbreakTp(-954, 19, -1449, true)
+	end)
+	
+	teleport.Pickup.MouseButton1Click:Connect(function() 
+		JailbreakTp(-1543, 18, 727, true)
+	end)
+	
+	teleport.Model3.MouseButton1Click:Connect(function() 
+		JailbreakTp(-115, 18, 547, true)
+	end)
+	
+	teleport.Mini.MouseButton1Click:Connect(function()
+		JailbreakTp(759, 18, -1240, true)
+	end)
+	
+	teleport.Jetski.MouseButton1Click:Connect(function()
+		JailbreakTp(-503, 18, 809, true)
+	end)
+	
+	teleport.Dirtbike.MouseButton1Click:Connect(function()
+		JailbreakTp(1652, 18, 230, true)
+	end)
+	
+	teleport.SUV.MouseButton1Click:Connect(function()
+		JailbreakTp(-1083, 18, -1494, true)
+	end)
+	
+	teleport.Buggy.MouseButton1Click:Connect(function()
+		JailbreakTp(579,18, -461, true)
+	end)
+	
+	teleport.ATV.MouseButton1Click:Connect(function()
+		JailbreakTp(-1452, 25, 200, true)
+	end)
+	
+	teleport.Jetpack.MouseButton1Click:Connect(function()
+		local ex = workspace.TouchTrigger.JetPackGiver.Position.X
+		local why = workspace.TouchTrigger.JetPackGiver.Position.Y
+		local zee = workspace.TouchTrigger.JetPackGiver.Position.Z
+	
+	    workspace.TouchTrigger.JetPackGiver.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+	wait(.5)
+	    workspace.TouchTrigger.JetPackGiver.Position = Vector3.new(ex, why, zee)
+	end)
+	
+	teleport.Porsche.MouseButton1Click:Connect(function()
+		JailbreakTp(1100,102, 1306, true)
+	end)
+	
+	teleport.Lambo.MouseButton1Click:Connect(function()
+		JailbreakTp(146, 18, 773, true)
+	end)
+	
+	teleport.Ferrari.MouseButton1Click:Connect(function()
+		JailbreakTp(-1507,50, 1791, true)
+	end)
+	
+	teleport.Audi.MouseButton1Click:Connect(function()
+		JailbreakTp(1702, 18, -1684, true)
+	end)
+	
+	teleport.Stunt.MouseButton1Click:Connect(function()
+		JailbreakTp(-1538, 41, 2823, true)
+	end)
+	
+	teleport.UFO.MouseButton1Click:Connect(function()
+		JailbreakTp(777, 18, -160, true)
+	end)
+	
+	teleport.Bugatti.MouseButton1Click:Connect(function()
+		JailbreakTp(243, 18, 1364, true)
+	end)
+	
+	teleport.Volt.MouseButton1Click:Connect(function()
+		JailbreakTp(400, 24, -1717, true)
+	end)
+	
+	teleport.Monster.MouseButton1Click:Connect(function()
+		JailbreakTp(400, 24, -1717, true)
+	end)
+	
+	teleport.ArmyHeli.MouseButton1Click:Connect(function()
+		JailbreakTp(398, 43, -1739, true)
+	end)
+	
+	teleport.Jet.MouseButton1Click:Connect(function()
+		JailbreakTp(-1164, 41, 2890, true)
+	end)
+	
+	teleport.Wraith.MouseButton1Click:Connect(function()
+		JailbreakTp(-375, 18, 1598, true)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_REMR71_FAKESCRIPT))
+function SCRIPT_YBGX67_FAKESCRIPT() -- Carspeed.Carspeed 
+	local script = Instance.new('LocalScript')
+	script.Parent = Carspeed
+	script.Parent.MouseButton1Click:Connect(function()	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+		
+			dir = 0
+			gs = game.GetService
+			gs(game,"RunService").Heartbeat:connect(function()
+			   for i,v in next,workspace.Vehicles:children() do
+			       if v.Name ~= "Heli" then
+			           if v:FindFirstChild("Engine") then
+			               local bf,cf = v.Engine:FindFirstChild("NewForce"),v:GetPrimaryPartCFrame().lookVector
+			               if not bf then 
+			                   bf = v.Engine:FindFirstChild("BodyForce") or v.Engine:FindFirstChild("VectorForce")
+			                   if bf then
+			                       bf = bf:Clone()
+			                       bf.Parent = v.Engine
+			                       bf.Name = "NewForce"
+			                   end
+			               end
+			               if bf then
+			                   local fa = 1
+			                   if v.Name:lower():find("bike") then fa = .3 elseif v.Name:lower():find("bugg") then fa = .5 end
+			                   if v.Seat.PlayerName.Value ~= game:GetService("Players").LocalPlayer.Name then fa = 0 end
+			                   bf.Force = Vector3.new(cf.X*300000*dir*fa,0,cf.Z*300000*dir*fa)
+			               end
+			           end
+			      end
+			   end
+			end)
+			val = {
+			{Enum.KeyCode.W,1};
+			{Enum.KeyCode.S,-1};
+			}
+			uis = gs(game,"UserInputService")
+			chk = function(k)
+			   for i,v in next,val do
+			       if v[1]==k.KeyCode then
+			           return v[2]
+			       end
+			   end
+			end
+			uis.InputBegan:connect(function(k)
+			dir = chk(k) or dir
+			end)
+			uis.InputEnded:connect(function(k)
+			   if chk(k) == dir then
+			       dir = 0
+			   end
+			end)
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YBGX67_FAKESCRIPT))
+function SCRIPT_KVET89_FAKESCRIPT() -- GotoPlayer.GotoPlayer 
+	local script = Instance.new('LocalScript')
+	script.Parent = GotoPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+	    local tp_namedplayer = script.Parent.Parent.TextBox.Text
+	    local tp_player = game:GetService("Players")[tp_namedplayer]
+	    local PLR = game:GetService("Players").LocalPlayer
+	    local p = script.Parent.Parent.TextBox.Text
+	
+	    if tp_player then
+	        for i = 1,20 do
+	            wait()
+	            PLR.Character.HumanoidRootPart.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+	        end
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_KVET89_FAKESCRIPT))
+function SCRIPT_PNEE86_FAKESCRIPT() -- Day.Day 
+	local script = Instance.new('LocalScript')
+	script.Parent = Day
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.ClockTime = 14
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_PNEE86_FAKESCRIPT))
+function SCRIPT_DIIC69_FAKESCRIPT() -- Main.draglol 
+	local script = Instance.new('LocalScript')
+	script.Parent = Main
+	script.Parent.Visible = false
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+
+end
+coroutine.resume(coroutine.create(SCRIPT_DIIC69_FAKESCRIPT))
+function SCRIPT_CGLC81_FAKESCRIPT() -- Bank_2.Bank 
+	local script = Instance.new('LocalScript')
+	script.Parent = Bank_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		
+		
+		 -- no lasers
+			local bank = workspace:FindFirstChild("Banks")
+			local bankchild = bank:GetChildren()
+			
+			for i,v in pairs(bankchild) do
+			    local weirdname = v.Name
+			
+			    local childs = bank[weirdname].Layout:GetChildren()
+			    for i,layout in pairs(childs) do
+			        local layoutname = layout.Name
+			
+			        bank[weirdname].Layout[layoutname].Lasers:Destroy()		        
+			    end
+			end
+				
+			
+	
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_CGLC81_FAKESCRIPT))
+function SCRIPT_PJSE66_FAKESCRIPT() -- Jew_2.Jew 
+	local script = Instance.new('LocalScript')
+	script.Parent = Jew_2
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		else
+			toggle = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
+		end
+		
+		
+		if toggle then
+		-- no lasers
+			local Jew = workspace:FindFirstChild("Jewelrys")
+			local JChilds = Jew:GetChildren()
+			
+			for i,v in pairs(JChilds) do
+			    local weirdname = v.Name
+			
+			    local lasers = Jew[weirdname]:GetChildren()
+			    for i,laser in pairs(lasers) do
+			
+			        -- 1st floor lasers
+			        if laser.Name == "BarbedWire" then
+			            laser.Position = laser.Position - Vector3.new(0,100,0)
+			        end
+			    end
+			end	
+			
+		else
+			
+			local Jew = workspace:FindFirstChild("Jewelrys")
+			local JChilds = Jew:GetChildren()
+			
+			for i,v in pairs(JChilds) do
+			    local weirdname = v.Name
+			
+			    local lasers = Jew[weirdname]:GetChildren()
+			    for i,laser in pairs(lasers) do
+			
+			        -- 1st floor lasers
+			        if laser.Name == "BarbedWire" then
+			            laser.Position = laser.Position - Vector3.new(0,100,0)
+			        end
+			    end
+			end		
+			
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_PJSE66_FAKESCRIPT))
+function SCRIPT_ZWSR77_FAKESCRIPT() -- NoLasers.NoLasersopen 
+	local script = Instance.new('LocalScript')
+	script.Parent = NoLasers
+	script.Parent.MouseButton1Click:Connect(function()	
+	
+		if script.Parent.LaserFrame.Visible == false then
+			script.Parent.LaserFrame.Visible = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+			
+			script.Parent.Parent.Tracers.TracerFrame.Visible = false
+			script.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			script.Parent.Parent.ESP.ESPFrame.Visible = false
+			script.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		else
+			script.Parent.LaserFrame.Visible = false		
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		end
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZWSR77_FAKESCRIPT))
+function SCRIPT_NLTD89_FAKESCRIPT() -- Gravity.Gravity 
+	local script = Instance.new('LocalScript')
+	script.Parent = Gravity
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,200,0)
+			script.Parent.Text = "Normal Gravity"
+		else
+			toggle = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(30,30,30)
+			script.Parent.Text = "Low Gravity"
+		end
+		
+		
+		if toggle then
+			-- low gravity
+			workspace.Gravity = 50	
+		else
+			-- normal gravity		
+			workspace.Gravity = 196.2
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NLTD89_FAKESCRIPT))
+function SCRIPT_GWTV89_FAKESCRIPT() -- Close_4.Close 
+	local script = Instance.new('LocalScript')
+	script.Parent = Close_4
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GWTV89_FAKESCRIPT))
+function SCRIPT_ZALP85_FAKESCRIPT() -- Mini_5.Mini 
+	local script = Instance.new('LocalScript')
+	script.Parent = Mini_5
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Teleports1.Visible = false
+		script.Parent.Parent.Parent.Parent.Teleports2.Visible = false
+		script.Parent.Parent.Parent.Parent.CarTeleports.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Parent.Parent.ESP.ESPFrame.Visible = false	
+		
+		script.Parent.Parent.Parent.Parent.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Parent.Parent.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		script.Parent.Parent.Parent.Parent.Tabs.Page1.TextColor3 = Color3.fromRGB(0,200,0)
+		script.Parent.Parent.Parent.Parent.Tabs.Page2.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Parent.Tabs.Page3.TextColor3 = Color3.fromRGB(255,255,255)
+		script.Parent.Parent.Parent.Parent.Tabs.Page4.TextColor3 = Color3.fromRGB(255,255,255)	
+		
+		script.Parent.Parent.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		
+		
+		script.Parent.Parent.Parent.Parent.Parent.MinimizeStatus.Visible = true
+			
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZALP85_FAKESCRIPT))
+function SCRIPT_WQDG82_FAKESCRIPT() -- CarTeleports.MainTp 
+	local script = Instance.new('LocalScript')
+	script.Parent = CarTeleports
+	local button = script.Parent
+	
+	local function InCarCheck()
+	    if workspace:FindFirstChild(game:GetService("Players").LocalPlayer.Name).InVehicle then
+	        -- Player is in vehicle, so tp
+	    else
+	    	game:GetService("StarterGui"):SetCore("SendNotification", {
+			    Title = "No Vehicle Found!",
+			    Text = "Enter a vehicle to use this command!",
+			    Duration = 3
+			})
+		end
+	end
+	
+	
+	button.BankOut.MouseButton1Click:Connect(function()	
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then		
+							playername.Parent.Parent.Model.Body.Anchored = true                                            
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-13, 21, 782)	
+							playername.Parent.Parent.Model.Body.Anchored = false
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.JewOut.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(89, 21, 1363)
+							playername.Parent.Parent.Model.Body.Anchored = false 					
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Crim1.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then		
+							playername.Parent.Parent.Model.Body.Anchored = true 
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-228, 21, 1596)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Crim2.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then	
+							playername.Parent.Parent.Model.Body.Anchored = true 	
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(1642, 53, -1767)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.MuseumOut.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(1085, 139, 1234)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.PPout.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(613, 40, 2362)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Police1.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-1208, 21, -1529)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Police2.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(749, 41, 1032)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Police3.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-209, 28, 2828)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Donut.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then	
+							playername.Parent.Parent.Model.Body.Anchored = true 	
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(257, 21, -1804)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Gas.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-1521, 21, 695)		
+							playername.Parent.Parent.Model.Body.Anchored = false 									
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Airport.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-1382, 44, 2858)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button["1Mil"].MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then	
+							playername.Parent.Parent.Model.Body.Anchored = true 	
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(372, 21, -1680)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Prison.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-1143, 21, -1427)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Military.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(773, 21, -306)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.TrainStation.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(1659, 21, 259)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Garage.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-358, 21, 1151)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.GunShop.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(372, 21, 530)	
+							playername.Parent.Parent.Model.Body.Anchored = false 										
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Yard.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(-1219, 21, -1760)
+							playername.Parent.Parent.Model.Body.Anchored = false 											
+		                end
+		            end	
+		        end
+		    end	
+		end	
+	end)
+	
+	button.Goto.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local player = script.Parent.TextBox.Text
+	
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+			
+							if player == "" then -- textbox is 
+							    game:GetService("StarterGui"):SetCore("SendNotification", {
+									Title = "Player Not Found!",
+									Text = ("The textbox is literally empty!"),
+									Duration = 3
+								})							
+							end
+				
+	                        if game:GetService("Players")[player] then -- Player is found, so tp to them
+	                            playername.Parent.Parent.Model.Body.Anchored = true 	
+	                            playername.Parent.Parent.Model.Body.CFrame = workspace:FindFirstChild(game:GetService("Players")[player].Name).HumanoidRootPart.CFrame + Vector3.new(0,10,0)
+	                            playername.Parent.Parent.Model.Body.Anchored = false 
+							else -- Player not found, send notification\
+								if player ~= "" then
+								    game:GetService("StarterGui"):SetCore("SendNotification", {
+										Title = "Player Not Found!",
+										Text = ("Player '".. player.. "' was not found!"),
+										Duration = 3
+									})
+								end
+							end						
+	
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Airdrop.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local player = script.Parent.TextBox.TextColor3
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+			
+							if workspace.Drop.Briefcase then	
+								playername.Parent.Parent.Model.Body.Anchored = true 	
+			                    playername.Parent.Parent.Model.Body.CFrame = workspace.Drop:FindFirstChild("Briefcase").CFrame + Vector3.new(0,10,0)
+								playername.Parent.Parent.Model.Body.Anchored = false 	
+							else
+								game:GetService("StarterGui"):SetCore("SendNotification", {
+									Title = "No Airdrops Found!",	
+									Text = "There are currently no airdrops!",
+									Duration = 3
+								})
+							end
+												
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+	
+	button.Jetpack.MouseButton1Click:Connect(function()
+		InCarCheck()
+		
+		local Vehicles = workspace.Vehicles:GetChildren()
+		local lplayer = game:GetService('Players').LocalPlayer.Name	
+		for i,Car in pairs(Vehicles) do
+		    local CarChild = Car:GetChildren()	
+		    for i,Parts in pairs(CarChild) do
+		        if Parts.Name == "Seat" then	
+		            local PartsChild = Parts:GetChildren()	
+		            for i,playername in pairs(PartsChild) do
+		                if playername.Value == (lplayer) then
+							playername.Parent.Parent.Model.Body.Anchored = true 		
+		                    playername.Parent.Parent.Model.Body.CFrame = CFrame.new(1385, 171, 2607)
+							playername.Parent.Parent.Model.Body.Anchored = false 					
+		                end
+		            end	
+		        end
+		    end	
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WQDG82_FAKESCRIPT))
+function SCRIPT_TSWF77_FAKESCRIPT() -- Open.open 
+	local script = Instance.new('LocalScript')
+	script.Parent = Open
+	script.Parent.MouseButton1Click:Connect(function()	
+		script.Parent.Visible = false
+		script.Parent.Parent.Main.Visible = true
+		
+		-- gui reset
+		script.Parent.Parent.Main.ESP.ESPFrame.Visible = false
+		script.Parent.Parent.Main.Tracers.TracerFrame.Visible = false
+		script.Parent.Parent.Main.NoLasers.LaserFrame.Visible = false	
+		
+		script.Parent.Parent.Main.ESP.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Main.Tracers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		script.Parent.Parent.Main.NoLasers.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		
+		-- Minimized statusses
+		script.Parent.Parent.MinimizeStatus.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_TSWF77_FAKESCRIPT))
+function SCRIPT_ZUGL76_FAKESCRIPT() -- Logo.Intro 
+	local script = Instance.new('LocalScript')
+	script.Parent = Logo
+	script.Parent.Title.Text = ""
+	script.Parent.Position = UDim2.new(0.5, -125,-1, 0)
+	
+	wait(0.5)
+		script.Parent:TweenPosition(UDim2.new(0.5, -125,0.5, -157), "Out", "Bounce", 2)
+	wait(2.1)
+	
+		local title = ("Welcome to Jailbroken, ".. game:GetService("Players").LocalPlayer.Name.. "!")
+		
+		for i = 1, #title do
+		    script.Parent.Title.Text = string.sub(title, 1, i)
+			wait(0.04)
+		end
+		
+	wait(.5)	
+		
+		print("")
+		print("Jailbroken GUI")
+		print("Made by RegularVynixu#8795 and aLiMK06#0319")
+		print("")
+		
+		repeat wait()
+			script.Parent.ImageTransparency = script.Parent.ImageTransparency + 0.025
+			script.Parent.Title.TextTransparency = script.Parent.Title.TextTransparency + 0.025
+			script.Parent.Title.TextStrokeTransparency = script.Parent.Title.TextStrokeTransparency + 0.025
+		until		
+			script.Parent.ImageTransparency >= 1
+			
+		
+		script.Parent.Parent.Open.Visible = true
+		script.Parent:Destroy()	
+		
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZUGL76_FAKESCRIPT))
+function SCRIPT_FQHK84_FAKESCRIPT() -- BankSt_2.BankSt 
+	local script = Instance.new('LocalScript')
+	script.Parent = BankSt_2
+	local Bank = workspace:FindFirstChild("Banks"):GetChildren()[1]
+	local Info = Bank.Extra.Sign
+	
+	
+	while wait(1) do
+		if Info.Decal.Transparency ~= 0 then	
+			--script.Parent.Text = "Bank: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+		else
+			--script.Parent.Text = "Bank: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)	
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FQHK84_FAKESCRIPT))
+function SCRIPT_VJJM88_FAKESCRIPT() -- CargoTrain_2.CargoTrain 
+	local script = Instance.new('LocalScript')
+	script.Parent = CargoTrain_2
+	local train = workspace.Trains
+	
+	while wait(3) do
+		if train.LocomotiveFront then
+			if train.BoxCar then
+				script.Parent.TextColor3 = Color3.fromRGB(0,200,0)
+				--print("Cargo train arrived")						
+			else
+				script.Parent.TextColor3 = Color3.fromRGB(4,175,236)
+				--print("Cargo train arrived, but doesn't have a red BoxCar")
+			end	
+			
+		else		
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)	
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VJJM88_FAKESCRIPT))
+function SCRIPT_NHJU85_FAKESCRIPT() -- Jewst_2.Jewst 
+	local script = Instance.new('LocalScript')
+	script.Parent = Jewst_2
+	local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+	local Info = Jewelry.Extra.Sign.Decal
+	
+	Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+		if Info.Transparency ~= 0 then
+			--script.Parent.Text = "Jewelry: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0, 200, 0)
+		else
+			--script.Parent.Text = "Jewelry: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)			
+		end
+	end)	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NHJU85_FAKESCRIPT))
+function SCRIPT_RNKW66_FAKESCRIPT() -- Jewst_2.Update 
+	local script = Instance.new('LocalScript')
+	script.Parent = Jewst_2
+	local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+	local Info = Jewelry.Extra.Sign.Decal
+	
+	
+	wait(1)
+	
+	if Info.Transparency ~= 0 then
+		--script.Parent.Text = "Jewelry: Open"
+		script.Parent.TextColor3 = Color3.fromRGB(0, 200, 0)
+	else
+		--script.Parent.Text = "Jewelry: Closed"
+		script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)			
+	end
+	
+	script:Destroy()
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RNKW66_FAKESCRIPT))
+function SCRIPT_JYCR77_FAKESCRIPT() -- Museumst_2.Museumst 
+	local script = Instance.new('LocalScript')
+	script.Parent = Museumst_2
+	while wait(1) do
+		if workspace.Museum.Roof.Hole.Part.Transparency == 1 then			
+			--script.Parent.Text = "Museum: Open"
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)			
+		end	
+		
+		
+		if workspace.Museum.Roof.Hole.Part.Transparency == 0 then
+			--script.Parent.Text = "Museum: Closed"
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+		end		
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JYCR77_FAKESCRIPT))
+function SCRIPT_STPZ65_FAKESCRIPT() -- PassengerTrain_2.PassengerTrain 
+	local script = Instance.new('LocalScript')
+	script.Parent = PassengerTrain_2
+	local train = workspace.Trains
+	
+	
+	while wait(1) do	
+		if train.Passenger1 then
+			script.Parent.TextColor3 = Color3.fromRGB(0,200,0)	
+		else
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)				
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_STPZ65_FAKESCRIPT))
