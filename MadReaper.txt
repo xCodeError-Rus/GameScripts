@@ -1,0 +1,1656 @@
+function message(msg, color)
+	local msg_color = Color3.fromRGB(0, 0, 0)
+	if color == "green" then
+		msg_color = Color3.fromRGB(84, 243, 35)
+	end
+	if color == "yellow" then
+		msg_color = Color3.fromRGB(243, 237, 46)
+	end
+	if color == "red" then
+		msg_color = Color3.fromRGB(243, 4, 4)
+	end
+	if color == "dark_red" then
+		msg_color = Color3.fromRGB(127, 2, 2)
+	end
+	if color == "blue" then
+		msg_color = Color3.fromRGB(65, 48, 255)
+	end
+	if color == "pink" then
+		msg_color = Color3.fromRGB(255, 5, 155)
+	end
+	if color == "light_blue" then
+		msg_color = Color3.fromRGB(0, 161, 255)
+	end
+	wait(0.3)
+	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+		Text = msg;
+		Color = msg_color;
+		Font = Enum.Font.Cartoon;
+	})
+	
+end
+
+local tweenservice = game:GetService("TweenService")
+function tweenMove(model, target)
+    CFrameValue = Instance.new("CFrameValue")
+    CFrameValue.Value = model:GetPrimaryPartCFrame()
+    CFrameValue:GetPropertyChangedSignal("Value"):connect(function()
+    model:SetPrimaryPartCFrame(CFrameValue.Value)
+    end)
+    local Info = TweenInfo.new(((model:GetPrimaryPartCFrame().Position - target.Position).magnitude)/ 1800, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0)
+    local tween = tweenservice:Create(CFrameValue, Info, {Value = target})
+
+    tween:Play()
+end
+
+--
+
+message("Mad Reaper X: Bypassing Anti-Cheat, don't move...", "red")
+local PlrPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+wait(0.75)
+tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-1143.6178, 82.2212296, -3088.72461)))
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+wait(0.5)
+
+--
+
+local MadReaperX = Instance.new("ScreenGui")
+local MainF = Instance.new("Frame")
+local TitleBar = Instance.new("Frame")
+local MainBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local SubTitle = Instance.new("TextLabel")
+local OpenTPB = Instance.new("TextButton")
+local OpenMiscB = Instance.new("TextButton")
+local TeleportsF = Instance.new("Frame")
+local TPTitleBar = Instance.new("Frame")
+local TPMainBar = Instance.new("Frame")
+local TPSubTitle = Instance.new("TextLabel")
+local TPTitle = Instance.new("TextLabel")
+local Divider1 = Instance.new("Frame")
+local Divider2 = Instance.new("Frame")
+local SecretLocB = Instance.new("TextButton")
+local PrisonB = Instance.new("TextButton")
+local JewlB = Instance.new("TextButton")
+local HeroBaseB = Instance.new("TextButton")
+local GarageB = Instance.new("TextButton")
+local DealershipB = Instance.new("TextButton")
+local CrimBaseB = Instance.new("TextButton")
+local CasinoB = Instance.new("TextButton")
+local BoatGarageB = Instance.new("TextButton")
+local BankB = Instance.new("TextButton")
+local AirportB = Instance.new("TextButton")
+local NightclubB = Instance.new("TextButton")
+local PyramidB = Instance.new("TextButton")
+local GunstoreB = Instance.new("TextButton")
+local PoliceB = Instance.new("TextButton")
+local MiscF = Instance.new("Frame")
+local MiscTitleBar = Instance.new("Frame")
+local MiscMainBar = Instance.new("Frame")
+local MiscSubTitle = Instance.new("TextLabel")
+local MiscTitle = Instance.new("TextLabel")
+local Divider1_2 = Instance.new("Frame")
+local Divider2_2 = Instance.new("Frame")
+local FPB = Instance.new("TextButton")
+local ManAEB = Instance.new("TextButton")
+local NoclipB = Instance.new("TextButton")
+local ESPB = Instance.new("TextButton")
+local WeaponModB = Instance.new("TextButton")
+local AutoCashB = Instance.new("TextButton")
+local AutoXPB = Instance.new("TextButton")
+local GiveCarsB = Instance.new("TextButton")
+local GiveGunsB = Instance.new("TextButton")
+local GravityB = Instance.new("TextButton")
+local InfiniteAmmoB = Instance.new("TextButton")
+local MultiBox = Instance.new("TextBox")
+local RemoveLasersB = Instance.new("TextButton")
+local SetSpeedB = Instance.new("TextButton")
+local RemoveCellDB = Instance.new("TextButton")
+local GiveJetpackB = Instance.new("TextButton")
+local GotoB = Instance.new("TextButton")
+local RemoveTagsB = Instance.new("TextButton")
+
+--
+
+MadReaperX.Name = "MadReaperX"
+MadReaperX.Parent = game.CoreGui
+MadReaperX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainF.Name = "MainF"
+MainF.Parent = MadReaperX
+MainF.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+MainF.BorderSizePixel = 0
+MainF.Position = UDim2.new(0.5, -158, 0.5, -197)
+MainF.Size = UDim2.new(0, 317, 0, 393)
+MainF.Active = true
+MainF.Draggable = true
+
+TitleBar.Name = "TitleBar"
+TitleBar.Parent = MainF
+TitleBar.BackgroundColor3 = Color3.new(0.8, 0.207843, 0.215686)
+TitleBar.BorderSizePixel = 0
+TitleBar.Size = UDim2.new(0, 317, 0, 41)
+
+MainBar.Name = "MainBar"
+MainBar.Parent = TitleBar
+MainBar.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+MainBar.BorderSizePixel = 0
+MainBar.Size = UDim2.new(0, 317, 0, 35)
+
+Title.Name = "Title"
+Title.Parent = MainBar
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.258675069, 0, 0, 0)
+Title.Size = UDim2.new(0, 152, 0, 23)
+Title.Font = Enum.Font.Arial
+Title.Text = "Mad Reaper X"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextSize = 13
+Title.TextWrapped = true
+
+SubTitle.Name = "SubTitle"
+SubTitle.Parent = MainBar
+SubTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+SubTitle.BackgroundTransparency = 1
+SubTitle.BorderSizePixel = 0
+SubTitle.Position = UDim2.new(0.173501581, 0, 0.453749955, 0)
+SubTitle.Size = UDim2.new(0, 208, 0, 19)
+SubTitle.Font = Enum.Font.Arial
+SubTitle.Text = "Created By Dishan#1222 & Iconz#2176"
+SubTitle.TextColor3 = Color3.new(0, 0, 0)
+SubTitle.TextSize = 11
+SubTitle.TextWrapped = true
+
+OpenTPB.Name = "OpenTPB"
+OpenTPB.Parent = MainBar
+OpenTPB.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenTPB.BackgroundTransparency = 1
+OpenTPB.Position = UDim2.new(0.876971662, 0, 0, 0)
+OpenTPB.Size = UDim2.new(0, 38, 0, 35)
+OpenTPB.Font = Enum.Font.SourceSans
+OpenTPB.Text = ">"
+OpenTPB.TextColor3 = Color3.new(0, 0, 0)
+OpenTPB.TextSize = 23
+
+OpenMiscB.Name = "OpenMiscB"
+OpenMiscB.Parent = MainBar
+OpenMiscB.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenMiscB.BackgroundTransparency = 1
+OpenMiscB.Position = UDim2.new(0.00630921125, 0, 0, 0)
+OpenMiscB.Size = UDim2.new(0, 38, 0, 35)
+OpenMiscB.Font = Enum.Font.SourceSans
+OpenMiscB.Text = "<"
+OpenMiscB.TextColor3 = Color3.new(0, 0, 0)
+OpenMiscB.TextSize = 23
+
+TeleportsF.Name = "TeleportsF"
+TeleportsF.Parent = MainF
+TeleportsF.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+TeleportsF.BorderSizePixel = 0
+TeleportsF.Position = UDim2.new(0.996995151, 0, 0, 0)
+TeleportsF.Size = UDim2.new(0, 210, 0, 393)
+TeleportsF.Visible = false
+
+TPTitleBar.Name = "TPTitleBar"
+TPTitleBar.Parent = TeleportsF
+TPTitleBar.BackgroundColor3 = Color3.new(0.8, 0.207843, 0.215686)
+TPTitleBar.BorderSizePixel = 0
+TPTitleBar.Size = UDim2.new(0, 210, 0, 41)
+
+TPMainBar.Name = "TPMainBar"
+TPMainBar.Parent = TPTitleBar
+TPMainBar.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+TPMainBar.BorderSizePixel = 0
+TPMainBar.Position = UDim2.new(0.00453578401, 0, 0, 0)
+TPMainBar.Size = UDim2.new(0, 208, 0, 35)
+
+TPSubTitle.Name = "TPSubTitle"
+TPSubTitle.Parent = TPMainBar
+TPSubTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+TPSubTitle.BackgroundTransparency = 1
+TPSubTitle.BorderSizePixel = 0
+TPSubTitle.Position = UDim2.new(0.014423077, 0, 0.450931668, 0)
+TPSubTitle.Size = UDim2.new(0, 206, 0, 19)
+TPSubTitle.Font = Enum.Font.Arial
+TPSubTitle.Text = "Click a Button to be Teleported!"
+TPSubTitle.TextColor3 = Color3.new(0, 0, 0)
+TPSubTitle.TextSize = 11
+TPSubTitle.TextWrapped = true
+
+TPTitle.Name = "TPTitle"
+TPTitle.Parent = TPMainBar
+TPTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+TPTitle.BackgroundTransparency = 1
+TPTitle.BorderSizePixel = 0
+TPTitle.Position = UDim2.new(0.014423077, 0, 0, 0)
+TPTitle.Size = UDim2.new(0, 205, 0, 23)
+TPTitle.Font = Enum.Font.Arial
+TPTitle.Text = "Teleports"
+TPTitle.TextColor3 = Color3.new(0, 0, 0)
+TPTitle.TextSize = 13
+TPTitle.TextWrapped = true
+
+Divider1.Name = "Divider1"
+Divider1.Parent = TPMainBar
+Divider1.BackgroundColor3 = Color3.new(0.8, 0.207843, 0.215686)
+Divider1.BorderSizePixel = 0
+Divider1.Size = UDim2.new(0, 3, 0, 41)
+
+Divider2.Name = "Divider2"
+Divider2.Parent = TPMainBar
+Divider2.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+Divider2.BorderSizePixel = 0
+Divider2.Position = UDim2.new(-0.00457939738, 0, 1.17142856, 0)
+Divider2.Size = UDim2.new(0, 3, 0, 352)
+
+SecretLocB.Name = "SecretLocB"
+SecretLocB.Parent = TeleportsF
+SecretLocB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+SecretLocB.BorderSizePixel = 0
+SecretLocB.Position = UDim2.new(0.51760602, 0, 0.486999989, 0)
+SecretLocB.Size = UDim2.new(0, 94, 0, 29)
+SecretLocB.Font = Enum.Font.SourceSans
+SecretLocB.Text = "Secret Location"
+SecretLocB.TextColor3 = Color3.new(0, 0, 0)
+SecretLocB.TextSize = 14
+SecretLocB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-70.4709015, 8.44674683, 831.904968)))
+end)
+
+PrisonB.Name = "PrisonB"
+PrisonB.Parent = TeleportsF
+PrisonB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+PrisonB.BorderSizePixel = 0
+PrisonB.Position = UDim2.new(0.0520077571, 0, 0.129710868, 0)
+PrisonB.Size = UDim2.new(0, 89, 0, 29)
+PrisonB.Font = Enum.Font.SourceSans
+PrisonB.Text = "Prison"
+PrisonB.TextColor3 = Color3.new(0, 0, 0)
+PrisonB.TextSize = 14
+PrisonB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-816.837219, 52.4324112, -3248.89673)))
+end)
+
+JewlB.Name = "JewlB"
+JewlB.Parent = TeleportsF
+JewlB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+JewlB.BorderSizePixel = 0
+JewlB.Position = UDim2.new(0.517372489, 0, 0.217455462, 0)
+JewlB.Size = UDim2.new(0, 94, 0, 29)
+JewlB.Font = Enum.Font.SourceSans
+JewlB.Text = "Jewlery Store"
+JewlB.TextColor3 = Color3.new(0, 0, 0)
+JewlB.TextSize = 14
+JewlB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-117.66, 24.9, 740.15)))
+end)
+
+HeroBaseB.Name = "HeroBaseB"
+HeroBaseB.Parent = TeleportsF
+HeroBaseB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+HeroBaseB.BorderSizePixel = 0
+HeroBaseB.Position = UDim2.new(0.0526754484, 0, 0.219931901, 0)
+HeroBaseB.Size = UDim2.new(0, 89, 0, 29)
+HeroBaseB.Font = Enum.Font.SourceSans
+HeroBaseB.Text = "Hero Base"
+HeroBaseB.TextColor3 = Color3.new(0, 0, 0)
+HeroBaseB.TextSize = 14
+HeroBaseB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-1751.76, 75.84, 1600.62)))
+end)
+
+
+
+GarageB.Name = "GarageB"
+GarageB.Parent = TeleportsF
+GarageB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GarageB.BorderSizePixel = 0
+GarageB.Position = UDim2.new(0.0531386361, 0, 0.486999989, 0)
+GarageB.Size = UDim2.new(0, 89, 0, 29)
+GarageB.Font = Enum.Font.SourceSans
+GarageB.Text = "Garage"
+GarageB.TextColor3 = Color3.new(0, 0, 0)
+GarageB.TextSize = 14
+GarageB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(231.40872192383,24.549949645996,-493.32705688477)))
+end)
+
+DealershipB.Name = "DealershipB"
+DealershipB.Parent = TeleportsF
+DealershipB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+DealershipB.BorderSizePixel = 0
+DealershipB.Position = UDim2.new(0.517372489, 0, 0.397664994, 0)
+DealershipB.Size = UDim2.new(0, 94, 0, 29)
+DealershipB.Font = Enum.Font.SourceSans
+DealershipB.Text = "Dealership"
+DealershipB.TextColor3 = Color3.new(0, 0, 0)
+DealershipB.TextSize = 14
+DealershipB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(220.742371, 24.5260925, -593.761536)))
+end)
+
+CrimBaseB.Name = "CrimBaseB"
+CrimBaseB.Parent = TeleportsF
+CrimBaseB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+CrimBaseB.BorderSizePixel = 0
+CrimBaseB.Position = UDim2.new(0.0531386361, 0, 0.398000002, 0)
+CrimBaseB.Size = UDim2.new(0, 89, 0, 29)
+CrimBaseB.Font = Enum.Font.SourceSans
+CrimBaseB.Text = "Criminal Base"
+CrimBaseB.TextColor3 = Color3.new(0, 0, 0)
+CrimBaseB.TextSize = 14
+CrimBaseB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(2035.13623, 25.5521774, 455.920776)))
+end)
+
+CasinoB.Name = "CasinoB"
+CasinoB.Parent = TeleportsF
+CasinoB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+CasinoB.BorderSizePixel = 0
+CasinoB.Position = UDim2.new(0.0529050454, 0, 0.309000015, 0)
+CasinoB.Size = UDim2.new(0, 89, 0, 29)
+CasinoB.Font = Enum.Font.SourceSans
+CasinoB.Text = "Casino"
+CasinoB.TextColor3 = Color3.new(0, 0, 0)
+CasinoB.TextSize = 14
+CasinoB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(1779.7911376953,24.738931655884,685.00677490234)))
+end)
+
+BoatGarageB.Name = "BoatGarageB"
+BoatGarageB.Parent = TeleportsF
+BoatGarageB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+BoatGarageB.BorderSizePixel = 0
+BoatGarageB.Position = UDim2.new(0.517372489, 0, 0.308832467, 0)
+BoatGarageB.Size = UDim2.new(0, 94, 0, 29)
+BoatGarageB.Font = Enum.Font.SourceSans
+BoatGarageB.Text = "Boat Garage"
+BoatGarageB.TextColor3 = Color3.new(0, 0, 0)
+BoatGarageB.TextSize = 14
+BoatGarageB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-143.151489, 9.65425205, 326.685974)))
+end)
+
+BankB.Name = "BankB"
+BankB.Parent = TeleportsF
+BankB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+BankB.BorderSizePixel = 0
+BankB.Position = UDim2.new(0.516059875, 0, 0.129710868, 0)
+BankB.Size = UDim2.new(0, 94, 0, 29)
+BankB.Font = Enum.Font.SourceSans
+BankB.Text = "Bank"
+BankB.TextColor3 = Color3.new(0, 0, 0)
+BankB.TextSize = 14
+BankB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(690.11553955078,24.889343261719,446.09664916992)))
+end)
+
+AirportB.Name = "AirportB"
+AirportB.Parent = TeleportsF
+AirportB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+AirportB.BorderSizePixel = 0
+AirportB.Position = UDim2.new(0.51760602, 0, 0.576058507, 0)
+AirportB.Size = UDim2.new(0, 94, 0, 29)
+AirportB.Font = Enum.Font.SourceSans
+AirportB.Text = "Airport"
+AirportB.TextColor3 = Color3.new(0, 0, 0)
+AirportB.TextSize = 14
+AirportB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-2106.92, 27.73, -1405.19)))
+end)
+
+NightclubB.Name = "NightclubB"
+NightclubB.Parent = TeleportsF
+NightclubB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+NightclubB.BorderSizePixel = 0
+NightclubB.Position = UDim2.new(0.0531386361, 0, 0.576058507, 0)
+NightclubB.Size = UDim2.new(0, 89, 0, 29)
+NightclubB.Font = Enum.Font.SourceSans
+NightclubB.Text = "Nightclub"
+NightclubB.TextColor3 = Color3.new(0, 0, 0)
+NightclubB.TextSize = 14
+NightclubB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(1281.09, 24.7, 28.24)))
+end)
+
+PyramidB.Name = "PyramidB"
+PyramidB.Parent = TeleportsF
+PyramidB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+PyramidB.BorderSizePixel = 0
+PyramidB.Position = UDim2.new(0.51760602, 0, 0.667661548, 0)
+PyramidB.Size = UDim2.new(0, 94, 0, 29)
+PyramidB.Font = Enum.Font.SourceSans
+PyramidB.Text = "Pyramid"
+PyramidB.TextColor3 = Color3.new(0, 0, 0)
+PyramidB.TextSize = 14
+PyramidB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-1048.25818, 17.8106861, -494.201416)))
+end)
+
+GunstoreB.Name = "GunstoreB"
+GunstoreB.Parent = TeleportsF
+GunstoreB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GunstoreB.BorderSizePixel = 0
+GunstoreB.Position = UDim2.new(0.0531386361, 0, 0.667661548, 0)
+GunstoreB.Size = UDim2.new(0, 89, 0, 29)
+GunstoreB.Font = Enum.Font.SourceSans
+GunstoreB.Text = "Gunstore"
+GunstoreB.TextColor3 = Color3.new(0, 0, 0)
+GunstoreB.TextSize = 14
+GunstoreB.MouseButton1Down:Connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-1619.1705322266,41.934741973877,684.16217041016)))
+end)
+
+PoliceB.Name = "PoliceB"
+PoliceB.Parent = TeleportsF
+PoliceB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+PoliceB.BorderSizePixel = 0
+PoliceB.Position = UDim2.new(0.518000007, 0, 0.759000003, 0)
+PoliceB.Size = UDim2.new(0, 94, 0, 29)
+PoliceB.Font = Enum.Font.SourceSans
+PoliceB.Text = "Police Base"
+PoliceB.TextColor3 = Color3.new(0, 0, 0)
+PoliceB.TextSize = 14
+PoliceB.MouseButton1Down:connect(function()
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-961.477356, 52.4035912, -2949.87061)))
+end)
+
+MiscF.Name = "MiscF"
+MiscF.Parent = MainF
+MiscF.BackgroundColor3 = Color3.new(0.0705882, 0.0705882, 0.0705882)
+MiscF.BorderSizePixel = 0
+MiscF.Position = UDim2.new(-0.654999971, 0, 0, 0)
+MiscF.Size = UDim2.new(0, 210, 0, 393)
+MiscF.Visible = false
+
+MiscTitleBar.Name = "MiscTitleBar"
+MiscTitleBar.Parent = MiscF
+MiscTitleBar.BackgroundColor3 = Color3.new(0.8, 0.207843, 0.215686)
+MiscTitleBar.BorderSizePixel = 0
+MiscTitleBar.Size = UDim2.new(0, 210, 0, 41)
+
+MiscMainBar.Name = "MiscMainBar"
+MiscMainBar.Parent = MiscTitleBar
+MiscMainBar.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+MiscMainBar.BorderSizePixel = 0
+MiscMainBar.Position = UDim2.new(0.00453578401, 0, 0, 0)
+MiscMainBar.Size = UDim2.new(0, 208, 0, 35)
+
+MiscSubTitle.Name = "MiscSubTitle"
+MiscSubTitle.Parent = MiscMainBar
+MiscSubTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+MiscSubTitle.BackgroundTransparency = 1
+MiscSubTitle.BorderSizePixel = 0
+MiscSubTitle.Position = UDim2.new(0.014423077, 0, 0.450931668, 0)
+MiscSubTitle.Size = UDim2.new(0, 206, 0, 19)
+MiscSubTitle.Font = Enum.Font.Arial
+MiscSubTitle.Text = "Some extra features you might need!"
+MiscSubTitle.TextColor3 = Color3.new(0, 0, 0)
+MiscSubTitle.TextSize = 11
+MiscSubTitle.TextWrapped = true
+
+MiscTitle.Name = "MiscTitle"
+MiscTitle.Parent = MiscMainBar
+MiscTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+MiscTitle.BackgroundTransparency = 1
+MiscTitle.BorderSizePixel = 0
+MiscTitle.Position = UDim2.new(0.014423077, 0, 0, 0)
+MiscTitle.Size = UDim2.new(0, 205, 0, 23)
+MiscTitle.Font = Enum.Font.Arial
+MiscTitle.Text = "Miscellaneous"
+MiscTitle.TextColor3 = Color3.new(0, 0, 0)
+MiscTitle.TextSize = 13
+MiscTitle.TextWrapped = true
+
+Divider1_2.Name = "Divider1"
+Divider1_2.Parent = MiscMainBar
+Divider1_2.BackgroundColor3 = Color3.new(0.8, 0.207843, 0.215686)
+Divider1_2.BorderSizePixel = 0
+Divider1_2.Position = UDim2.new(0.985000014, 0, 0, 0)
+Divider1_2.Size = UDim2.new(0, 3, 0, 41)
+
+Divider2_2.Name = "Divider2"
+Divider2_2.Parent = MiscMainBar
+Divider2_2.BackgroundColor3 = Color3.new(0.101961, 0.101961, 0.101961)
+Divider2_2.BorderSizePixel = 0
+Divider2_2.Position = UDim2.new(0.985000014, 0, 1.20000005, 0)
+Divider2_2.Size = UDim2.new(0, 3, 0, 351)
+
+FPB.Name = "FPB"
+FPB.Parent = MiscF
+FPB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+FPB.BorderSizePixel = 0
+FPB.Position = UDim2.new(0.0424839482, 0, 0.124621809, 0)
+FPB.Size = UDim2.new(0, 89, 0, 29)
+FPB.Font = Enum.Font.SourceSans
+FPB.Text = "First Person: [Off]"
+FPB.TextColor3 = Color3.new(0, 0, 0)
+FPB.TextSize = 14
+
+ManAEB.Name = "ManAEB"
+ManAEB.Parent = MiscF
+ManAEB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+ManAEB.BorderSizePixel = 0
+ManAEB.Position = UDim2.new(0.506536067, 0, 0.124621809, 0)
+ManAEB.Size = UDim2.new(0, 90, 0, 29)
+ManAEB.Font = Enum.Font.SourceSans
+ManAEB.Text = "Manual AE Bypass"
+ManAEB.TextColor3 = Color3.new(0, 0, 0)
+ManAEB.TextSize = 14
+
+NoclipB.Name = "NoclipB"
+NoclipB.Parent = MiscF
+NoclipB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+NoclipB.BorderSizePixel = 0
+NoclipB.Position = UDim2.new(0.0424839482, 0, 0.213680342, 0)
+NoclipB.Size = UDim2.new(0, 89, 0, 29)
+NoclipB.Font = Enum.Font.SourceSans
+NoclipB.Text = "Load Noclip"
+NoclipB.TextColor3 = Color3.new(0, 0, 0)
+NoclipB.TextSize = 14
+
+ESPB.Name = "ESPB"
+ESPB.Parent = MiscF
+ESPB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+ESPB.BorderSizePixel = 0
+ESPB.Position = UDim2.new(0.506536067, 0, 0.213680357, 0)
+ESPB.Size = UDim2.new(0, 90, 0, 29)
+ESPB.Font = Enum.Font.SourceSans
+ESPB.Text = "Load ESP"
+ESPB.TextColor3 = Color3.new(0, 0, 0)
+ESPB.TextSize = 14
+
+WeaponModB.Name = "WeaponModB"
+WeaponModB.Parent = MainF
+WeaponModB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+WeaponModB.BorderSizePixel = 0
+WeaponModB.Position = UDim2.new(0.518999994, 0, 0.409000009, 0)
+WeaponModB.Size = UDim2.new(0, 143, 0, 29)
+WeaponModB.Font = Enum.Font.SourceSans
+WeaponModB.Text = "Weapon Mod"
+WeaponModB.TextColor3 = Color3.new(0, 0, 0)
+WeaponModB.TextSize = 14
+
+AutoCashB.Name = "AutoCashB"
+AutoCashB.Parent = MainF
+AutoCashB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+AutoCashB.BorderSizePixel = 0
+AutoCashB.Position = UDim2.new(0.0306946635, 0, 0.127086312, 0)
+AutoCashB.Size = UDim2.new(0, 143, 0, 29)
+AutoCashB.Font = Enum.Font.SourceSans
+AutoCashB.Text = "Auto-Cash: [Off]"
+AutoCashB.TextColor3 = Color3.new(0, 0, 0)
+AutoCashB.TextSize = 14
+
+AutoXPB.Name = "AutoXPB"
+AutoXPB.Parent = MainF
+AutoXPB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+AutoXPB.BorderSizePixel = 0
+AutoXPB.Position = UDim2.new(0.519152462, 0, 0.128188223, 0)
+AutoXPB.Size = UDim2.new(0, 143, 0, 29)
+AutoXPB.Font = Enum.Font.SourceSans
+AutoXPB.Text = "Auto-XP: [Off]"
+AutoXPB.TextColor3 = Color3.new(0, 0, 0)
+AutoXPB.TextSize = 14
+
+GiveCarsB.Name = "GiveCarsB"
+GiveCarsB.Parent = MainF
+GiveCarsB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GiveCarsB.BorderSizePixel = 0
+GiveCarsB.Position = UDim2.new(0.0298454259, 0, 0.218999997, 0)
+GiveCarsB.Size = UDim2.new(0, 143, 0, 29)
+GiveCarsB.Font = Enum.Font.SourceSans
+GiveCarsB.Text = "Give Vehicles"
+GiveCarsB.TextColor3 = Color3.new(0, 0, 0)
+GiveCarsB.TextSize = 14
+
+GiveGunsB.Name = "GiveGunsB"
+GiveGunsB.Parent = MainF
+GiveGunsB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GiveGunsB.BorderSizePixel = 0
+GiveGunsB.Position = UDim2.new(0.518999994, 0, 0.219999999, 0)
+GiveGunsB.Size = UDim2.new(0, 143, 0, 29)
+GiveGunsB.Font = Enum.Font.SourceSans
+GiveGunsB.Text = "Give Guns"
+GiveGunsB.TextColor3 = Color3.new(0, 0, 0)
+GiveGunsB.TextSize = 14
+
+GravityB.Name = "GravityB"
+GravityB.Parent = MainF
+GravityB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GravityB.BorderSizePixel = 0
+GravityB.Position = UDim2.new(0.0267539993, 0, 0.908934355, 0)
+GravityB.Size = UDim2.new(0, 94, 0, 23)
+GravityB.Font = Enum.Font.SourceSans
+GravityB.Text = "Set Gravity"
+GravityB.TextColor3 = Color3.new(0, 0, 0)
+GravityB.TextSize = 14
+
+InfiniteAmmoB.Name = "InfiniteAmmoB"
+InfiniteAmmoB.Parent = MainF
+InfiniteAmmoB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+InfiniteAmmoB.BorderSizePixel = 0
+InfiniteAmmoB.Position = UDim2.new(0.0309999995, 0, 0.312999994, 0)
+InfiniteAmmoB.Size = UDim2.new(0, 143, 0, 29)
+InfiniteAmmoB.Font = Enum.Font.SourceSans
+InfiniteAmmoB.Text = "Infinite Ammo"
+InfiniteAmmoB.TextColor3 = Color3.new(0, 0, 0)
+InfiniteAmmoB.TextSize = 14
+
+MultiBox.Name = "MultiBox"
+MultiBox.Parent = MainF
+MultiBox.BackgroundColor3 = Color3.new(1, 1, 1)
+MultiBox.Position = UDim2.new(0.0267539993, 0, 0.827216566, 0)
+MultiBox.Size = UDim2.new(0, 300, 0, 21)
+MultiBox.Font = Enum.Font.SourceSans
+MultiBox.PlaceholderColor3 = Color3.new(0, 0, 0)
+MultiBox.PlaceholderText = "Enter a Name, Speed or Gravity Value..."
+MultiBox.Text = ""
+MultiBox.TextColor3 = Color3.new(0, 0, 0)
+MultiBox.TextSize = 14
+
+RemoveLasersB.Name = "RemoveLasersB"
+RemoveLasersB.Parent = MainF
+RemoveLasersB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+RemoveLasersB.BorderSizePixel = 0
+RemoveLasersB.Position = UDim2.new(0.518000007, 0, 0.312999994, 0)
+RemoveLasersB.Size = UDim2.new(0, 143, 0, 29)
+RemoveLasersB.Font = Enum.Font.SourceSans
+RemoveLasersB.Text = "Remove Lasers"
+RemoveLasersB.TextColor3 = Color3.new(0, 0, 0)
+RemoveLasersB.TextSize = 14
+
+SetSpeedB.Name = "SetSpeedB"
+SetSpeedB.Parent = MainF
+SetSpeedB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+SetSpeedB.BorderSizePixel = 0
+SetSpeedB.Position = UDim2.new(0.673726618, 0, 0.908934355, 0)
+SetSpeedB.Size = UDim2.new(0, 94, 0, 23)
+SetSpeedB.Font = Enum.Font.SourceSans
+SetSpeedB.Text = "Set Speed"
+SetSpeedB.TextColor3 = Color3.new(0, 0, 0)
+SetSpeedB.TextSize = 14
+
+RemoveCellDB.Name = "RemoveCellDB"
+RemoveCellDB.Parent = MainF
+RemoveCellDB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+RemoveCellDB.BorderSizePixel = 0
+RemoveCellDB.Position = UDim2.new(0.0309999995, 0, 0.504000008, 0)
+RemoveCellDB.Size = UDim2.new(0, 143, 0, 29)
+RemoveCellDB.Font = Enum.Font.SourceSans
+RemoveCellDB.Text = "Remove Cell Doors"
+RemoveCellDB.TextColor3 = Color3.new(0, 0, 0)
+RemoveCellDB.TextSize = 14
+
+GiveJetpackB.Name = "GiveJetpackB"
+GiveJetpackB.Parent = MainF
+GiveJetpackB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GiveJetpackB.BorderSizePixel = 0
+GiveJetpackB.Position = UDim2.new(0.518999994, 0, 0.504000008, 0)
+GiveJetpackB.Size = UDim2.new(0, 143, 0, 29)
+GiveJetpackB.Font = Enum.Font.SourceSans
+GiveJetpackB.Text = "Give Jetpack"
+GiveJetpackB.TextColor3 = Color3.new(0, 0, 0)
+GiveJetpackB.TextSize = 14
+
+GotoB.Name = "GotoB"
+GotoB.Parent = MainF
+GotoB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+GotoB.BorderSizePixel = 0
+GotoB.Position = UDim2.new(0.351960063, 0, 0.908934355, 0)
+GotoB.Size = UDim2.new(0, 94, 0, 23)
+GotoB.Font = Enum.Font.SourceSans
+GotoB.Text = "Teleport"
+GotoB.TextColor3 = Color3.new(0, 0, 0)
+GotoB.TextSize = 14
+
+RemoveTagsB.Name = "RemoveTagsB"
+RemoveTagsB.Parent = MainF
+RemoveTagsB.BackgroundColor3 = Color3.new(1, 0.258824, 0.270588)
+RemoveTagsB.BorderSizePixel = 0
+RemoveTagsB.Position = UDim2.new(0.0299999993, 0, 0.409000009, 0)
+RemoveTagsB.Size = UDim2.new(0, 143, 0, 29)
+RemoveTagsB.Font = Enum.Font.SourceSans
+RemoveTagsB.Text = "Remove All Name Tags"
+RemoveTagsB.TextColor3 = Color3.new(0, 0, 0)
+RemoveTagsB.TextSize = 14
+
+-- Functions
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+
+local Mouse = Player:GetMouse()
+local Gui = game.CoreGui.MadReaperX.MainF
+local Open = false
+
+function PressQ(key)
+	if (key == "q") then
+		if (Open == false) then
+			Gui.Visible = true
+			Open = true
+		elseif (Open == true) then
+			Gui.Visible = false
+			Open = false
+		end
+	end
+end
+	
+Mouse.KeyDown:Connect(PressQ)
+
+--
+	
+ManAEB.MouseButton1Down:connect(function()
+	message("Mad Reaper X: Bypassing Anti-Cheat, don't move...", "red")
+	local PlrPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	wait(0.75)
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-1143.6178, 82.2212296, -3088.72461)))
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1143.6178, 82.2212296, -3088.72461)
+	wait(0.5)
+	message("Mad Reaper X: Anti-Cheat Bypassed! You may now move.", "green")
+	wait(0.2)
+end)
+
+OpenTPB.MouseButton1Down:connect(function()
+	if OpenTPB.Text == ">" then
+		OpenTPB.Text = "<"
+		TeleportsF.Visible = true
+	elseif OpenTPB.Text == "<" then
+		OpenTPB.Text = ">"
+		TeleportsF.Visible = false
+	end
+end)
+
+OpenMiscB.MouseButton1Down:connect(function()
+	if OpenMiscB.Text == "<" then
+		OpenMiscB.Text = ">"
+		MiscF.Visible = true
+	elseif OpenMiscB.Text == ">" then
+		OpenMiscB.Text = "<"
+		MiscF.Visible = false
+	end
+end)
+
+CashFarm = false
+AutoCashB.MouseButton1Down:connect(function()
+	if CashFarm == false then
+		CashFarm = true
+		AutoCashB.Text = "Auto-Cash: [On]"
+		-- Version 7.2
+	------------------------------------- [Quick Settings] ----------------------------------------------------------------------
+	-- note: changing some of this values can make this script unstable and very bugged
+	Vip = false -- Enable this if you have the VIP gamepass then you will get more money
+		
+	Movment = true -- Enables or disables player movment (by default in false to avoid bugs)
+	clear_appearance = false -- Useful when you use hide_nametag and clear_appearance together (players wont know who you are)
+	
+	hide_nametag = true -- Disables your nametag for other players (useful to avoid reports)
+		star = false -- If enabled will show a star for other players if hide nametag is on
+	
+	rob_small_things = true -- Disable this if you don't want to rob small things like: houses, stores...
+	
+	start_toggled = true
+	
+	debug_mode = false -- Enables/disables the debug mode (I use this to test things, idk if is useful for you)
+		view_invisible_parts = true -- if enabled will show invisble parts if the debug mode is on
+	    show_your_nametag = false
+	
+	bank_cooldown = 500
+	nightclub_cooldown = 500
+	
+	cant_rob = "Can't rob the %s because %s"
+	-----------------------------------------------------------------------------------------------------------------------------
+	
+	local busy = false
+	local busy_with = ""
+	local robbingBank = false
+	local robbingNightclub = false
+	local robbingCasino = false
+	local robbingJewerly = false
+	local toggled = false
+	
+	
+	function clearAppearance()
+		if clear_appearance == true then
+			game.Players.LocalPlayer:ClearCharacterAppearance()
+		end
+	end
+	
+	function hideNametag() -- Yes, It replicates because you have the network ownership of your character. Don't fuck me saying that this isn't server sided
+		if hide_nametag == true and star == true then
+			game.Players.LocalPlayer.Character.NameTag.Title:Destroy()
+			game.Players.LocalPlayer.Character.NameTag.Script:Destroy()
+			game.Players.LocalPlayer.Character.NameTag.Icon.Rank:Destroy()
+		elseif hide_nametag == true and star == false then
+			game.Players.LocalPlayer.Character.NameTag:Destroy()
+		end
+	end
+
+	function noclip()
+	game:GetService("RunService").Stepped:connect(function()
+		game.Players.LocalPlayer.Character.Head.CanCollide = false
+	        game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+	        game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+	    end)
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.Changed:connect(function()
+	        game.Players.LocalPlayer.Character.Head.CanCollide = false
+	        game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+	        game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+	    end)
+	end
+	
+	function toggle()
+		game.Players.LocalPlayer.Chatted:connect(function(msg)
+	        if msg:lower() == "/e toggle" then
+			    if toggled == false then
+				    wait(1)
+				    message("Starting the auto rob...", "yellow")
+				    toggled = true
+				    noclip()
+				    hideNametag()
+	                clearAppearance()
+	                if Movment == false then
+		                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+	                    game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = true
+	                end
+	                wait(0.5)
+	                message("Auto rob started!", "green")
+			    else
+				    message("Stopping the auto rob...", "yellow")
+				    message("Ending current robs...", "yellow")
+				    repeat
+					    wait()
+				    until(busy == false and robbingBank == false and robbingNightclub == false)
+				    --message("An error ocurred: the script can't stop the auto rob!", "dark_red")
+	                game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = false
+	                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	                toggled = false
+	                --[[for i = 1,10 do
+	                    wait(1)
+	                    game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2138,25,358)
+	                end]]
+	                wait(0.5)
+	                game.Players.LocalPlayer.Character.Head:Destroy()
+	                message("Auto rob stopped!", "red")
+			    end
+		    end
+	    end)
+	end
+	
+	--[[function teleport(xyz)
+		for i = 1,2 do
+	        wait(3)
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(xyz)
+	    end
+	end]]
+	
+	local died_fix = coroutine.create(function()
+	    while wait() do
+	        game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+		        if toggled == true then
+			        toggled = false
+		            wait(10)
+		            message("You died! Resuming the auto rob.", "yellow")
+		            game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = false
+		            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		            wait(5)
+		            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+		            game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = true
+		            wait(1)
+		            hideNametag()
+		            clearAppearance()
+			        busy = false
+			        toggled = true
+			        message("Auto rob successfully resumed!", "green")
+			        wait(20)
+		        end
+	        end)
+	    end
+	end)
+	
+	local debug_things = coroutine.create(function()
+		if debug_mode == true and view_invisible_parts == true then
+			for i, v in pairs(workspace:GetDescendants()) do
+			    if v:IsA("Part") and v.Transparency == 1 then
+				    v.Transparency = 0.3
+			    end
+		    end
+		end
+		if debug_mode == true and show_your_nametag == true then
+			game.Players.LocalPlayer.Character.NameTag.Enabled = true
+		end
+	end)
+	
+	local antiafk = coroutine.create(function()
+		local VirtualUser=game:service'VirtualUser'
+		game:service'Players'.LocalPlayer.Idled:connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end)
+	
+	local robCashRegister = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "CashRegister" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing cash registers"
+					           wait(1.5)
+					           local pos = v.SmashCash.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.5)
+					           v.SmashCash.SmashCash.Event:FireServer()
+				               wait(2)
+				               if part.Name == "Nope" and robbingBank == false and robbingNightclub == false then
+					               busy = false   
+				               end
+				           end  
+			           end
+				   end
+				elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "cash registers", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robDiamondBox = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "DiamondBox" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing diamond boxes"
+					           wait(1.5)
+					           local pos = v.SmashCash.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.SmashCash.SmashCash.Event:FireServer()
+				               wait(2)
+				               if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					              
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "diamond boxes", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robSafe = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "Safe" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing safes"
+					           wait(5)
+					           local pos = v.SmashCash.Position
+	                           for i = 1,10 do
+	                               wait(0.3)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.SmashCash.SmashCash.Event:FireServer()
+				               wait(2)
+				               if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					              
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "safes", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robTipJar = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "TipJar" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name == "SmashCash" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing tip jars"
+					           local pos = v.SmashCash.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.SmashCash.SmashCash.Event:FireServer()
+				               wait(2)
+				               if part.Name == "SmashCash" and robbingBank == false and robbingNightclub == false then
+					             
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "tip jars", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robLuggage = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "Luggage" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing luggage"
+					           wait(1.5)
+					           local pos = v.SmashCash.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.5)
+					           v.SmashCash.SmashCash.Event:FireServer()
+				               wait(2)
+				               if part.Name == "Nope" and robbingBank == false and robbingNightclub == false then
+					               busy = false   
+				               end
+				           end  
+			           end
+				   end
+				elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "cash registers", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robCash = coroutine.create(function()
+	    while wait(5) do
+		    wait()
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "Cash" then
+				           local part = v:FindFirstChildOfClass("MeshPart")
+				           if part.Name == "Cash" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing cash"
+					           local pos = v.Cash.Position
+	                           for i = 1,10 do
+	                               wait(0.3)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.Cash.Cash.Event:FireServer()
+				               wait(2)
+				               if part.Name == "Cash" and robbingBank == false and robbingNightclub == false then
+					              
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "cash", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robTv = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "TV" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing TVs"
+					           wait(3)
+					           local pos = v.StealTV.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.StealTV.StealTV.Event:FireServer()
+				               wait(2)
+				               if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					             
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "TVs", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robAtm = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "ATM" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing ATMs" 
+			                   wait(1.5)
+					           local pos = v.ATM.Position
+	                           for i = 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+				               wait(0.3)
+				               v.ATM.ATM.Event:FireServer()
+				               wait(2)
+				               if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+					          
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "ATMs", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robSlotmachine = coroutine.create(function()
+	    while wait(5) do
+		    pcall(function()
+			    if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+				   for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+			           if v.Name == "SlotMachine" then
+				           local part = v:FindFirstChildOfClass("Part")
+				           if part.Name ~= "Nope" and part.name == "SlotMachine" and robbingBank == false and robbingNightclub == false then
+					           busy = true
+					           busy_with = "robbing slot machines"
+					           wait(1.5)
+					           local pos = v.SlotMachine.Position
+	                           for i = 1, 1,5 do
+	                               wait(1)
+	                               game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                           end
+	                           wait(0.5)
+	                           v.SlotMachine.SlotMachine.Event:FireServer()
+				               wait(2)
+				               if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then  
+				               else
+					               busy = false
+				               end
+				           end  
+			           end
+				   end
+			    elseif debug_mode == true and busy == true then
+				    print(string.format(cant_rob, "slot machines", busy_with))
+				end	    
+		    end)
+	    end
+	end)
+	
+	local robBank = coroutine.create(function()
+	    while wait(2) do
+		    pcall(function()
+				if toggled == true and game.ReplicatedStorage.HeistStatus.Bank.Locked.Value == false and robbingNightclub == false then
+				   robbingBank = true
+				   busy = true
+				   busy_with = "robbing bank"
+				   if debug_mode == true then
+					   warn("All robs have been paused to rob the bank")
+				   end
+				   wait(5)
+				   --[[for i, v in pairs (workspace.ObjectSelection:GetChildren()) do
+					   if v.Name == "HackComputer" then
+						   for i = 1,10 do
+	                           wait(1.5)
+	                           game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(636.778, 27.5895, 529.505)
+	                           v.HackComputer.HackComputer.Event:FireServer()
+						   end
+						   v.HackComputer.HackComputer.Event:FireServer()
+						   wait(1)
+						   v.HackComputer.HackComputer.Event:FireServer()
+						   wait(1.5)
+						   return
+					   end
+					   wait(3)
+					   break
+					end]]
+					for i = 1,5 do
+	                    wait(1.5)
+	                    game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(739,0,488)
+					end
+					wait(.5)
+				    local pos = workspace.Bank.MoneyBags["Money Bag"].Position
+	                for i = 1,5 do
+	                    wait(1.5)
+	                    game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+	                end
+	                if Vip == false then
+		                repeat
+		                  wait()
+		                until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$3000"
+	                else
+		                repeat
+		                  wait()
+		                until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$6000"
+	                end
+	                
+		            for i = 1,10 do
+	                   wait(.5)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2034, 25, 447)
+	                   game.Players.LocalPlayer.Character.Humanoid:ChangeState(3)
+		            end
+		            robbingBank = false
+		            busy = false
+		            wait(bank_cooldown)
+				elseif debug_mode == true and busy == true then
+					warn(string.format(cant_rob, "bank", "it's closed"))
+			    end
+		    end)
+	    end
+	end)
+	
+	local robNightclub = coroutine.create(function()
+	    while wait(1) do
+		    pcall(function()
+				if toggled == true and game.ReplicatedStorage.HeistStatus.Club.Locked.Value == false and robbingNightclub == false then
+				   robbingNightclub = true
+				   busy = true
+				   busy_with = "robbing night club"
+				   wait(5)
+				   if debug_mode == true then
+					   warn("All robs have been paused to rob the night club")
+				   end
+				   for i = 1,5 do
+	                   wait(.5)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1362,42,-153)
+				   end
+				   wait(3)
+				   for i = 1,5 do
+	                   wait(.5)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1349,142,-100)
+				   end
+				   wait(0.3)
+				   for i, v in pairs(workspace.ObjectSelection.HackKeyPad:GetChildren()) do
+					   if v.Name == "HackKeyPad" then
+						  v.HackKeyPad.Event:FireServer()
+					   end
+				   end
+				   wait(3)
+				   for i = 1,5 do
+	                   wait(.3)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1361,142,-155)
+				   end
+	               if Vip == false then
+		               repeat
+		                 wait()
+		               until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$6000"
+	               else
+		               repeat
+		                 wait()
+		               until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$12000"
+	               end
+		           for i = 1,10 do
+	                   wait(.5)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2034, 25, 447)
+	                   game.Players.LocalPlayer.Character.Humanoid:ChangeState(3)
+		           end
+		           robbingNightclub = false
+		           busy = false
+		           wait(nightclub_cooldown)
+				elseif debug_mode == true and game.ReplicatedStorage.HeistStatus.Club.Locked.Value == true then
+					warn(string.format(cant_rob, "night club", "it's closed"))
+			    end
+		    end)
+	    end
+	end)
+	
+	coroutine.resume(antiafk)
+	coroutine.resume(died_fix)
+	--coroutine.resume(busy_fix)
+	coroutine.resume(debug_things)
+	
+	coroutine.resume(robNightclub)
+	coroutine.resume(robBank)
+	
+	if rob_small_things == true then
+		coroutine.resume(robCashRegister)
+	    coroutine.resume(robDiamondBox)
+	    coroutine.resume(robSafe)
+	    coroutine.resume(robTipJar)
+	    coroutine.resume(robLuggage)
+	
+	    coroutine.resume(robCash)
+	    coroutine.resume(robTv)
+	    coroutine.resume(robAtm)
+	    coroutine.resume(robSlotmachine)
+	end
+	
+	if start_toggled == true then
+		message("Starting...", "yellow")
+		noclip()
+		hideNametag()
+		clearAppearance()
+		toggle()
+		toggled = true
+		message("Mad Reaper X: Currently once enabled you cannot turn it off, you must rejoin.")
+	else
+		toggle()
+	end
+	elseif CashFarm == true then
+		CashFarm = false
+		AutoCashB.Text = "Auto-Cash: [Off]"
+		start_toggled = false
+		toggle()
+	end
+end)
+
+_G.arrest = false
+AutoXPB.MouseButton1Down:connect(function()
+	message("Mad Reaper X: Auto-XP is currently patched.", "dark_red")
+	if _G.arrest == false then
+		local plr = game.Players.LocalPlayer
+		AutoXPB.Text = "Auto-XP: [On]"
+		_G.arrest = true
+	elseif _G.arrest == true then
+		_G.arrest = false
+		AutoXPB.Text = "Auto-XP: [Off]"
+	end
+end)
+
+GiveCarsB.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteFunction:InvokeServer("BuyItem", "Hoverboard")
+	wait(0.1)
+	game.ReplicatedStorage.RemoteFunction:InvokeServer("BuyItem", "Banshee")
+	wait(0.1)
+	game.ReplicatedStorage.RemoteFunction:InvokeServer("BuyItem", "Reaper")
+	wait(0.1)
+	game.ReplicatedStorage.RemoteFunction:InvokeServer("BuyItem", "Phantom")
+	wait(0.1)
+	game.ReplicatedStorage.RemoteFunction:InvokeServer("BuyItem", "SWAT")
+	message("Mad Reaper X: Hoverboard, Banshee, Reaper, Phantom & SWAT Vehicle given.", "yellow")
+end)
+
+InfiniteAmmoB.MouseButton1Down:Connect(function()
+	local L=debug.getregistry or getreg
+	local M=debug.getupvalues or getupvalues
+	local N=debug.setupvalue or setupvalue
+	if not L then
+		assert(false, "no")
+	end
+	for O,B in pairs(L())do
+		if type(B)=='function' then
+			local P,Q=pcall(M,B)
+			if Q and Q.Ammo then
+				N(B,'Ammo',1/0)N(B,'Clip',1/0)N(B,'Spread',0)N(B,'Recoil',0)N(B,'FireRate',1/0)
+			end
+		end
+	end
+	message("Mad Reaper X: Infinite Ammo given.", "yellow")
+end)
+
+RemoveLasersB.MouseButton1Down:connect(function()
+	game.Workspace.JewelryStore.SlideLaser:Destroy()
+	game.Workspace.JewelryStore.SpinLaser:Destroy()
+	game.Workspace.JewelryStore.SpinLaser2:Destroy()
+	game.Workspace.JewelryStore.SpinLaser3:Destroy()
+	game.Workspace.JewelryStore.SpinLaser4:Destroy()
+	game.Workspace.JewelryStore.SpinLaser5:Destroy()
+	game.Workspace.JewelryStore.Jewlery.Lasers:Destroy()
+	game.Workspace.Ignore.WorldObjects.Lasers:Destroy()
+	game.Workspace.Ignore.WorldObjects["Lasers Club"]:Destroy()
+	message("Mad Reaper X: Lasers have been removed.", "pink")
+end)
+
+ESPB.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/A84cMe8w", true))()
+	message("Mad Reaper X: ESP loaded.", "green")
+end)
+
+WeaponModB.MouseButton1Down:connect(function()
+	message("Mad Reaper X: Weapons have been modded.", "pink")
+	local backpack = game.Players.LocalPlayer.Backpack
+	local MP5 = backpack['MP5']
+	local ss1 = MP5['RifleScript']
+	for i=1,60 do -- You can change the value to something higher to increase Damage!
+	ss1:Clone().Parent = MP5
+	end
+	wait(0.1)
+	local Pistol = backpack['Pistol']
+	local ss2 = Pistol['PistolScript']
+	for i=1,10 do -- You can change the value to something higher to increase Damage!
+	ss2:Clone().Parent = Pistol
+	end
+	wait(0.1)
+	local Deagle = backpack['Deagle']
+	local ss3 = Deagle['PistolScript']
+	for i=1,12 do -- You can change the value to something higher to increase Damage!
+	ss3:Clone().Parent = Deagle
+	end
+	wait(0.1)
+	local Baton = backpack['Baton']
+	local ss4 = Baton['MeeleScript']
+	for i=1,200 do -- You can change the value to something higher to increase Damage!
+	ss4:Clone().Parent = Baton
+	end
+	wait(0.1)
+	local Knife = backpack['Knife']
+	local ss5 = Knife['MeeleScript']
+	for i=1,200 do -- You can change the value to something higher to increase Damage!
+	ss5:Clone().Parent = Knife
+	end
+	wait(0.1)
+	local Shotgun = backpack['Shotgun']
+	local ss6 = Shotgun['ShotgunScript']
+	for i=1,6 do -- You can change the value to something higher to increase Damage!
+	ss6:Clone().Parent = Shotgun
+	end
+	local Grenade = backpack['Grenade']
+	local ss7 = Grenade['GrenadeScript']
+	for i=1,12 do -- You can change the value to something higher to increase Damage!
+	ss7:Clone().Parent = Grenade
+	end
+end)
+
+GravityB.MouseButton1Down:connect(function()
+	local Numb = MultiBox.Text
+	game.Workspace.Gravity = Numb
+	message("Mad Reaper X: Gravity set.", "pink")
+end)
+
+SetSpeedB.MouseButton1Down:connect(function()
+	local CharHumanoid = game.Players.LocalPlayer.Character.Humanoid
+	local Speed = MultiBox.Text
+	message("Mad Reaper X: Speed set.", "pink")
+	message("Mad Reaper X: Don't set your speed higher than 65. You can get kicked.", "pink")
+	while wait() do
+		CharHumanoid.WalkSpeed = Speed
+	end
+end)
+
+GiveGunsB.MouseButton1Down:connect(function()
+	local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	wait (.075)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.ObjectSelection.AK47.AK47.Position)
+	wait (.075)
+	game.Workspace.ObjectSelection.AK47.AK47.AK47.Event:FireServer()
+	wait (.075)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(oldpos)
+	wait(1)
+	local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	wait (.075)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.ObjectSelection.Shotgun.Shotgun.Position)
+	wait (.075)
+	game.Workspace.ObjectSelection.Shotgun.Shotgun.Shotgun.Event:FireServer()
+	wait (.075)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(oldpos)
+	wait(0.5)
+	message("Mad Reaper X: Guns given.", "yellow")
+end)
+
+FirstPers = false
+FPB.MouseButton1Down:connect(function()
+	if FirstPers == false then
+		FirstPers = true
+		FPB.Text = "First Person: [On]"
+		local player = game.Players.LocalPlayer
+		player.CameraMode = Enum.CameraMode.LockFirstPerson
+	elseif FirstPers == true then
+		FirstPers = false
+		FPB.Text = "First Person: [Off]"
+		local player = game.Players.LocalPlayer
+		player.CameraMode = Enum.CameraMode.Classic
+	end
+end)
+
+RemoveCellDB.MouseButton1Down:connect(function()
+	game.Workspace.Prison.CellSpawns:Destroy()
+	game.Workspace.Prison.FakeCell:Destroy()
+	message("Mad Reaper X: Cell Doors have been removed.", "pink")
+end)
+
+noclip = false
+NoclipB.MouseButton1Down:connect(function()
+	message("Mad Reaper X: Noclip loaded. Press 'F' to enable and disable Noclip.", "light_blue")
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+		if key == "f" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end)
+
+RemoveTagsB.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.NameTag.Title:Destroy()
+	game.Players.LocalPlayer.Character.NameTag.Script:Destroy()
+	game.Players.LocalPlayer.Character.NameTag.Icon.Rank:Destroy()
+	game.Players.LocalPlayer.Character.NameTag:Destroy()
+	message("Mad Reaper X: All Name Tags have been removed.", "pink")
+end)
+
+GiveJetpackB.MouseButton1Down:connect(function()
+	local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	wait (0.1)
+	game.Workspace.ObjectSelection.BossKey.Nope.BossKey.Event:FireServer()
+	wait (0.2)
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(Vector3.new(-2183.74902, 29.0133343, -1552.18677)))
+	wait (4)
+	game.Workspace.ObjectSelection.TakeJetpack.TakeJetpack.TakeJetpack.Event:FireServer()
+	wait (0.2)
+	tweenMove(game.Players.LocalPlayer.Character, CFrame.new(oldpos))
+	wait(0.2)
+	message("Mad Reaper X: Jetpack given." ,"yellow")
+end)
+
+GotoB.MouseButton1Down:connect(function()
+	message("Mad Reaper X: Player TP coming soon!", "light_blue")
+end)
+
+--
+
+local A_1 = "Dialogue"
+local A_2 = 
+{
+    [1] = 
+{
+    ["Delay"] = 3.5, 
+    ["Text"] = "Mad Reaper X presented to you by Dishan & Iconz."
+}
+}
+local Event = game:GetService("ReplicatedStorage").Event
+Event:FireServer(A_1, A_2)
+wait(4.7)
+
+message("Mad Reaper X: Anti-Cheat Bypassed! You may now move.", "green")
+wait(0.2)
+
+message("Mad Reaper X: Press Q to open & close!", "blue")
+
+-- End Of Script.
